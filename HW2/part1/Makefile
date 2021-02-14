@@ -1,5 +1,7 @@
+SYSTEMC ?= ../../systemc-2.3.3
+
 all:
-	g++ -I../systemc/systemc-install-dir/include sad.cpp ../systemc/systemc-install-dir/lib-linux64/libsystemc.a -o sad.out
+	g++ -I ${SYSTEMC}/include sad1.cpp ${SYSTEMC}/lib-linux64/libsystemc.a -lpthread -o sad_part1.out
 
 clean:
-	-rm ./sad.out 2>/dev/null
+	-rm ./hello_systemc.out 2>/dev/null
