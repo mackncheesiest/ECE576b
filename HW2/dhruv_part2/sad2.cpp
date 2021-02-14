@@ -10,16 +10,14 @@
 
 //--------------------------------------------------------------------------//
 
-#define MEM_SIZE 65789
-#define INPUT1_ADDR 1
-#define INPUT2_ADDR 3
-#define OUTPUT_ADDR 6
 
 #define NUM_BLOCKS 64
 #define BLOCK_SIZE 64
-//#define INPUT1_ADDR 0
-//#define INPUT2_ADDR 16384
-#define SAD_OUTPUT_ADDR 6
+#define INPUT1_ADDR 0
+#define INPUT2_ADDR 4096
+#define OUTPUT_ADDR 8192
+
+#define MEM_SIZE 65789
 
 // simple memory interface
 class simple_mem_if : virtual public sc_interface
@@ -44,21 +42,20 @@ public:
 	sc_in<int> DataIn;
 	sc_out<int> DataOut;
 	sc_out<sc_logic> Ack;
-	unsigned int  memData[MEM_SIZE]; 
-	char* memFilename;
+	
+	unsigned int  memData[MEM_SIZE];
 	
 	SC_HAS_PROCESS(MEMORY_RTL);
-	
-	
-	
+
 	MEMORY_RTL(sc_module_name name, char* memInitFilename) :sc_module(name)
 	{	
-		memFilename = memInitFilename;
+		SC_METHOD(rtl);
+		//sensitive << clk.pos();
+		
+		char* memFilename = memInitFilename;
         
 		unsigned int initData;
 		unsigned int initLocation;
-		
-		
 		
 		// initiliaze memory to 0
 		for(int i=0; i<MEM_SIZE; i++) { memData[i] = 0; }
@@ -82,18 +79,15 @@ public:
 		}
 		ifs.close();
 		
-		SC_METHOD(rtl);
-		sensitive << clk.pos();
 	}
 	void rtl()
 	{ 
 		//memory behaviors here}
-		if(Ren ==1)
+		if(Ren == SC_LOGIC_1)
 		{
-			
 			DataOut = memData[Addr];
 		}
-		else if(Wen ==1)
+		if(Wen == SC_LOGIC_1)
 		{
 			memData[Addr] = DataIn;
 		}
@@ -235,10 +229,10 @@ public:
 				offset = (block * BLOCK_SIZE) + i;
 				// so is MEM an instance of the simple_mem_if???
 				addr1 = INPUT1_ADDR + offset;
-				wait(10);
+				wait(10, SC_NS);
 				//cout << " ADDR 1 for the ALU is: " << addr1 << endl;
 				addr2 = INPUT2_ADDR + offset;
-				wait(10);
+				wait(10, SC_NS);
 				//cout << " ADDR 2 for the ALU is: " << addr2 << endl;
 				if(!bus->Read(addr1, dataA)) { //read the data in INPUT1_ADDR via the Read port of the interface
 					cout << "Error: Invalid input 1 data!! " << endl;
@@ -253,14 +247,18 @@ public:
 				}
 				//cout << " DataB for the ALU is: " << dataB << endl;
 				v = dataA - dataB;
-				wait(10);
+				if (block == 0) {
+					//cout << "For block 0, our addr1 is " << addr1 << endl;
+					//cout << "For block 0, our addr2 is " << addr2 << endl;
+				}
+				wait(10, SC_NS);
 				//v = MEM[INPUT1_ADDR + offset] - MEM[INPUT2_ADDR + offset];
 				if (v < 0) {
 				v = -v;
-				wait(10);
+				wait(10, SC_NS);
 				}
 				sad_value += v;
-				wait(10);
+				wait(10, SC_NS);
 			}
 			cout << " SAD value is: " << sad_value<< endl;
 			if(!bus->Write(OUTPUT_ADDR, sad_value)) {
