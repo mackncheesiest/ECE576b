@@ -1,0 +1,9 @@
+Input file: beardown.txt
+
+To Encrypt please use:
+./aesx86 -e 128/192/256 -i beardown.txt -o outfile128/192/256.txt
+
+To Decrypt please use:
+./aesx86 -d 128/192/256 -i outfile128/192/256.txt -o infile_beardown_128/192/256.txt
+
+Unique password used: 123. Outfile is diffenrt for each key size
