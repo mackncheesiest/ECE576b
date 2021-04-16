@@ -1,0 +1,2370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1618555088114">
+  <ports id="1" name="len" type="PortType" originalName="len" coreId="4294967295" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="hr" type="PortType" originalName="hr" coreId="113" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="t" type="PortType" originalName="t" coreId="49" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="meanhr" type="PortType" originalName="meanhr" coreId="49" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="tpower" type="PortType" originalName="tpower" coreId="129" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="stationarity" type="PortType" originalName="stationarity" coreId="129" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="activity" type="PortType" originalName="activity" coreId="49" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="acmin" type="PortType" originalName="acmin" coreId="177" bitwidth="64" direction="DirInOut">
+    <dataInputObjs>read</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>write</dataOutputObjs>
+  </ports>
+  <ports id="9" name="hrmin" type="PortType" originalName="hrmin" coreId="129" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="10" name="stmin" type="PortType" originalName="stmin" coreId="132" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="11" name="tpmin" type="PortType" originalName="tpmin" coreId="0" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="12" name="tmin0" type="PortType" originalName="tmin0" coreId="273" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="13" name="tmin1" type="PortType" originalName="tmin1" coreId="129" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="202" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="205" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="210" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="213" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="217" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="219" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="221" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="224" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="225" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="226" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="227" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="229" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="232" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="237" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="238" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="239" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="240" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="241" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="242" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="244" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="246" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="247" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="248" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="251" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="255" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="256" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="257" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="258" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="259" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="260" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="263" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="264" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="265" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="266" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="268" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="269" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="270" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="272" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="273" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="275" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="276" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="277" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="278" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="279" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="280" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="281" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="282" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="283" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="284" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="286" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="287" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="288" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="289" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="290" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="291" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="292" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="293" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="294" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="297" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="298" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="299" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="300" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="301" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="302" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="303" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="304" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="305" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="308" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="311" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@ports.3"/>
+  <edges id="312" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.4/@node_objs.6"/>
+  <edges id="313" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.7"/>
+  <edges id="314" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.7"/>
+  <edges id="315" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@blocks.4/@node_objs.8"/>
+  <edges id="318" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="323" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="324" source_obj="//@blocks.4/@node_objs.9" sink_obj="//@blocks.4/@node_objs.11"/>
+  <edges id="327" source_obj="//@blocks.4/@node_objs.10" sink_obj="//@blocks.4/@node_objs.12"/>
+  <edges id="330" source_obj="//@blocks.4/@node_objs.12" sink_obj="//@blocks.4/@node_objs.13"/>
+  <edges id="331" source_obj="//@blocks.4/@node_objs.11" sink_obj="//@blocks.4/@node_objs.13"/>
+  <edges id="332" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@blocks.4/@node_objs.14"/>
+  <edges id="334" source_obj="//@blocks.4/@node_objs.13" sink_obj="//@blocks.4/@node_objs.15"/>
+  <edges id="335" source_obj="//@blocks.4/@node_objs.14" sink_obj="//@blocks.4/@node_objs.15"/>
+  <edges id="336" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@blocks.4/@node_objs.16"/>
+  <edges id="339" source_obj="//@blocks.4/@node_objs.16" sink_obj="//@blocks.4/@node_objs.17"/>
+  <edges id="340" source_obj="//@blocks.4/@node_objs.15" sink_obj="//@blocks.4/@node_objs.18"/>
+  <edges id="341" source_obj="//@blocks.4/@node_objs.17" sink_obj="//@blocks.4/@node_objs.18"/>
+  <edges id="342" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@blocks.4/@node_objs.18"/>
+  <edges id="343" source_obj="//@blocks.4/@node_objs.18" sink_obj="//@blocks.4/@node_objs.19"/>
+  <edges id="345" source_obj="//@blocks.4/@node_objs.20" sink_obj="//@ports.5"/>
+  <edges id="346" source_obj="//@blocks.4/@node_objs.19" sink_obj="//@blocks.4/@node_objs.20"/>
+  <edges id="347" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.4/@node_objs.21"/>
+  <edges id="349" source_obj="//@blocks.4/@node_objs.21" sink_obj="//@blocks.4/@node_objs.22"/>
+  <edges id="350" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.4/@node_objs.22"/>
+  <edges id="351" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.22"/>
+  <edges id="352" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="353" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="354" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="355" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="356" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="358" source_obj="//@regions.2/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="359" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="361" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0"/>
+  <edges id="362" source_obj="//@regions.2/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="363" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="365" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1"/>
+  <edges id="366" source_obj="//@regions.2/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.2"/>
+  <edges id="369" source_obj="//@regions.2/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.3"/>
+  <edges id="370" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.3"/>
+  <edges id="371" source_obj="//@regions.2/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4"/>
+  <edges id="372" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4"/>
+  <edges id="373" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4"/>
+  <edges id="374" source_obj="//@regions.2/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.0"/>
+  <edges id="375" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.0"/>
+  <edges id="377" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.1"/>
+  <edges id="378" source_obj="//@regions.2/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.1"/>
+  <edges id="379" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.2"/>
+  <edges id="380" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="382" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="383" source_obj="//@regions.2/@basic_blocks.0/@node_objs.1" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="384" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="385" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="386" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="387" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="388" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="390" source_obj="//@blocks.7/@node_objs.3" sink_obj="//@blocks.7/@node_objs.4"/>
+  <edges id="393" source_obj="//@blocks.7/@node_objs.3" sink_obj="//@blocks.7/@node_objs.5"/>
+  <edges id="394" source_obj="//@blocks.7/@node_objs.4" sink_obj="//@blocks.7/@node_objs.6"/>
+  <edges id="396" source_obj="//@blocks.7/@node_objs.5" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="398" source_obj="//@blocks.7/@node_objs.7" sink_obj="//@blocks.7/@node_objs.8"/>
+  <edges id="399" source_obj="//@blocks.7/@node_objs.6" sink_obj="//@blocks.7/@node_objs.8"/>
+  <edges id="400" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.7/@node_objs.9"/>
+  <edges id="403" source_obj="//@blocks.7/@node_objs.8" sink_obj="//@blocks.7/@node_objs.10"/>
+  <edges id="404" source_obj="//@blocks.7/@node_objs.9" sink_obj="//@blocks.7/@node_objs.10"/>
+  <edges id="405" source_obj="//@blocks.7/@node_objs.10" sink_obj="//@blocks.7/@node_objs.11"/>
+  <edges id="408" source_obj="//@blocks.7/@node_objs.3" sink_obj="//@blocks.7/@node_objs.11"/>
+  <edges id="409" source_obj="//@blocks.7/@node_objs.10" sink_obj="//@blocks.7/@node_objs.12"/>
+  <edges id="411" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.7/@node_objs.12"/>
+  <edges id="413" source_obj="//@blocks.7/@node_objs.13" sink_obj="//@ports.4"/>
+  <edges id="414" source_obj="//@blocks.7/@node_objs.11" sink_obj="//@blocks.7/@node_objs.13"/>
+  <edges id="415" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.7/@node_objs.14"/>
+  <edges id="418" source_obj="//@blocks.7/@node_objs.14" sink_obj="//@blocks.7/@node_objs.15"/>
+  <edges id="419" source_obj="//@blocks.7/@node_objs.14" sink_obj="//@blocks.7/@node_objs.15"/>
+  <edges id="420" source_obj="//@blocks.4/@node_objs.18" sink_obj="//@blocks.7/@node_objs.16"/>
+  <edges id="423" source_obj="//@blocks.7/@node_objs.16" sink_obj="//@blocks.7/@node_objs.17"/>
+  <edges id="424" source_obj="//@blocks.4/@node_objs.18" sink_obj="//@blocks.7/@node_objs.17"/>
+  <edges id="425" source_obj="//@blocks.7/@node_objs.15" sink_obj="//@blocks.7/@node_objs.18"/>
+  <edges id="426" source_obj="//@blocks.7/@node_objs.17" sink_obj="//@blocks.7/@node_objs.18"/>
+  <edges id="427" source_obj="//@blocks.7/@node_objs.12" sink_obj="//@blocks.7/@node_objs.19"/>
+  <edges id="429" source_obj="//@blocks.7/@node_objs.18" sink_obj="//@blocks.7/@node_objs.20"/>
+  <edges id="430" source_obj="//@blocks.7/@node_objs.19" sink_obj="//@blocks.7/@node_objs.20"/>
+  <edges id="433" source_obj="//@blocks.7/@node_objs.20" sink_obj="//@blocks.7/@node_objs.21"/>
+  <edges id="435" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.7/@node_objs.22"/>
+  <edges id="438" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.7/@node_objs.23"/>
+  <edges id="439" source_obj="//@blocks.7/@node_objs.22" sink_obj="//@blocks.7/@node_objs.24"/>
+  <edges id="441" source_obj="//@blocks.7/@node_objs.23" sink_obj="//@blocks.7/@node_objs.25"/>
+  <edges id="443" source_obj="//@blocks.7/@node_objs.25" sink_obj="//@blocks.7/@node_objs.26"/>
+  <edges id="444" source_obj="//@blocks.7/@node_objs.24" sink_obj="//@blocks.7/@node_objs.26"/>
+  <edges id="445" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.7/@node_objs.27"/>
+  <edges id="448" source_obj="//@blocks.7/@node_objs.26" sink_obj="//@blocks.7/@node_objs.28"/>
+  <edges id="449" source_obj="//@blocks.7/@node_objs.27" sink_obj="//@blocks.7/@node_objs.28"/>
+  <edges id="451" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.7/@node_objs.29"/>
+  <edges id="452" source_obj="//@blocks.7/@node_objs.21" sink_obj="//@blocks.7/@node_objs.30"/>
+  <edges id="453" source_obj="//@blocks.7/@node_objs.29" sink_obj="//@blocks.7/@node_objs.30"/>
+  <edges id="454" source_obj="//@blocks.7/@node_objs.28" sink_obj="//@blocks.7/@node_objs.31"/>
+  <edges id="455" source_obj="//@blocks.7/@node_objs.30" sink_obj="//@blocks.7/@node_objs.31"/>
+  <edges id="456" source_obj="//@blocks.7/@node_objs.21" sink_obj="//@blocks.7/@node_objs.31"/>
+  <edges id="457" source_obj="//@blocks.7/@node_objs.31" sink_obj="//@blocks.7/@node_objs.32"/>
+  <edges id="459" source_obj="//@blocks.7/@node_objs.33" sink_obj="//@ports.6"/>
+  <edges id="460" source_obj="//@blocks.7/@node_objs.32" sink_obj="//@blocks.7/@node_objs.33"/>
+  <edges id="462" source_obj="//@ports.7" sink_obj="//@blocks.7/@node_objs.34"/>
+  <edges id="463" source_obj="//@blocks.7/@node_objs.34" sink_obj="//@blocks.7/@node_objs.35"/>
+  <edges id="465" source_obj="//@blocks.7/@node_objs.32" sink_obj="//@blocks.7/@node_objs.36"/>
+  <edges id="468" source_obj="//@blocks.7/@node_objs.32" sink_obj="//@blocks.7/@node_objs.37"/>
+  <edges id="470" source_obj="//@blocks.7/@node_objs.34" sink_obj="//@blocks.7/@node_objs.38"/>
+  <edges id="473" source_obj="//@blocks.7/@node_objs.34" sink_obj="//@blocks.7/@node_objs.39"/>
+  <edges id="474" source_obj="//@blocks.7/@node_objs.36" sink_obj="//@blocks.7/@node_objs.40"/>
+  <edges id="476" source_obj="//@blocks.7/@node_objs.37" sink_obj="//@blocks.7/@node_objs.41"/>
+  <edges id="478" source_obj="//@blocks.7/@node_objs.41" sink_obj="//@blocks.7/@node_objs.42"/>
+  <edges id="479" source_obj="//@blocks.7/@node_objs.40" sink_obj="//@blocks.7/@node_objs.42"/>
+  <edges id="480" source_obj="//@blocks.7/@node_objs.38" sink_obj="//@blocks.7/@node_objs.43"/>
+  <edges id="482" source_obj="//@blocks.7/@node_objs.39" sink_obj="//@blocks.7/@node_objs.44"/>
+  <edges id="484" source_obj="//@blocks.7/@node_objs.44" sink_obj="//@blocks.7/@node_objs.45"/>
+  <edges id="485" source_obj="//@blocks.7/@node_objs.43" sink_obj="//@blocks.7/@node_objs.45"/>
+  <edges id="486" source_obj="//@blocks.7/@node_objs.42" sink_obj="//@blocks.7/@node_objs.46"/>
+  <edges id="487" source_obj="//@blocks.7/@node_objs.45" sink_obj="//@blocks.7/@node_objs.46"/>
+  <edges id="488" source_obj="//@blocks.7/@node_objs.31" sink_obj="//@blocks.7/@node_objs.47"/>
+  <edges id="489" source_obj="//@blocks.7/@node_objs.35" sink_obj="//@blocks.7/@node_objs.47"/>
+  <edges id="490" source_obj="//@blocks.7/@node_objs.46" sink_obj="//@blocks.7/@node_objs.48"/>
+  <edges id="491" source_obj="//@blocks.7/@node_objs.47" sink_obj="//@blocks.7/@node_objs.48"/>
+  <edges id="492" source_obj="//@blocks.7/@node_objs.35" sink_obj="//@blocks.7/@node_objs.49"/>
+  <edges id="494" source_obj="//@blocks.7/@node_objs.45" sink_obj="//@blocks.7/@node_objs.50"/>
+  <edges id="495" source_obj="//@blocks.7/@node_objs.49" sink_obj="//@blocks.7/@node_objs.50"/>
+  <edges id="496" source_obj="//@blocks.7/@node_objs.48" sink_obj="//@blocks.7/@node_objs.51"/>
+  <edges id="497" source_obj="//@blocks.7/@node_objs.50" sink_obj="//@blocks.7/@node_objs.51"/>
+  <edges id="498" source_obj="//@blocks.7/@node_objs.51" sink_obj="//@blocks.7/@node_objs.52"/>
+  <edges id="499" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.7/@node_objs.52"/>
+  <edges id="500" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.52"/>
+  <edges id="502" source_obj="//@ports.7" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="503" source_obj="//@blocks.7/@node_objs.32" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="505" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@ports.8"/>
+  <edges id="506" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="508" source_obj="//@blocks.8/@node_objs.2" sink_obj="//@ports.9"/>
+  <edges id="509" source_obj="//@blocks.4/@node_objs.19" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="510" source_obj="//@blocks.7/@node_objs.12" sink_obj="//@blocks.8/@node_objs.3"/>
+  <edges id="512" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@ports.10"/>
+  <edges id="513" source_obj="//@blocks.8/@node_objs.3" sink_obj="//@blocks.8/@node_objs.4"/>
+  <edges id="515" source_obj="//@ports.2" sink_obj="//@blocks.8/@node_objs.5"/>
+  <edges id="517" source_obj="//@blocks.8/@node_objs.6" sink_obj="//@ports.11"/>
+  <edges id="518" source_obj="//@blocks.8/@node_objs.5" sink_obj="//@blocks.8/@node_objs.6"/>
+  <edges id="520" source_obj="//@blocks.8/@node_objs.7" sink_obj="//@ports.12"/>
+  <edges id="521" source_obj="//@blocks.8/@node_objs.5" sink_obj="//@blocks.8/@node_objs.7"/>
+  <edges id="522" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.8"/>
+  <edges id="822" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="823" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="824" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="825" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="826" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="827" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="828" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="829" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="830" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="831" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="832" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="833" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="834" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.7"/>
+  <edges id="835" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0"/>
+  <edges id="836" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@blocks.6"/>
+  <edges id="837" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@regions.2/@basic_blocks.1"/>
+  <edges id="838" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="839" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="840" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="841" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9"/>
+  <edges id="842" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="843" edge_type="VirtEdge" source_obj="//@blocks.7/@node_objs.34" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="-462" source_obj="//@blocks.7/@node_objs.34" sink_obj="//@ports.7"/>
+  <edges id="-502" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@ports.7"/>
+  <blocks id="54" name="block_54" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.lr.ph15</controlOutputObjs>
+    <controlOutputObjs>._crit_edge16</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="len_read" lineNumber="3" originalName="len" fileName="activity_kernel.c" fileDirectory=".." coreId="625" contextFuncName="activity_kernel" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>len</dataInputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>sitodp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="tmp_10" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="tmp_10_fu_402_p3" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="p_neg" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="p_neg_fu_410_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="activity_kernel" bitwidth="32" opcode="sub" m_display="0" m_delay="1.89" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="p_lshr" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="p_lshr_fu_416_p4" coreId="1618559888" contextFuncName="activity_kernel" bitwidth="31" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="p_lshr_cast" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="p_lshr_cast_fu_426_p1" coreId="913" contextFuncName="activity_kernel" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="p_neg_t" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="p_neg_t_fu_430_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="activity_kernel" bitwidth="32" opcode="sub" m_display="0" m_delay="1.87" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="p_lshr_f" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="p_lshr_f_fu_436_p4" coreId="961" contextFuncName="activity_kernel" bitwidth="31" opcode="partselect" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="p_lshr_f_cast" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="p_lshr_f_cast_fu_446_p1" coreId="353" contextFuncName="activity_kernel" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="div" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="div_fu_450_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="activity_kernel" bitwidth="32" opcode="select" m_display="0" m_delay="0.7" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>sitodp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="tmp_11" lineNumber="11" fileName="activity_kernel.c" fileDirectory=".." rtlName="tmp_11_fu_458_p4" coreId="6" contextFuncName="activity_kernel" bitwidth="31" opcode="partselect" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="11" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="icmp_ln11" lineNumber="11" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln11_fu_468_p2" opType="icmp" coreId="1265" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.96" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="11" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="hr_read" lineNumber="12" fileName="activity_kernel.c" fileDirectory=".." coreId="52" contextFuncName="activity_kernel" bitwidth="64" opcode="read" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="12" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>hr</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="br_ln11" lineNumber="11" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="br" m_display="0" m_delay="1.29" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="11" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>._crit_edge16</controlInputObjs>
+      <controlInputObjs>.lr.ph15</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="activity_kernel.c">
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>11</validLinenumbers>
+      <validLinenumbers>12</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="57" name=".lr.ph15" type="BlockType">
+    <controlInputObjs>block_54</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_64</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="bitcast_ln12" lineNumber="12" fileName="activity_kernel.c" fileDirectory=".." rtlName="bitcast_ln12_fu_474_p1" coreId="2833" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="12" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>dacc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="br_ln11" lineNumber="11" fileName="activity_kernel.c" fileDirectory=".." coreId="1618519168" contextFuncName="activity_kernel" opcode="br" m_display="0" m_delay="1.29" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="11" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <controlInputObjs>block_64</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="activity_kernel.c">
+      <validLinenumbers>12</validLinenumbers>
+      <validLinenumbers>11</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="71" name="._crit_edge16.loopexit" type="BlockType">
+    <controlInputObjs>block_64</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>._crit_edge16</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln0" coreId="6" opcode="br" nodeLabel="4.0" m_display="0" m_delay="1.29" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <controlInputObjs>._crit_edge16</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="78" name="._crit_edge16" type="BlockType">
+    <controlInputObjs>block_54</controlInputObjs>
+    <controlInputObjs>._crit_edge16.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_84</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="meanhr0_0_lcssa" originalName="meanhr0" coreId="0" bitwidth="64" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>ddiv</dataOutputObjs>
+      <controlInputObjs>block_54</controlInputObjs>
+      <controlInputObjs>._crit_edge16.loopexit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="i_1" lineNumber="3" originalName="i" fileName="activity_kernel.c" fileDirectory=".." coreId="1618564432" contextFuncName="activity_kernel" bitwidth="32" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <controlInputObjs>block_54</controlInputObjs>
+      <controlInputObjs>._crit_edge16.loopexit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="sext_ln15" lineNumber="15" fileName="activity_kernel.c" fileDirectory=".." rtlName="sext_ln15_fu_501_p1" coreId="1618565680" contextFuncName="activity_kernel" bitwidth="64" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="15" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="wide_trip_count21" lineNumber="3" fileName="activity_kernel.c" fileDirectory=".." rtlName="wide_trip_count21_fu_505_p1" coreId="132" contextFuncName="activity_kernel" bitwidth="64" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="3" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="bitcast_ln16" lineNumber="16" fileName="activity_kernel.c" fileDirectory=".." rtlName="bitcast_ln16_fu_508_p1" coreId="82" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="16" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+      <dataOutputObjs>dsub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="br_ln15" lineNumber="15" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="br" nodeLabel="4.0" m_display="0" m_delay="1.29" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="15" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <controlInputObjs>block_84</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="activity_kernel.c">
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>15</validLinenumbers>
+      <validLinenumbers>16</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="113" name="._crit_edge10.loopexit_ifconv" type="BlockType">
+    <controlInputObjs>block_84</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.lr.ph</controlOutputObjs>
+    <controlOutputObjs>._crit_edge_ifconv</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="conv" lineNumber="19" fileName="activity_kernel.c" fileDirectory=".." rtlName="sitodp_32ns_64_2_no_dsp_1_U9" opType="sitodp" coreId="1618059240" contextFuncName="activity_kernel" bitwidth="64" opcode="sitodp" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="16.2" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="19" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>ddiv</dataOutputObjs>
+      <dataOutputObjs>ddiv</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="meanhr0_2" lineNumber="19" originalName="meanhr0" fileName="activity_kernel.c" fileDirectory=".." rtlName="ddiv_64ns_64ns_64_6_no_dsp_1_U5" coreName="DDiv" implIndex="fabric" control="auto" opType="ddiv" coreId="39" contextFuncName="activity_kernel" bitwidth="64" opcode="ddiv" nodeLabel="9.0" nodeLatency="5" m_display="0" m_delay="59.9" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="19" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>sitodp</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+      <dataOutputObjs>dsub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="meanhr1_2" lineNumber="20" originalName="meanhr1" fileName="activity_kernel.c" fileDirectory=".." rtlName="ddiv_64ns_64ns_64_6_no_dsp_1_U6" coreName="DDiv" implIndex="fabric" control="auto" opType="ddiv" coreId="39" contextFuncName="activity_kernel" bitwidth="64" opcode="ddiv" nodeLabel="9.0" nodeLatency="5" m_display="0" m_delay="59.9" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="20" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>sitodp</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+      <dataOutputObjs>dsub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="add" lineNumber="21" fileName="activity_kernel.c" fileDirectory=".." rtlName="dadddsub_64ns_64ns_64_2_full_dsp_1_U1" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dadd" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dadd" nodeLabel="15.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="21" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>ddiv</dataInputObjs>
+      <dataInputObjs>ddiv</dataInputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="div2" lineNumber="21" fileName="activity_kernel.c" fileDirectory=".." rtlName="dmul_64ns_64ns_64_2_max_dsp_1_U3" coreName="DMul_maxdsp" implIndex="maxdsp" control="auto" opType="dmul" coreId="49" contextFuncName="activity_kernel" bitwidth="64" opcode="dmul" nodeLabel="16.0" nodeLatency="1" m_display="0" m_delay="27.1" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="21" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dadd</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>dsub</dataOutputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+      <dataOutputObjs>dcmp</dataOutputObjs>
+      <dataOutputObjs>dsub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="bitcast_ln21" lineNumber="21" fileName="activity_kernel.c" fileDirectory=".." rtlName="meanhr" coreId="171847424" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="21" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="meanhr_write_ln21" lineNumber="21" fileName="activity_kernel.c" fileDirectory=".." coreId="4294967295" contextFuncName="activity_kernel" opcode="write" nodeLabel="17.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="21" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>meanhr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="sub" lineNumber="22" fileName="activity_kernel.c" fileDirectory=".." rtlName="dsub_64ns_64ns_64_2_full_dsp_1_U2" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dsub" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dsub" nodeLabel="15.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="22" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>ddiv</dataInputObjs>
+      <dataInputObjs>ddiv</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>dcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="bitcast_ln24" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="bitcast_ln24_fu_522_p1" coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dsub</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="tmp_1" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="tmp_1_fu_526_p4" coreId="0" contextFuncName="activity_kernel" bitwidth="11" opcode="partselect" nodeLabel="16.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="trunc_ln24" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="trunc_ln24_fu_536_p1" coreId="4294967295" contextFuncName="activity_kernel" bitwidth="52" opcode="trunc" nodeLabel="16.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="icmp_ln24" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln24_fu_540_p2" opType="icmp" coreId="1677721728" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="16.0" m_display="0" m_delay="1.88" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="icmp_ln24_1" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln24_1_fu_546_p2" opType="icmp" coreId="1618545648" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="16.0" m_display="0" m_delay="2.2" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="or_ln24" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="or_ln24_fu_552_p2" opType="or" coreId="1618440944" contextFuncName="activity_kernel" bitwidth="1" opcode="or" nodeLabel="16.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="tmp_2" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="dcmp_64ns_64ns_1_1_no_dsp_1_U7" opType="dcmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="dcmp" nodeLabel="16.0" m_display="0" m_delay="20.3" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dsub</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="and_ln24" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="and_ln24_fu_558_p2" opType="and" coreId="1618548528" contextFuncName="activity_kernel" bitwidth="1" opcode="and" nodeLabel="16.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>dcmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="xor_ln25" lineNumber="25" fileName="activity_kernel.c" fileDirectory=".." rtlName="xor_ln25_fu_564_p2" opType="xor" coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="xor" nodeLabel="16.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="25" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="bitcast_ln25" lineNumber="25" fileName="activity_kernel.c" fileDirectory=".." rtlName="bitcast_ln25_fu_570_p1" coreId="1618439952" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="25" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="select_ln24" lineNumber="24" fileName="activity_kernel.c" fileDirectory=".." rtlName="select_ln24_fu_574_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="activity_kernel" bitwidth="64" opcode="select" nodeLabel="16.0" m_display="0" m_delay="1.17" m_topoIndex="54" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="24" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataInputObjs>dsub</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="bitcast_ln22" lineNumber="22" fileName="activity_kernel.c" fileDirectory=".." rtlName="stationarity" coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="22" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="stationarity_write_ln22" lineNumber="22" fileName="activity_kernel.c" fileDirectory=".." coreId="1677721728" contextFuncName="activity_kernel" opcode="write" nodeLabel="17.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="22" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>stationarity</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="icmp_ln28" lineNumber="28" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln28_fu_591_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="1.96" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="28" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="br_ln28" lineNumber="28" fileName="activity_kernel.c" fileDirectory=".." coreId="49" contextFuncName="activity_kernel" opcode="br" nodeLabel="17.0" m_display="0" m_delay="1.29" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="28" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>._crit_edge_ifconv</controlInputObjs>
+      <controlInputObjs>.lr.ph</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="activity_kernel.c">
+      <validLinenumbers>19</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="118" name=".lr.ph" type="BlockType">
+    <controlInputObjs>._crit_edge10.loopexit_ifconv</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_126</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="trunc_ln29" lineNumber="29" fileName="activity_kernel.c" fileDirectory=".." rtlName="trunc_ln29_fu_596_p1" coreId="0" contextFuncName="activity_kernel" bitwidth="31" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="29" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="p" lineNumber="29" originalName="p" fileName="activity_kernel.c" fileDirectory=".." rtlName="dadddsub_64ns_64ns_64_2_full_dsp_1_U1" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dadd" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dsub" nodeLabel="17.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="29" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="mul1" lineNumber="30" fileName="activity_kernel.c" fileDirectory=".." rtlName="dmul_64ns_64ns_64_2_max_dsp_1_U3" coreName="DMul_maxdsp" implIndex="maxdsp" control="auto" opType="dmul" coreId="49" contextFuncName="activity_kernel" bitwidth="64" opcode="dmul" nodeLabel="18.0" nodeLatency="1" m_display="0" m_delay="27.1" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="30" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dsub</dataInputObjs>
+      <dataInputObjs>dsub</dataInputObjs>
+      <dataOutputObjs>dacc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="br_ln28" lineNumber="28" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="br" nodeLabel="19.0" m_display="0" m_delay="1.29" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="28" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <controlInputObjs>block_126</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="activity_kernel.c">
+      <validLinenumbers>29</validLinenumbers>
+      <validLinenumbers>30</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="133" name="._crit_edge_ifconv.loopexit" type="BlockType">
+    <controlInputObjs>block_126</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>._crit_edge_ifconv</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="br_ln0" coreId="0" opcode="br" nodeLabel="23.0" m_display="0" m_delay="1.29" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <controlInputObjs>._crit_edge_ifconv</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="187" name="._crit_edge_ifconv" type="BlockType">
+    <controlInputObjs>._crit_edge10.loopexit_ifconv</controlInputObjs>
+    <controlInputObjs>._crit_edge_ifconv.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_197</controlOutputObjs>
+    <controlOutputObjs>._crit_edge3</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="134" name="empty_12" lineNumber="30" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="phi" nodeLabel="24.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="30" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>ddiv</dataOutputObjs>
+      <controlInputObjs>._crit_edge10.loopexit_ifconv</controlInputObjs>
+      <controlInputObjs>._crit_edge_ifconv.loopexit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="conv1" lineNumber="33" fileName="activity_kernel.c" fileDirectory=".." rtlName="sitodp_32ns_64_2_no_dsp_1_U9" opType="sitodp" coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="sitodp" nodeLabel="23.0" nodeLatency="1" m_display="0" m_delay="16.2" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="33" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>ddiv</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="136" name="div3" lineNumber="33" fileName="activity_kernel.c" fileDirectory=".." rtlName="ddiv_64ns_64ns_64_6_no_dsp_1_U5" coreName="DDiv" implIndex="fabric" control="auto" opType="ddiv" coreId="39" contextFuncName="activity_kernel" bitwidth="64" opcode="ddiv" nodeLabel="25.0" nodeLatency="5" m_display="0" m_delay="59.9" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="33" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>sitodp</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>dcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="137" name="bitcast_ln33" lineNumber="33" fileName="activity_kernel.c" fileDirectory=".." rtlName="bitcast_ln33_fu_623_p1" coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="31.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="33" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>ddiv</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="138" name="tmp_3" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="tmp_3_fu_627_p4" coreId="0" contextFuncName="activity_kernel" bitwidth="11" opcode="partselect" nodeLabel="31.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="139" name="trunc_ln35" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="trunc_ln35_fu_637_p1" coreId="0" contextFuncName="activity_kernel" bitwidth="52" opcode="trunc" nodeLabel="31.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="140" name="icmp_ln35" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln35_fu_641_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="31.0" m_display="0" m_delay="1.88" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="icmp_ln35_1" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln35_1_fu_647_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="31.0" m_display="0" m_delay="2.2" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="142" name="or_ln35" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="or_ln35_fu_653_p2" opType="or" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="or" nodeLabel="31.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="143" name="tmp_4" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="dcmp_64ns_64ns_1_1_no_dsp_1_U7" opType="dcmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="dcmp" nodeLabel="31.0" m_display="0" m_delay="20.3" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>ddiv</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="144" name="and_ln35" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="and_ln35_fu_659_p2" opType="and" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="and" nodeLabel="31.0" m_display="0" m_delay="0.8" m_topoIndex="88" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>dcmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="select_ln35" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="tpower" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="activity_kernel" bitwidth="64" opcode="select" nodeLabel="31.0" m_display="0" m_delay="1.17" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="146" name="select_ln35_1" lineNumber="35" fileName="activity_kernel.c" fileDirectory=".." rtlName="select_ln35_1_fu_674_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="activity_kernel" bitwidth="64" opcode="select" nodeLabel="31.0" m_display="0" m_delay="1.17" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="35" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>ddiv</dataInputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="147" name="tpower_write_ln33" lineNumber="33" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="write" nodeLabel="31.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="33" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>tpower</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="148" name="sub2" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="dadddsub_64ns_64ns_64_2_full_dsp_1_U1" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dadd" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dadd" nodeLabel="29.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="149" name="mul2" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="dmul_64ns_64ns_64_2_max_dsp_1_U3" coreName="DMul_maxdsp" implIndex="maxdsp" control="auto" opType="dmul" coreId="49" contextFuncName="activity_kernel" bitwidth="64" opcode="dmul" nodeLabel="30.0" nodeLatency="1" m_display="0" m_delay="27.1" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dadd</dataInputObjs>
+      <dataInputObjs>dadd</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="150" name="mul3" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="dmul_64ns_64ns_64_2_max_dsp_1_U3" coreName="DMul_maxdsp" implIndex="maxdsp" control="auto" opType="dmul" coreId="49" contextFuncName="activity_kernel" bitwidth="64" opcode="dmul" nodeLabel="29.0" nodeLatency="1" m_display="0" m_delay="27.1" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>dmul</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="151" name="mul4" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="dmul_64ns_64ns_64_2_max_dsp_1_U4" coreName="DMul_maxdsp" implIndex="maxdsp" control="auto" opType="dmul" coreId="49" contextFuncName="activity_kernel" bitwidth="64" opcode="dmul" nodeLabel="30.0" nodeLatency="1" m_display="0" m_delay="27.1" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="152" name="add2" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="dadddsub_64ns_64ns_64_2_full_dsp_1_U1" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dadd" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dadd" nodeLabel="31.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="153" name="mul5" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="dmul_64ns_64ns_64_2_max_dsp_1_U3" coreName="DMul_maxdsp" implIndex="maxdsp" control="auto" opType="dmul" coreId="49" contextFuncName="activity_kernel" bitwidth="64" opcode="dmul" nodeLabel="31.0" nodeLatency="1" m_display="0" m_delay="27.1" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="154" name="add3" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="dadddsub_64ns_64ns_64_2_full_dsp_1_U1" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dadd" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dadd" nodeLabel="32.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dadd</dataInputObjs>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataOutputObjs>dsqrt</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="155" name="tmp" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="dsqrt_64ns_64ns_64_6_no_dsp_1_U10" coreName="DSqrt" implIndex="fabric" control="auto" opType="dsqrt" coreId="52" contextFuncName="activity_kernel" bitwidth="64" opcode="dsqrt" nodeLabel="34.0" nodeLatency="5" m_display="0" m_delay="51.5" m_topoIndex="95" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dadd</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="156" name="tmp_5" lineNumber="41" fileName="activity_kernel.c" fileDirectory=".." rtlName="tmp_5_fu_683_p4" coreId="0" contextFuncName="activity_kernel" bitwidth="11" opcode="partselect" nodeLabel="41.0" m_display="0" m_topoIndex="99" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="41" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="157" name="trunc_ln41" lineNumber="41" fileName="activity_kernel.c" fileDirectory=".." rtlName="trunc_ln41_fu_692_p1" coreId="0" contextFuncName="activity_kernel" bitwidth="52" opcode="trunc" nodeLabel="41.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="41" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="158" name="icmp_ln41" lineNumber="41" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln41_fu_695_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.88" m_topoIndex="101" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="41" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="159" name="icmp_ln41_1" lineNumber="41" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln41_1_fu_701_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="2.2" m_topoIndex="102" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="41" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="160" name="or_ln41" lineNumber="41" fileName="activity_kernel.c" fileDirectory=".." rtlName="or_ln41_fu_707_p2" opType="or" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="or" nodeLabel="41.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="41" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="161" name="tmp_6" lineNumber="41" fileName="activity_kernel.c" fileDirectory=".." rtlName="dcmp_64ns_64ns_1_1_no_dsp_1_U7" opType="dcmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="dcmp" nodeLabel="39.0" m_display="0" m_delay="20.3" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="41" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="162" name="and_ln41" lineNumber="41" fileName="activity_kernel.c" fileDirectory=".." rtlName="and_ln41_fu_713_p2" opType="and" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="and" nodeLabel="41.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="41" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>dcmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="163" name="sub3" lineNumber="43" fileName="activity_kernel.c" fileDirectory=".." rtlName="dadddsub_64ns_64ns_64_2_full_dsp_1_U1" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dadd" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dsub" nodeLabel="39.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="97" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="43" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dmul</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="164" name="add4" lineNumber="43" fileName="activity_kernel.c" fileDirectory=".." rtlName="dadddsub_64ns_64ns_64_2_full_dsp_1_U1" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dadd" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dadd" nodeLabel="40.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="98" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="43" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>dsqrt</dataInputObjs>
+      <dataInputObjs>dsub</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="select_ln41" lineNumber="41" fileName="activity_kernel.c" fileDirectory=".." rtlName="select_ln41_fu_718_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="activity_kernel" bitwidth="64" opcode="select" nodeLabel="41.0" m_display="0" m_delay="1.17" m_topoIndex="105" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="41" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>dadd</dataInputObjs>
+      <dataInputObjs>dsqrt</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>dcmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="166" name="bitcast_ln39" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." rtlName="bitcast_ln39_fu_726_p1" coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="41.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="167" name="activity_write_ln39" lineNumber="39" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="write" nodeLabel="41.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="39" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>activity</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="168" name="acmin_read" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="read" nodeLabel="41.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>acmin</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>acmin</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="169" name="bitcast_ln46" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="tmp_s_fu_359_p0" coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="41.0" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>dcmp</dataOutputObjs>
+      <dataOutputObjs>dcmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="170" name="tmp_7" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="tmp_7_fu_738_p4" coreId="0" contextFuncName="activity_kernel" bitwidth="11" opcode="partselect" nodeLabel="41.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="171" name="trunc_ln46" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="trunc_ln46_fu_748_p1" coreId="0" contextFuncName="activity_kernel" bitwidth="52" opcode="trunc" nodeLabel="41.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="172" name="tmp_8" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="tmp_8_fu_752_p4" coreId="0" contextFuncName="activity_kernel" bitwidth="11" opcode="partselect" nodeLabel="41.0" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="173" name="trunc_ln46_1" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="trunc_ln46_1_fu_762_p1" coreId="0" contextFuncName="activity_kernel" bitwidth="52" opcode="trunc" nodeLabel="41.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="174" name="icmp_ln46" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln46_fu_766_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.88" m_topoIndex="114" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="175" name="icmp_ln46_1" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln46_1_fu_772_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="2.2" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="176" name="or_ln46_1" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="or_ln46_1_fu_778_p2" opType="or" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="or" nodeLabel="41.0" m_display="0" m_topoIndex="116" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="177" name="icmp_ln46_2" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln46_2_fu_784_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.88" m_topoIndex="117" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="178" name="icmp_ln46_3" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln46_3_fu_790_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="2.2" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="179" name="or_ln46_2" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="or_ln46_2_fu_796_p2" opType="or" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="or" nodeLabel="41.0" m_display="0" m_delay="0.8" m_topoIndex="119" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="180" name="and_ln46" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="and_ln46_fu_802_p2" opType="and" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="and" nodeLabel="41.0" m_display="0" m_topoIndex="120" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="181" name="tmp_9" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="dcmp_64ns_64ns_1_1_no_dsp_1_U7" opType="dcmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="dcmp" nodeLabel="41.0" m_display="0" m_delay="20.3" m_topoIndex="121" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="182" name="and_ln46_1" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="and_ln46_1_fu_808_p2" opType="and" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="and" nodeLabel="41.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>dcmp</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="183" name="tmp_s" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="dcmp_64ns_64ns_1_1_no_dsp_1_U8" opType="dcmp" coreId="134283779" contextFuncName="activity_kernel" bitwidth="1" opcode="dcmp" nodeLabel="41.0" m_display="0" m_delay="20.3" m_topoIndex="123" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="184" name="and_ln46_2" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="and_ln46_2_fu_814_p2" opType="and" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="and" nodeLabel="41.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>dcmp</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="185" name="or_ln46" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." rtlName="or_ln46_fu_820_p2" opType="or" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="or" nodeLabel="41.0" m_display="0" m_delay="0.8" m_topoIndex="125" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="186" name="br_ln46" lineNumber="46" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="126" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="46" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>or</dataInputObjs>
+      <controlInputObjs>._crit_edge3</controlInputObjs>
+      <controlInputObjs>block_197</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="activity_kernel.c">
+      <validLinenumbers>30</validLinenumbers>
+      <validLinenumbers>33</validLinenumbers>
+      <validLinenumbers>35</validLinenumbers>
+      <validLinenumbers>39</validLinenumbers>
+      <validLinenumbers>41</validLinenumbers>
+      <validLinenumbers>43</validLinenumbers>
+      <validLinenumbers>46</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="197" name="block_197" type="BlockType">
+    <controlInputObjs>._crit_edge_ifconv</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge3</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="188" name="acmin_write_ln47" lineNumber="47" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="write" nodeLabel="41.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="47" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>acmin</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>acmin</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="189" name="hrmin_write_ln48" lineNumber="48" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="write" nodeLabel="41.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="48" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>hrmin</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="190" name="stmin_write_ln49" lineNumber="49" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="write" nodeLabel="41.0" m_display="0" m_topoIndex="129" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="49" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>stmin</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="191" name="bitcast_ln50" lineNumber="50" fileName="activity_kernel.c" fileDirectory=".." rtlName="tpmin" coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="bitcast" nodeLabel="41.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="50" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="192" name="tpmin_write_ln50" lineNumber="50" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="write" nodeLabel="41.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="50" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>tpmin</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="193" name="t_read" lineNumber="51" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="read" nodeLabel="41.0" m_display="0" m_topoIndex="132" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="51" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>t</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="194" name="tmin0_write_ln51" lineNumber="51" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="write" nodeLabel="41.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="51" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>tmin0</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="195" name="tmin1_write_ln52" lineNumber="52" fileName="activity_kernel.c" fileDirectory=".." coreId="730513272" contextFuncName="activity_kernel" opcode="write" nodeLabel="41.0" m_display="0" m_topoIndex="134" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="52" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>tmin1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="196" name="br_ln53" lineNumber="53" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="135" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="53" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+      <controlInputObjs>._crit_edge3</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="activity_kernel.c">
+      <validLinenumbers>47</validLinenumbers>
+      <validLinenumbers>48</validLinenumbers>
+      <validLinenumbers>49</validLinenumbers>
+      <validLinenumbers>50</validLinenumbers>
+      <validLinenumbers>51</validLinenumbers>
+      <validLinenumbers>52</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="199" name="._crit_edge3" type="BlockType">
+    <controlInputObjs>._crit_edge_ifconv</controlInputObjs>
+    <controlInputObjs>block_197</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="198" name="_ln55" lineNumber="55" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="ret" nodeLabel="41.0" m_display="0" m_topoIndex="136" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="activity_kernel.c" linenumber="55" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="activity_kernel.c">
+      <validLinenumbers>55</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="788" pipe_depth="3" RegionName="VITIS_LOOP_11_1">
+    <basic_blocks id="64" name="block_64" type="BlockType">
+      <controlInputObjs>.lr.ph15</controlInputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge16.loopexit</controlOutputObjs>
+      <controlOutputObjs>.split4</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="i" lineNumber="11" originalName="i" fileName="activity_kernel.c" fileDirectory=".." coreId="1618558761" contextFuncName="activity_kernel" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="11" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>.split4</controlInputObjs>
+        <controlInputObjs>.lr.ph15</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="meanhr0" originalName="meanhr0" coreId="1618173664" bitwidth="64" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <dataInputObjs>dacc</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>.split4</controlInputObjs>
+        <controlInputObjs>.lr.ph15</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="add_ln11" lineNumber="11" fileName="activity_kernel.c" fileDirectory=".." rtlName="add_ln11_fu_478_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="activity_kernel" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.89" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="11" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="icmp_ln11_1" lineNumber="11" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln11_1_fu_484_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.96" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="11" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="br_ln11" lineNumber="11" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="11" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split4</controlInputObjs>
+        <controlInputObjs>._crit_edge16.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="activity_kernel.c">
+        <validLinenumbers>11</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="69" name=".split4" type="BlockType">
+      <controlInputObjs>block_64</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_64</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="icmp_ln12" lineNumber="12" fileName="activity_kernel.c" fileDirectory=".." rtlName="grp_fu_494_p2" opType="icmp" coreId="9" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.96" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="12" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>dacc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="meanhr0_1" lineNumber="12" originalName="meanhr0" fileName="activity_kernel.c" fileDirectory=".." rtlName="dacc_64ns_64ns_1ns_64_3_no_dsp_1_U11" coreName="DAcc_nodsp" implIndex="fabric" control="auto" coreId="14" contextFuncName="activity_kernel" bitwidth="64" opcode="dacc" nodeLabel="1.0" nodeLatency="2" m_display="0" m_delay="9.16" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="12" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln0" coreId="1618523272" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_64</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="activity_kernel.c">
+        <validLinenumbers>12</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="789" pipe_depth="2" RegionName="VITIS_LOOP_15_2">
+    <basic_blocks id="84" name="block_84" type="BlockType">
+      <controlInputObjs>._crit_edge16</controlInputObjs>
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.split2</controlOutputObjs>
+      <controlOutputObjs>._crit_edge10.loopexit_ifconv</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="i_2" lineNumber="15" originalName="i" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="15" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+        <controlInputObjs>._crit_edge16</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="meanhr1" originalName="meanhr1" coreId="49" bitwidth="64" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <dataInputObjs>dadd</dataInputObjs>
+        <dataOutputObjs>dadd</dataOutputObjs>
+        <dataOutputObjs>ddiv</dataOutputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+        <controlInputObjs>._crit_edge16</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="icmp_ln15" lineNumber="15" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln15_fu_511_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="2.26" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="15" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="br_ln15" lineNumber="15" fileName="activity_kernel.c" fileDirectory=".." coreId="1618571273" contextFuncName="activity_kernel" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="15" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>._crit_edge10.loopexit_ifconv</controlInputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="activity_kernel.c">
+        <validLinenumbers>15</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="89" name=".split2" type="BlockType">
+      <controlInputObjs>block_84</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_84</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="meanhr1_1" lineNumber="16" originalName="meanhr1" fileName="activity_kernel.c" fileDirectory=".." rtlName="dadddsub_64ns_64ns_64_2_full_dsp_1_U1" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="dadd" coreId="37" contextFuncName="activity_kernel" bitwidth="64" opcode="dadd" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="22.9" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="16" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="add_ln15" lineNumber="15" fileName="activity_kernel.c" fileDirectory=".." rtlName="add_ln15_fu_516_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="activity_kernel" bitwidth="64" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.69" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="15" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln0" coreId="1618532624" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_84</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="activity_kernel.c">
+        <validLinenumbers>16</validLinenumbers>
+        <validLinenumbers>15</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="790" pipe_depth="3" RegionName="VITIS_LOOP_28_3">
+    <basic_blocks id="126" name="block_126" type="BlockType">
+      <controlInputObjs>.lr.ph</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge_ifconv.loopexit</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="i_3" lineNumber="28" originalName="i" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" bitwidth="31" opcode="phi" nodeLabel="20.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="28" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>.lr.ph</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="empty" lineNumber="30" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" bitwidth="64" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="30" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>dacc</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>.lr.ph</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="add_ln28" lineNumber="28" fileName="activity_kernel.c" fileDirectory=".." rtlName="add_ln28_fu_599_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="activity_kernel" bitwidth="31" opcode="add" nodeLabel="20.0" m_display="0" m_delay="1.87" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="28" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="icmp_ln28_1" lineNumber="28" fileName="activity_kernel.c" fileDirectory=".." rtlName="icmp_ln28_1_fu_605_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="20.0" m_display="0" m_delay="1.96" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="28" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="br_ln28" lineNumber="28" fileName="activity_kernel.c" fileDirectory=".." coreId="0" contextFuncName="activity_kernel" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="28" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>._crit_edge_ifconv.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="activity_kernel.c">
+        <validLinenumbers>28</validLinenumbers>
+        <validLinenumbers>30</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="131" name=".split" type="BlockType">
+      <controlInputObjs>block_126</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_126</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="icmp_ln30" lineNumber="30" fileName="activity_kernel.c" fileDirectory=".." rtlName="grp_fu_615_p2" opType="icmp" coreId="0" contextFuncName="activity_kernel" bitwidth="1" opcode="icmp" nodeLabel="20.0" m_display="0" m_delay="1.96" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="30" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>dacc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="tmp_13" lineNumber="30" fileName="activity_kernel.c" fileDirectory=".." rtlName="dacc_64ns_64ns_1ns_64_3_no_dsp_1_U12" coreName="DAcc_nodsp" implIndex="fabric" control="auto" coreId="14" contextFuncName="activity_kernel" bitwidth="64" opcode="dacc" nodeLabel="20.0" nodeLatency="2" m_display="0" m_delay="9.16" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="activity_kernel.c" linenumber="30" fileDirectory="/home/mikesinouye/ECE576b/mike/activity" functionName="activity_kernel"/>
+        <dataInputObjs>dmul</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="br_ln0" coreId="0" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_126</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="activity_kernel.c">
+        <validLinenumbers>30</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <ScheduleInfo time="41"/>
+  <regnodes realName="icmp_ln11_1_reg_865">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln15_reg_899">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="div_reg_838">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_13_reg_960">
+    <nodeIds>129</nodeIds>
+  </regnodes>
+  <regnodes realName="div2_reg_917">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln28_reg_936">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln22_reg_931">
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="mul4_reg_971">
+    <nodeIds>151</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln30_reg_955">
+    <nodeIds>128</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln15_reg_895">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_242">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="meanhr0_0_lcssa_reg_229">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="meanhr0_reg_217">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_6_reg_982">
+    <nodeIds>161</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_12_reg_297">
+    <nodeIds>134</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_395">
+    <nodeIds>116</nodeIds>
+    <nodeIds>150</nodeIds>
+    <nodeIds>149</nodeIds>
+    <nodeIds>153</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_372">
+    <nodeIds>86</nodeIds>
+    <nodeIds>93</nodeIds>
+    <nodeIds>115</nodeIds>
+    <nodeIds>148</nodeIds>
+    <nodeIds>152</nodeIds>
+    <nodeIds>154</nodeIds>
+    <nodeIds>163</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln24_reg_910">
+    <nodeIds>108</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln16_reg_889">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_976">
+    <nodeIds>155</nodeIds>
+  </regnodes>
+  <regnodes realName="len_read_reg_830">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="meanhr1_2_reg_904">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln12_reg_855">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_reg_285">
+    <nodeIds>120</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln21_reg_924">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="meanhr1_reg_262">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln12_reg_869">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="wide_trip_count21_reg_884">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="hr_read_reg_850">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln11_reg_860">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln15_reg_879">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_206">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln29_reg_940">
+    <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_253">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln28_1_reg_951">
+    <nodeIds>123</nodeIds>
+  </regnodes>
+  <regnodes realName="i_3_reg_274">
+    <nodeIds>119</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_382">
+    <nodeIds>90</nodeIds>
+    <nodeIds>135</nodeIds>
+  </regnodes>
+  <regnodes realName="meanhr0_1_reg_874">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln35_1_reg_965">
+    <nodeIds>146</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln11_reg_846">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln28_reg_946">
+    <nodeIds>121</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_388">
+    <nodeIds>91</nodeIds>
+    <nodeIds>136</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_10_fu_402">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln25_fu_570">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln46_fu_732">
+    <nodeIds>169</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln46_fu_766">
+    <nodeIds>174</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="meanhr1_phi_fu_266">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_lshr_f_fu_436">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln16_fu_508">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln24_fu_574">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln24_fu_552">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln35_fu_653">
+    <nodeIds>142</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln30_fu_610">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_phi_fu_289">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln46_2_fu_796">
+    <nodeIds>179</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln46_2_fu_814">
+    <nodeIds>184</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_351">
+    <nodeIds>104</nodeIds>
+    <nodeIds>143</nodeIds>
+    <nodeIds>161</nodeIds>
+    <nodeIds>181</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln46_1_fu_772">
+    <nodeIds>175</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln41_fu_695">
+    <nodeIds>158</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_fu_458">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln46_1_fu_808">
+    <nodeIds>182</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_210">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_526">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_683">
+    <nodeIds>156</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln35_fu_637">
+    <nodeIds>139</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_lshr_fu_416">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln41_fu_713">
+    <nodeIds>162</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln33_fu_623">
+    <nodeIds>137</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_12_phi_fu_301">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln41_1_fu_701">
+    <nodeIds>159</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln41_fu_692">
+    <nodeIds>157</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln46_fu_748">
+    <nodeIds>171</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_phi_fu_256">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_359">
+    <nodeIds>183</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln35_fu_641">
+    <nodeIds>140</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="meanhr0_phi_fu_221">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln46_fu_820">
+    <nodeIds>185</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_lshr_f_cast_fu_446">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln24_fu_540">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_neg_t_fu_430">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln12_fu_489">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="meanhr0_0_lcssa_phi_fu_233">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln35_fu_659">
+    <nodeIds>144</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln22_fu_587">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln24_fu_558">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln28_fu_591">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln46_1_fu_762">
+    <nodeIds>173</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln21_fu_582">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln24_1_fu_546">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln46_3_fu_790">
+    <nodeIds>178</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln46_1_fu_778">
+    <nodeIds>176</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln35_fu_665">
+    <nodeIds>145</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_627">
+    <nodeIds>138</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln15_fu_511">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wide_trip_count21_fu_505">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln39_fu_726">
+    <nodeIds>166</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln41_fu_707">
+    <nodeIds>160</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln46_fu_802">
+    <nodeIds>180</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln24_fu_536">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="div_fu_450">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln24_fu_522">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_phi_fu_246">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_3_phi_fu_278">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln11_1_fu_484">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln28_1_fu_605">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln35_1_fu_674">
+    <nodeIds>146</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_752">
+    <nodeIds>172</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln50_fu_826">
+    <nodeIds>191</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln12_fu_474">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln25_fu_564">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln11_fu_468">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_lshr_cast_fu_426">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln41_fu_718">
+    <nodeIds>165</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln15_fu_516">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln35_1_fu_647">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_neg_fu_410">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln29_fu_596">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln28_fu_599">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln15_fu_501">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln11_fu_478">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_738">
+    <nodeIds>170</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln46_2_fu_784">
+    <nodeIds>177</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_615">
+    <nodeIds>129</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_315">
+    <nodeIds>97</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_310">
+    <nodeIds>86</nodeIds>
+    <nodeIds>93</nodeIds>
+    <nodeIds>115</nodeIds>
+    <nodeIds>148</nodeIds>
+    <nodeIds>152</nodeIds>
+    <nodeIds>154</nodeIds>
+    <nodeIds>163</nodeIds>
+    <nodeIds>164</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_333">
+    <nodeIds>151</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_323">
+    <nodeIds>94</nodeIds>
+    <nodeIds>116</nodeIds>
+    <nodeIds>150</nodeIds>
+    <nodeIds>149</nodeIds>
+    <nodeIds>153</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_345">
+    <nodeIds>92</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_367">
+    <nodeIds>155</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_340">
+    <nodeIds>91</nodeIds>
+    <nodeIds>136</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_494">
+    <nodeIds>67</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_364">
+    <nodeIds>90</nodeIds>
+    <nodeIds>135</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="write_ln33_write_fu_136">
+    <nodeIds>147</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln39_write_fu_143">
+    <nodeIds>167</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln49_write_fu_170">
+    <nodeIds>190</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln50_write_fu_177">
+    <nodeIds>192</nodeIds>
+  </ioNodes>
+  <ioNodes realName="acmin_read_read_fu_150">
+    <nodeIds>168</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln48_write_fu_163">
+    <nodeIds>189</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln51_write_fu_190">
+    <nodeIds>194</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln47_write_fu_156">
+    <nodeIds>188</nodeIds>
+  </ioNodes>
+  <ioNodes realName="hr_read_read_fu_116">
+    <nodeIds>52</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln22_write_fu_129">
+    <nodeIds>110</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln21_write_fu_122">
+    <nodeIds>96</nodeIds>
+  </ioNodes>
+  <ioNodes realName="t_read_read_fu_184">
+    <nodeIds>193</nodeIds>
+  </ioNodes>
+  <ioNodes realName="len_read_read_fu_110">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln52_write_fu_198">
+    <nodeIds>195</nodeIds>
+  </ioNodes>
+  <ioPorts name="acmin">
+    <contents name="read">
+      <nodeIds>168</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>188</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="activity">
+    <contents name="write">
+      <nodeIds>167</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="hr">
+    <contents name="read">
+      <nodeIds>52</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="hrmin">
+    <contents name="write">
+      <nodeIds>189</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="len">
+    <contents name="read">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="meanhr">
+    <contents name="write">
+      <nodeIds>96</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stationarity">
+    <contents name="write">
+      <nodeIds>110</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stmin">
+    <contents name="write">
+      <nodeIds>190</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="t">
+    <contents name="read">
+      <nodeIds>193</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="tmin0">
+    <contents name="write">
+      <nodeIds>194</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="tmin1">
+    <contents name="write">
+      <nodeIds>195</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="tpmin">
+    <contents name="write">
+      <nodeIds>192</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="tpower">
+    <contents name="write">
+      <nodeIds>147</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="3" latency="3"/>
+    </states>
+    <states id="3">
+      <operations id="67" stage="2" latency="3"/>
+    </states>
+    <states id="4">
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="3"/>
+      <operations id="68" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="86" stage="2" latency="2"/>
+      <operations id="87" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="2"/>
+      <operations id="88" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="90" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="90" stage="1" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="91" stage="6" latency="6"/>
+      <operations id="92" stage="6" latency="6"/>
+    </states>
+    <states id="11">
+      <operations id="91" stage="5" latency="6"/>
+      <operations id="92" stage="5" latency="6"/>
+    </states>
+    <states id="12">
+      <operations id="91" stage="4" latency="6"/>
+      <operations id="92" stage="4" latency="6"/>
+    </states>
+    <states id="13">
+      <operations id="91" stage="3" latency="6"/>
+      <operations id="92" stage="3" latency="6"/>
+    </states>
+    <states id="14">
+      <operations id="91" stage="2" latency="6"/>
+      <operations id="92" stage="2" latency="6"/>
+    </states>
+    <states id="15">
+      <operations id="91" stage="1" latency="6"/>
+      <operations id="92" stage="1" latency="6"/>
+    </states>
+    <states id="16">
+      <operations id="93" stage="2" latency="2"/>
+      <operations id="97" stage="2" latency="2"/>
+    </states>
+    <states id="17">
+      <operations id="93" stage="1" latency="2"/>
+      <operations id="94" stage="2" latency="2"/>
+      <operations id="97" stage="1" latency="2"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+    </states>
+    <states id="18">
+      <operations id="94" stage="1" latency="2"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="115" stage="2" latency="2"/>
+    </states>
+    <states id="19">
+      <operations id="115" stage="1" latency="2"/>
+      <operations id="116" stage="2" latency="2"/>
+    </states>
+    <states id="20">
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="2"/>
+      <operations id="117" stage="1" latency="1"/>
+    </states>
+    <states id="21">
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="3" latency="3"/>
+    </states>
+    <states id="22">
+      <operations id="129" stage="2" latency="3"/>
+    </states>
+    <states id="23">
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="3"/>
+      <operations id="130" stage="1" latency="1"/>
+    </states>
+    <states id="24">
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="135" stage="2" latency="2"/>
+    </states>
+    <states id="25">
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="2"/>
+    </states>
+    <states id="26">
+      <operations id="136" stage="6" latency="6"/>
+    </states>
+    <states id="27">
+      <operations id="136" stage="5" latency="6"/>
+    </states>
+    <states id="28">
+      <operations id="136" stage="4" latency="6"/>
+    </states>
+    <states id="29">
+      <operations id="136" stage="3" latency="6"/>
+    </states>
+    <states id="30">
+      <operations id="136" stage="2" latency="6"/>
+      <operations id="148" stage="2" latency="2"/>
+      <operations id="150" stage="2" latency="2"/>
+    </states>
+    <states id="31">
+      <operations id="136" stage="1" latency="6"/>
+      <operations id="148" stage="1" latency="2"/>
+      <operations id="149" stage="2" latency="2"/>
+      <operations id="150" stage="1" latency="2"/>
+      <operations id="151" stage="2" latency="2"/>
+    </states>
+    <states id="32">
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="2"/>
+      <operations id="151" stage="1" latency="2"/>
+      <operations id="152" stage="2" latency="2"/>
+      <operations id="153" stage="2" latency="2"/>
+    </states>
+    <states id="33">
+      <operations id="152" stage="1" latency="2"/>
+      <operations id="153" stage="1" latency="2"/>
+      <operations id="154" stage="2" latency="2"/>
+    </states>
+    <states id="34">
+      <operations id="154" stage="1" latency="2"/>
+    </states>
+    <states id="35">
+      <operations id="155" stage="6" latency="6"/>
+    </states>
+    <states id="36">
+      <operations id="155" stage="5" latency="6"/>
+    </states>
+    <states id="37">
+      <operations id="155" stage="4" latency="6"/>
+    </states>
+    <states id="38">
+      <operations id="155" stage="3" latency="6"/>
+    </states>
+    <states id="39">
+      <operations id="155" stage="2" latency="6"/>
+    </states>
+    <states id="40">
+      <operations id="155" stage="1" latency="6"/>
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="163" stage="2" latency="2"/>
+    </states>
+    <states id="41">
+      <operations id="163" stage="1" latency="2"/>
+      <operations id="164" stage="2" latency="2"/>
+    </states>
+    <states id="42">
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="162" stage="1" latency="1"/>
+      <operations id="164" stage="1" latency="2"/>
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="166" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="169" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="171" stage="1" latency="1"/>
+      <operations id="172" stage="1" latency="1"/>
+      <operations id="173" stage="1" latency="1"/>
+      <operations id="174" stage="1" latency="1"/>
+      <operations id="175" stage="1" latency="1"/>
+      <operations id="176" stage="1" latency="1"/>
+      <operations id="177" stage="1" latency="1"/>
+      <operations id="178" stage="1" latency="1"/>
+      <operations id="179" stage="1" latency="1"/>
+      <operations id="180" stage="1" latency="1"/>
+      <operations id="181" stage="1" latency="1"/>
+      <operations id="182" stage="1" latency="1"/>
+      <operations id="183" stage="1" latency="1"/>
+      <operations id="184" stage="1" latency="1"/>
+      <operations id="185" stage="1" latency="1"/>
+      <operations id="186" stage="1" latency="1"/>
+      <operations id="188" stage="1" latency="1"/>
+      <operations id="189" stage="1" latency="1"/>
+      <operations id="190" stage="1" latency="1"/>
+      <operations id="191" stage="1" latency="1"/>
+      <operations id="192" stage="1" latency="1"/>
+      <operations id="193" stage="1" latency="1"/>
+      <operations id="194" stage="1" latency="1"/>
+      <operations id="195" stage="1" latency="1"/>
+      <operations id="196" stage="1" latency="1"/>
+      <operations id="198" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="37" outState="38">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="39" outState="40">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="40" outState="41">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="41" outState="42">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="activity_kernel" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <subRegions>9</subRegions>
+      <subRegions>10</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>54</basicBlocks>
+      <basicBlocks>57</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_11_1" mII="1" mDepth="3" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>64</basicBlocks>
+      <basicBlocks>69</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>71</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>78</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="VITIS_LOOP_15_2" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>84</basicBlocks>
+      <basicBlocks>89</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="10" mMaxLatency="12">
+      <basicBlocks>113</basicBlocks>
+      <basicBlocks>118</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="VITIS_LOOP_28_3" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1" mType="1">
+      <basicBlocks>126</basicBlocks>
+      <basicBlocks>131</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="Region 4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>133</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="18" mMaxLatency="18">
+      <basicBlocks>187</basicBlocks>
+      <basicBlocks>197</basicBlocks>
+      <basicBlocks>199</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

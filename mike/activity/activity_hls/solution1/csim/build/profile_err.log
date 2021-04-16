@@ -1,0 +1,13 @@
+warning: no profile data available for file "activity.c" [-Wprofile-instr-unprofiled]
+1 warning generated.
+warning: no profile data available for file "activity_kernel.c" [-Wprofile-instr-unprofiled]
+1 warning generated.
+Function:activity_kernel ---> FID:1
+CFGHierUserfilelist:[/home/mikesinouye/ECE576b/mike/activity/test-activity-out-golden /home/mikesinouye/ECE576b/mike/activity/test-100.ts /home/mikesinouye/ECE576b/mike/activity/activity.c /home/mikesinouye/ECE576b/mike/activity/activity_kernel.c]
+TopFunctionName:activity_kernel
+Writing 'callgraphDemangle.dot'...Function:activity_kernel ---> FID:1
+
+Writing 'cfg_main_csim.dot'...Function:activity_kernel ---> FID:1
+
+Function:activity_kernel ---> FID:1
+Writing 'cfg_1_csim.dot'...

@@ -1,0 +1,21 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling(apcc) ../../../../activity.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'mikesinouye' on host 'NZXT-H1-Ubuntu' (Linux_x86_64 version 5.8.0-49-generic) on Thu Apr 15 23:43:12 MST 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/mikesinouye/ECE576b/mike/activity/activity_hls/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_mikesinouye/93191618555392927411
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../activity_kernel.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'mikesinouye' on host 'NZXT-H1-Ubuntu' (Linux_x86_64 version 5.8.0-49-generic) on Thu Apr 15 23:43:17 MST 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/mikesinouye/ECE576b/mike/activity/activity_hls/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_mikesinouye/93761618555397044282
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Incorrect input file! Using test input: "test-100.ts" 
+Test passed !
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

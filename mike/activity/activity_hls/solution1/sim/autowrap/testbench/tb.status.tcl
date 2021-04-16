@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/mikesinouye/ECE576b/mike/activity/activity_hls/solution1/./sim/autowrap/testbench/activity_kernel.c_pre.c.tb.c

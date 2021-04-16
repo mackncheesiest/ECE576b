@@ -1,0 +1,825 @@
+{
+  "Top": "activity_kernel",
+  "RtlTop": "activity_kernel",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "activity_kernel_",
+  "SourceLanguage": "c",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z100i",
+    "Package": "-ffv900",
+    "Speed": "-2L",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "len": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "len",
+          "name": "len",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "hr": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "hr",
+          "name": "hr",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "t": {
+      "index": "2",
+      "direction": "in",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "t",
+          "name": "t",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "meanhr": {
+      "index": "3",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "meanhr",
+          "name": "meanhr",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "meanhr_ap_vld",
+          "name": "meanhr_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "tpower": {
+      "index": "4",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "tpower",
+          "name": "tpower",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "tpower_ap_vld",
+          "name": "tpower_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "stationarity": {
+      "index": "5",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "stationarity",
+          "name": "stationarity",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "stationarity_ap_vld",
+          "name": "stationarity_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "activity": {
+      "index": "6",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "activity",
+          "name": "activity",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "activity_ap_vld",
+          "name": "activity_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "acmin": {
+      "index": "7",
+      "direction": "inout",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "acmin_i",
+          "name": "acmin_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "acmin_o",
+          "name": "acmin_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "acmin_o_ap_vld",
+          "name": "acmin_o_ap_vld",
+          "usage": "control",
+          "direction": "inout"
+        }
+      ]
+    },
+    "hrmin": {
+      "index": "8",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "hrmin",
+          "name": "hrmin",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "hrmin_ap_vld",
+          "name": "hrmin_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "stmin": {
+      "index": "9",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "stmin",
+          "name": "stmin",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "stmin_ap_vld",
+          "name": "stmin_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "tpmin": {
+      "index": "10",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "tpmin",
+          "name": "tpmin",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "tpmin_ap_vld",
+          "name": "tpmin_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "tmin0": {
+      "index": "11",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "tmin0",
+          "name": "tmin0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "tmin0_ap_vld",
+          "name": "tmin0_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "tmin1": {
+      "index": "12",
+      "direction": "out",
+      "srcType": "double*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "tmin1",
+          "name": "tmin1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "tmin1_ap_vld",
+          "name": "tmin1_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "DirectiveTcl": ["set_directive_top activity_kernel -name activity_kernel"],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "activity_kernel"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "60",
+    "Uncertainty": "0",
+    "IsCombinational": "0",
+    "II": "x",
+    "Latency": "undef"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 60.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "activity_kernel",
+    "Version": "1.0",
+    "DisplayName": "Activity_kernel",
+    "Revision": "",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_activity_kernel_1_0.zip"
+  },
+  "Files": {
+    "CSource": ["..\/..\/activity_kernel.c"],
+    "Vhdl": [
+      "impl\/vhdl\/activity_kernel_dacc_64ns_64ns_1ns_64_3_no_dsp_1.vhd",
+      "impl\/vhdl\/activity_kernel_dadddsub_64ns_64ns_64_2_full_dsp_1.vhd",
+      "impl\/vhdl\/activity_kernel_dcmp_64ns_64ns_1_1_no_dsp_1.vhd",
+      "impl\/vhdl\/activity_kernel_ddiv_64ns_64ns_64_6_no_dsp_1.vhd",
+      "impl\/vhdl\/activity_kernel_dmul_64ns_64ns_64_2_max_dsp_1.vhd",
+      "impl\/vhdl\/activity_kernel_dsqrt_64ns_64ns_64_6_no_dsp_1.vhd",
+      "impl\/vhdl\/activity_kernel_dsub_64ns_64ns_64_2_full_dsp_1.vhd",
+      "impl\/vhdl\/activity_kernel_sitodp_32ns_64_2_no_dsp_1.vhd",
+      "impl\/vhdl\/activity_kernel.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/activity_kernel_dacc_64ns_64ns_1ns_64_3_no_dsp_1.v",
+      "impl\/verilog\/activity_kernel_dadddsub_64ns_64ns_64_2_full_dsp_1.v",
+      "impl\/verilog\/activity_kernel_dcmp_64ns_64ns_1_1_no_dsp_1.v",
+      "impl\/verilog\/activity_kernel_ddiv_64ns_64ns_64_6_no_dsp_1.v",
+      "impl\/verilog\/activity_kernel_dmul_64ns_64ns_64_2_max_dsp_1.v",
+      "impl\/verilog\/activity_kernel_dsqrt_64ns_64ns_64_6_no_dsp_1.v",
+      "impl\/verilog\/activity_kernel_dsub_64ns_64ns_64_2_full_dsp_1.v",
+      "impl\/verilog\/activity_kernel_sitodp_32ns_64_2_no_dsp_1.v",
+      "impl\/verilog\/activity_kernel.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "Subcore": [
+      "impl\/misc\/activity_kernel_ap_dadddsub_0_full_dsp_64_ip.tcl",
+      "impl\/misc\/activity_kernel_ap_dcmp_0_no_dsp_64_ip.tcl",
+      "impl\/misc\/activity_kernel_ap_ddiv_4_no_dsp_64_ip.tcl",
+      "impl\/misc\/activity_kernel_ap_dmul_0_max_dsp_64_ip.tcl",
+      "impl\/misc\/activity_kernel_ap_dsqrt_4_no_dsp_64_ip.tcl",
+      "impl\/misc\/activity_kernel_ap_dsub_0_full_dsp_64_ip.tcl",
+      "impl\/misc\/activity_kernel_ap_sitodp_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/DAcc_ip.tcl"
+    ],
+    "DesignXml": ".autopilot\/db\/activity_kernel.design.xml",
+    "DebugDir": ".debug",
+    "ProtoInst": ["\/home\/mikesinouye\/ECE576b\/mike\/activity\/activity_hls\/solution1\/.debug\/activity_kernel.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": [
+      {
+        "Name": "activity_kernel_ap_dadddsub_0_full_dsp_64",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name activity_kernel_ap_dadddsub_0_full_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "activity_kernel_ap_dcmp_0_no_dsp_64",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name activity_kernel_ap_dcmp_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Custom CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "activity_kernel_ap_ddiv_4_no_dsp_64",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name activity_kernel_ap_ddiv_4_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Divide CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "activity_kernel_ap_dmul_0_max_dsp_64",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name activity_kernel_ap_dmul_0_max_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "activity_kernel_ap_dsqrt_4_no_dsp_64",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name activity_kernel_ap_dsqrt_4_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Square_Root CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "activity_kernel_ap_dsub_0_full_dsp_64",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Subtract CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name activity_kernel_ap_dsub_0_full_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "activity_kernel_ap_sitodp_0_no_dsp_32",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name activity_kernel_ap_sitodp_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "DAcc",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.Add_Sub_Value Add CONFIG.Has_ACLKEN true CONFIG.Has_ARESETN true CONFIG.Operation_Type Accumulator CONFIG.C_Optimization Low_Latency CONFIG.Flow_Control NonBlocking CONFIG.Maximum_Latency false CONFIG.A_Precision_Type Double CONFIG.C_A_Exponent_Width 11 CONFIG.C_A_Fraction_Width 53 CONFIG.Result_Precision_Type Double CONFIG.C_Result_Exponent_Width 11 CONFIG.C_Result_Fraction_Width 53 CONFIG.C_Mult_Usage No_Usage CONFIG.Has_RESULT_TREADY false CONFIG.C_Latency 2 CONFIG.C_Rate 1 CONFIG.Has_A_TLAST true CONFIG.RESULT_TLAST_Behv Pass_A_TLAST"
+      }
+    ]
+  },
+  "Interfaces": {
+    "acmin_i": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"acmin_i": "DATA"},
+      "ports": ["acmin_i"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "acmin"
+        }]
+    },
+    "acmin_o": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"acmin_o": "DATA"},
+      "ports": ["acmin_o"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "acmin"
+        }]
+    },
+    "activity": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"activity": "DATA"},
+      "ports": ["activity"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "activity"
+        }]
+    },
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {"ASSOCIATED_RESET": "ap_rst"},
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "ap_rst": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_HIGH"},
+      "portMap": {"ap_rst": "RST"},
+      "ports": ["ap_rst"]
+    },
+    "hr": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"hr": "DATA"},
+      "ports": ["hr"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "hr"
+        }]
+    },
+    "hrmin": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"hrmin": "DATA"},
+      "ports": ["hrmin"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "hrmin"
+        }]
+    },
+    "len": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"len": "DATA"},
+      "ports": ["len"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "len"
+        }]
+    },
+    "meanhr": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"meanhr": "DATA"},
+      "ports": ["meanhr"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "meanhr"
+        }]
+    },
+    "stationarity": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"stationarity": "DATA"},
+      "ports": ["stationarity"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "stationarity"
+        }]
+    },
+    "stmin": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"stmin": "DATA"},
+      "ports": ["stmin"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "stmin"
+        }]
+    },
+    "t": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"t": "DATA"},
+      "ports": ["t"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "t"
+        }]
+    },
+    "tmin0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"tmin0": "DATA"},
+      "ports": ["tmin0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "tmin0"
+        }]
+    },
+    "tmin1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"tmin1": "DATA"},
+      "ports": ["tmin1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "tmin1"
+        }]
+    },
+    "tpmin": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"tpmin": "DATA"},
+      "ports": ["tpmin"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "tpmin"
+        }]
+    },
+    "tpower": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"tpower": "DATA"},
+      "ports": ["tpower"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "tpower"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "len": {
+      "dir": "in",
+      "width": "32"
+    },
+    "hr": {
+      "dir": "in",
+      "width": "64"
+    },
+    "t": {
+      "dir": "in",
+      "width": "64"
+    },
+    "meanhr": {
+      "dir": "out",
+      "width": "64"
+    },
+    "meanhr_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "tpower": {
+      "dir": "out",
+      "width": "64"
+    },
+    "tpower_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "stationarity": {
+      "dir": "out",
+      "width": "64"
+    },
+    "stationarity_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "activity": {
+      "dir": "out",
+      "width": "64"
+    },
+    "activity_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "acmin_i": {
+      "dir": "in",
+      "width": "64"
+    },
+    "acmin_o": {
+      "dir": "out",
+      "width": "64"
+    },
+    "acmin_o_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "hrmin": {
+      "dir": "out",
+      "width": "64"
+    },
+    "hrmin_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "stmin": {
+      "dir": "out",
+      "width": "64"
+    },
+    "stmin_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "tpmin": {
+      "dir": "out",
+      "width": "64"
+    },
+    "tpmin_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "tmin0": {
+      "dir": "out",
+      "width": "64"
+    },
+    "tmin0_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "tmin1": {
+      "dir": "out",
+      "width": "64"
+    },
+    "tmin1_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {"ModuleName": "activity_kernel"},
+    "Info": {"activity_kernel": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }},
+    "Metrics": {"activity_kernel": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "60.00",
+          "Uncertainty": "0.00",
+          "Estimate": "59.969"
+        },
+        "Loops": [
+          {
+            "Name": "VITIS_LOOP_11_1",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "VITIS_LOOP_15_2",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "VITIS_LOOP_28_3",
+            "TripCount": "",
+            "LatencyMin": "2",
+            "LatencyMax": "?",
+            "Latency": "2 ~ ?",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          }
+        ],
+        "Area": {
+          "DSP": "28",
+          "AVAIL_DSP": "2020",
+          "UTIL_DSP": "1",
+          "FF": "3090",
+          "AVAIL_FF": "554800",
+          "UTIL_FF": "~0",
+          "LUT": "6783",
+          "AVAIL_LUT": "277400",
+          "UTIL_LUT": "2",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "1510",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      }}
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2021-04-15 23:38:08 MST",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2020.2"
+  }
+}

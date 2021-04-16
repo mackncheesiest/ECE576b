@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="activity_kernel.c" path="/home/mikesinouye/ECE576b/mike/activity/activity_kernel.c"/>
+  </source>
+  <testbench>
+    <originFiles name="test-100.ts" path="/home/mikesinouye/ECE576b/mike/activity/test-100.ts"/>
+    <originFiles name="test-activity-out-golden" path="/home/mikesinouye/ECE576b/mike/activity/test-activity-out-golden"/>
+    <originFiles name="activity.c" path="/home/mikesinouye/ECE576b/mike/activity/activity.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

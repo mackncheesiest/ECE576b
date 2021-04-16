@@ -1,0 +1,915 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 152.921 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.02 seconds. CPU system time: 0.29 seconds. Elapsed time: 0.52 seconds; current allocated memory: 154.063 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.46 seconds. CPU system time: 1.29 seconds. Elapsed time: 3.56 seconds; current allocated memory: 156.126 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.128 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.02 seconds; current allocated memory: 157.490 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 156.695 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.17 seconds; current allocated memory: 177.293 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.11 seconds; current allocated memory: 170.485 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 3) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 4) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 5) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 7, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (12.286ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (6.14 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [80]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (6.14 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.11 seconds. Elapsed time: 0.35 seconds; current allocated memory: 171.489 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.38 seconds. CPU system time: 0.18 seconds. Elapsed time: 0.63 seconds; current allocated memory: 172.782 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_6_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.11 seconds. Elapsed time: 0.38 seconds; current allocated memory: 175.324 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.86 seconds. CPU system time: 0.34 seconds. Elapsed time: 1.29 seconds; current allocated memory: 186.372 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 152.921 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.19 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.32 seconds; current allocated memory: 154.063 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.7 seconds. CPU system time: 0.69 seconds. Elapsed time: 2.65 seconds; current allocated memory: 156.126 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 156.128 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 157.492 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 156.696 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.3 seconds; current allocated memory: 177.293 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 170.486 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 3) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 4) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 5) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 7, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (12.286ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (6.14 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [80]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (6.14 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.34 seconds; current allocated memory: 171.490 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.41 seconds. CPU system time: 0.16 seconds. Elapsed time: 0.64 seconds; current allocated memory: 172.784 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_6_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.12 seconds. Elapsed time: 0.4 seconds; current allocated memory: 175.324 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.89 seconds. CPU system time: 0.33 seconds. Elapsed time: 1.3 seconds; current allocated memory: 186.372 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 152.910 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.18 seconds. CPU system time: 0.11 seconds. Elapsed time: 0.34 seconds; current allocated memory: 154.097 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.55 seconds. CPU system time: 1.08 seconds. Elapsed time: 3.11 seconds; current allocated memory: 156.183 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.184 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.03 seconds; current allocated memory: 157.532 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 156.734 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.26 seconds; current allocated memory: 177.316 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 170.553 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 3) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 4) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 5) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 7, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (12.286ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (6.14 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [80]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (6.14 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.46 seconds; current allocated memory: 171.559 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.41 seconds. CPU system time: 0.15 seconds. Elapsed time: 0.69 seconds; current allocated memory: 172.839 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_6_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.11 seconds. Elapsed time: 0.4 seconds; current allocated memory: 175.409 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.89 seconds. CPU system time: 0.31 seconds. Elapsed time: 1.33 seconds; current allocated memory: 186.415 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 15 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 152.902 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.18 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.36 seconds; current allocated memory: 154.028 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.67 seconds. CPU system time: 0.88 seconds. Elapsed time: 2.99 seconds; current allocated memory: 156.157 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.158 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 157.504 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 156.707 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.07 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.22 seconds; current allocated memory: 177.305 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.16 seconds; current allocated memory: 170.487 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (19.884ns) exceeds the target (target clock period: 15ns, clock uncertainty: 4.05ns, effective delay budget: 10.95ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (9.94 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [80]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (9.94 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.35 seconds; current allocated memory: 171.380 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.3 seconds. CPU system time: 0.12 seconds. Elapsed time: 0.6 seconds; current allocated memory: 172.447 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_22_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_21_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.33 seconds; current allocated memory: 174.651 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.85 seconds. CPU system time: 0.29 seconds. Elapsed time: 1.26 seconds; current allocated memory: 185.502 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for activity_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for activity_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 50.29 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.53 seconds. CPU system time: 1.72 seconds. Elapsed time: 6.5 seconds; current allocated memory: 185.773 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 15 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 152.904 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.18 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.32 seconds; current allocated memory: 154.078 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.66 seconds. CPU system time: 0.88 seconds. Elapsed time: 3.05 seconds; current allocated memory: 156.158 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.159 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 157.506 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 156.710 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.24 seconds; current allocated memory: 177.307 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.19 seconds; current allocated memory: 170.485 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (19.884ns) exceeds the target (target clock period: 15ns, clock uncertainty: 4.05ns, effective delay budget: 10.95ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (9.94 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [80]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (9.94 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.4 seconds; current allocated memory: 171.377 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.31 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.61 seconds; current allocated memory: 172.474 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_22_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_21_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.35 seconds; current allocated memory: 174.649 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.83 seconds. CPU system time: 0.3 seconds. Elapsed time: 1.28 seconds; current allocated memory: 185.485 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for activity_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for activity_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 50.29 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.53 seconds. CPU system time: 1.71 seconds. Elapsed time: 6.69 seconds; current allocated memory: 185.785 MB.
+INFO==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 25 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 25ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 152.888 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.19 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.34 seconds; current allocated memory: 154.124 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.62 seconds. CPU system time: 0.88 seconds. Elapsed time: 3.01 seconds; current allocated memory: 156.172 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.173 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 157.521 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 156.724 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.24 seconds; current allocated memory: 177.307 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.19 seconds; current allocated memory: 170.486 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (19.884ns) exceeds the target (target clock period: 25ns, clock uncertainty: 6.75ns, effective delay budget: 18.25ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (9.94 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [80]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (9.94 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.35 seconds; current allocated memory: 171.313 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.25 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.53 seconds; current allocated memory: 172.317 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_14_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_14_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.34 seconds; current allocated memory: 174.168 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.84 seconds. CPU system time: 0.25 seconds. Elapsed time: 1.23 seconds; current allocated memory: 184.906 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for activity_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for activity_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 50.29 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.42 seconds. CPU system time: 1.63 seconds. Elapsed time: 6.49 seconds; current allocated memory: 185.191 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 152.888 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.17 seconds. CPU system time: 0.12 seconds. Elapsed time: 0.72 seconds; current allocated memory: 154.124 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.7 seconds. CPU system time: 0.85 seconds. Elapsed time: 3.98 seconds; current allocated memory: 156.173 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.174 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 157.503 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 156.715 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.28 seconds; current allocated memory: 177.290 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.18 seconds; current allocated memory: 170.399 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 3, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (38.188ns) exceeds the target (target clock period: 30ns, clock uncertainty: 8.1ns, effective delay budget: 21.9ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [77]  (19.1 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [71]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [77]  (19.1 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.3 seconds; current allocated memory: 171.173 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.2 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.46 seconds; current allocated memory: 172.086 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_11_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_11_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.32 seconds; current allocated memory: 173.804 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.75 seconds. CPU system time: 0.33 seconds. Elapsed time: 1.24 seconds; current allocated memory: 184.349 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for activity_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for activity_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 26.19 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.28 seconds. CPU system time: 1.69 seconds. Elapsed time: 7.76 seconds; current allocated memory: 184.695 MB.
+INFO: [HLS 200-112] Total CPU user time: 3.97 seconds. Total CPU system time: 2.44 seconds. Total elapsed time: 10.98 seconds; peak allocated memory: 184.349 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 152.947 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.18 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.33 seconds; current allocated memory: 154.135 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.68 seconds. CPU system time: 0.83 seconds. Elapsed time: 2.95 seconds; current allocated memory: 156.218 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.219 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 157.548 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 156.759 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.25 seconds; current allocated memory: 177.352 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.15 seconds; current allocated memory: 170.472 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (19.884ns) exceeds the target (target clock period: 10ns, clock uncertainty: 0ns, effective delay budget: 10ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [77]  (9.94 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [71]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [77]  (9.94 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.46 seconds; current allocated memory: 171.376 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.31 seconds. CPU system time: 0.13 seconds. Elapsed time: 0.63 seconds; current allocated memory: 172.438 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_22_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.35 seconds; current allocated memory: 174.691 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.84 seconds. CPU system time: 0.32 seconds. Elapsed time: 1.28 seconds; current allocated memory: 185.418 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for activity_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for activity_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 50.29 MHz
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 153.013 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.19 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.34 seconds; current allocated memory: 154.095 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.63 seconds. CPU system time: 0.97 seconds. Elapsed time: 3.16 seconds; current allocated memory: 156.206 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.207 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 157.527 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 156.747 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_26_2' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:17:18) to (activity_kernel.c:26:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:31:18) to (activity_kernel.c:44:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.24 seconds; current allocated memory: 177.307 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.17 seconds; current allocated memory: 170.312 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+WARNING: [HLS 200-880] The II Violation in module 'activity_kernel' (loop 'VITIS_LOOP_11_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'select' operation ('meanhr1', activity_kernel.c:12) and 'dadd' operation ('meanhr1', activity_kernel.c:13).
+WARNING: [HLS 200-880] The II Violation in module 'activity_kernel' (loop 'VITIS_LOOP_11_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'select' operation ('meanhr1', activity_kernel.c:12) and 'dadd' operation ('meanhr1', activity_kernel.c:13).
+WARNING: [HLS 200-880] The II Violation in module 'activity_kernel' (loop 'VITIS_LOOP_11_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'select' operation ('meanhr1', activity_kernel.c:12) and 'dadd' operation ('meanhr1', activity_kernel.c:13).
+WARNING: [HLS 200-880] The II Violation in module 'activity_kernel' (loop 'VITIS_LOOP_11_1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'select' operation ('meanhr1', activity_kernel.c:12) and 'dadd' operation ('meanhr1', activity_kernel.c:13).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 6, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('add', activity_kernel.c:28) and 'dadd' operation ('add', activity_kernel.c:28).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'dadd' operation ('add', activity_kernel.c:28) and 'dadd' operation ('add', activity_kernel.c:28).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_26_2'
+WARNING: [HLS 200-871] Estimated clock period (19.884ns) exceeds the target (target clock period: 10ns, clock uncertainty: 0ns, effective delay budget: 10ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('add', activity_kernel.c:28) [110]  (9.94 ns)
+	'phi' operation ('empty_10', activity_kernel.c:28) with incoming values : ('add', activity_kernel.c:28) [101]  (0 ns)
+	'dadd' operation ('add', activity_kernel.c:28) [110]  (9.94 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.37 seconds; current allocated memory: 171.194 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.31 seconds. CPU system time: 0.13 seconds. Elapsed time: 0.64 seconds; current allocated memory: 172.244 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_22_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_4_full_dsp_1': 1 instance(s).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z100i-ffv900-2L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z100iffv900-2L 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 152.947 MB.
+INFO: [HLS 200-10] Analyzing design file 'activity_kernel.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.21 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.35 seconds; current allocated memory: 154.104 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.69 seconds. CPU system time: 0.88 seconds. Elapsed time: 3.14 seconds; current allocated memory: 156.203 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 156.204 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 157.551 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 156.755 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (activity_kernel.c:5) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_3' (activity_kernel.c:6) in function 'activity_kernel' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:19:18) to (activity_kernel.c:28:24) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (activity_kernel.c:33:18) to (activity_kernel.c:46:32) in function 'activity_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.07 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.27 seconds; current allocated memory: 177.353 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0.11 seconds. Elapsed time: 0.22 seconds; current allocated memory: 170.563 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'activity_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_11_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'dadd' operation ('meanhr1', activity_kernel.c:16) and 'dadd' operation ('meanhr1', activity_kernel.c:16).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 3, loop 'VITIS_LOOP_15_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_28_3'
+WARNING: [HLS 200-871] Estimated clock period (38.188ns) exceeds the target (target clock period: 20ns, clock uncertainty: 0ns, effective delay budget: 20ns).
+WARNING: [HLS 200-1016] The critical path in module 'activity_kernel' consists of the following:	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (19.1 ns)
+	'phi' operation ('meanhr1') with incoming values : ('meanhr1', activity_kernel.c:16) [80]  (0 ns)
+	'dadd' operation ('meanhr1', activity_kernel.c:16) [86]  (19.1 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.34 seconds; current allocated memory: 171.383 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.29 seconds. Elapsed time: 0.58 seconds; current allocated memory: 172.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'activity_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/len' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/meanhr' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpower' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stationarity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/activity' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/acmin' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/hrmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/stmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tpmin' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'activity_kernel/tmin1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'activity_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_13_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_12_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'activity_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.15 seconds. Elapsed time: 0.46 seconds; current allocated memory: 174.151 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.8 seconds. CPU system time: 0.29 seconds. Elapsed time: 1.5 seconds; current allocated memory: 184.826 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for activity_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for activity_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 26.19 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.07 seconds. CPU system time: 1.98 seconds. Elapsed time: 7.13 seconds; current allocated memory: 185.172 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

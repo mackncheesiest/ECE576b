@@ -1,0 +1,6 @@
+digraph "Call graph demangled" {
+	label="Call graph demangled";
+
+	Node0x442f290 [shape=record,label="{activity_kernel}" fid="1" demanglename="activity_kernel" manglename="activity_kernel" filename="../../../../activity_kernel.c" linenumber="3"];
+	Node0x442f290 -> Node0x442fa80;
+}
