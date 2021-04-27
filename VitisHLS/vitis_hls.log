@@ -1,0 +1,62 @@
+INFO: [HLS 200-10] Running '/media/jmack2545/data_drive/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'jmack2545' on host 'engr-rcl13g.catnet.arizona.edu' (Linux_x86_64 version 5.4.0-72-generic) on Thu Apr 22 01:41:24 MST 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/localhome/jmack2545/ece576b/VitisHLS'
+Sourcing Tcl script '/localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln/export.tcl'
+INFO: [HLS 200-1510] Running: open_project activity_hls 
+INFO: [HLS 200-10] Opening project '/localhome/jmack2545/ece576b/VitisHLS/activity_hls'.
+INFO: [HLS 200-1510] Running: set_top compute_statistics 
+INFO: [HLS 200-1510] Running: add_files myfile.cpp 
+INFO: [HLS 200-10] Adding design file 'myfile.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files bytestrm_util.h 
+INFO: [HLS 200-10] Adding design file 'bytestrm_util.h' to the project
+INFO: [HLS 200-1510] Running: add_files activity_hls.cpp 
+INFO: [HLS 200-10] Adding design file 'activity_hls.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution activity_soln -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 2 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name compute_statistics compute_statistics 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/jmack2545/data_drive/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'compute_statistics_ap_dadddsub_12_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'compute_statistics_ap_dadddsub_12_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'compute_statistics_ap_dadddsub_12_no_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'compute_statistics_ap_dcmp_2_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'compute_statistics_ap_dcmp_2_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'compute_statistics_ap_dcmp_2_no_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'compute_statistics_ap_ddiv_57_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'compute_statistics_ap_ddiv_57_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'compute_statistics_ap_ddiv_57_no_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'compute_statistics_ap_dmul_12_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'compute_statistics_ap_dmul_12_full_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'compute_statistics_ap_dmul_12_full_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'compute_statistics_ap_dsqrt_57_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'compute_statistics_ap_dsqrt_57_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'compute_statistics_ap_dsqrt_57_no_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'compute_statistics_ap_sitodp_5_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'compute_statistics_ap_sitodp_5_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'compute_statistics_ap_sitodp_5_no_dsp_32'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/jmack2545/data_drive/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 22 01:41:40 2021...
+INFO: [HLS 200-802] Generated output file activity_hls/activity_soln/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 14.16 seconds. CPU system time: 1.74 seconds. Elapsed time: 17.85 seconds; current allocated memory: 198.564 MB.
