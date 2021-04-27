@@ -50,6 +50,100 @@ heart rate signal, and a heart rate stationarity index.  For details, see
 1992.
 */
 
+// Accelerator AXI-lite map
+// BUS_A
+// // 0x0000 : Control signals
+// //          bit 0  - ap_start (Read/Write/COH)
+// //          bit 1  - ap_done (Read/COR)
+// //          bit 2  - ap_idle (Read)
+// //          bit 3  - ap_ready (Read)
+// //          bit 7  - auto_restart (Read/Write)
+// //          others - reserved
+// // 0x0004 : Global Interrupt Enable Register
+// //          bit 0  - Global Interrupt Enable (Read/Write)
+// //          others - reserved
+// // 0x0008 : IP Interrupt Enable Register (Read/Write)
+// //          bit 0  - enable ap_done interrupt (Read/Write)
+// //          bit 1  - enable ap_ready interrupt (Read/Write)
+// //          others - reserved
+// // 0x000c : IP Interrupt Status Register (Read/TOW)
+// //          bit 0  - ap_done (COR/TOW)
+// //          bit 1  - ap_ready (COR/TOW)
+// //          others - reserved
+// // 0x0040 : Data signal of vals_i
+// //          bit 31~0 - vals_i[31:0] (Read/Write)
+// // 0x0044 : Data signal of vals_i
+// //          bit 31~0 - vals_i[63:32] (Read/Write)
+// // 0x0048 : Data signal of vals_i
+// //          bit 31~0 - vals_i[95:64] (Read/Write)
+// // 0x004c : Data signal of vals_i
+// //          bit 31~0 - vals_i[127:96] (Read/Write)
+// // 0x0050 : Data signal of vals_i
+// //          bit 31~0 - vals_i[159:128] (Read/Write)
+// // 0x0054 : Data signal of vals_i
+// //          bit 31~0 - vals_i[191:160] (Read/Write)
+// // 0x0058 : Data signal of vals_i
+// //          bit 31~0 - vals_i[223:192] (Read/Write)
+// // 0x005c : Data signal of vals_i
+// //          bit 31~0 - vals_i[255:224] (Read/Write)
+// // 0x0060 : Data signal of vals_i
+// //          bit 31~0 - vals_i[287:256] (Read/Write)
+// // 0x0064 : Data signal of vals_i
+// //          bit 31~0 - vals_i[319:288] (Read/Write)
+// // 0x0068 : Data signal of vals_i
+// //          bit 31~0 - vals_i[351:320] (Read/Write)
+// // 0x006c : Data signal of vals_i
+// //          bit 31~0 - vals_i[383:352] (Read/Write)
+// // 0x0070 : Data signal of vals_i
+// //          bit 31~0 - vals_i[415:384] (Read/Write)
+// // 0x0074 : Data signal of vals_i
+// //          bit 31~0 - vals_i[447:416] (Read/Write)
+// // 0x0078 : Data signal of vals_i
+// //          bit 31~0 - vals_i[479:448] (Read/Write)
+// // 0x007c : Data signal of vals_i
+// //          bit 31~0 - vals_i[511:480] (Read/Write)
+// // 0x0080 : reserved
+// // 0x0084 : Data signal of vals_o
+// //          bit 31~0 - vals_o[31:0] (Read)
+// // 0x0088 : Data signal of vals_o
+// //          bit 31~0 - vals_o[63:32] (Read)
+// // 0x008c : Data signal of vals_o
+// //          bit 31~0 - vals_o[95:64] (Read)
+// // 0x0090 : Data signal of vals_o
+// //          bit 31~0 - vals_o[127:96] (Read)
+// // 0x0094 : Data signal of vals_o
+// //          bit 31~0 - vals_o[159:128] (Read)
+// // 0x0098 : Data signal of vals_o
+// //          bit 31~0 - vals_o[191:160] (Read)
+// // 0x009c : Data signal of vals_o
+// //          bit 31~0 - vals_o[223:192] (Read)
+// // 0x00a0 : Data signal of vals_o
+// //          bit 31~0 - vals_o[255:224] (Read)
+// // 0x00a4 : Data signal of vals_o
+// //          bit 31~0 - vals_o[287:256] (Read)
+// // 0x00a8 : Data signal of vals_o
+// //          bit 31~0 - vals_o[319:288] (Read)
+// // 0x00ac : Data signal of vals_o
+// //          bit 31~0 - vals_o[351:320] (Read)
+// // 0x00b0 : Data signal of vals_o
+// //          bit 31~0 - vals_o[383:352] (Read)
+// // 0x00b4 : Data signal of vals_o
+// //          bit 31~0 - vals_o[415:384] (Read)
+// // 0x00b8 : Data signal of vals_o
+// //          bit 31~0 - vals_o[447:416] (Read)
+// // 0x00bc : Data signal of vals_o
+// //          bit 31~0 - vals_o[479:448] (Read)
+// // 0x00c0 : Data signal of vals_o
+// //          bit 31~0 - vals_o[511:480] (Read)
+// // 0x00c4 : Control signal of vals_o
+// //          bit 0  - vals_o_ap_vld (Read/COR)
+// //          others - reserved
+// // 0x2000 ~
+// // 0x3fff : Memory 'hr' (600 * 64b)
+// //          Word 2n   : bit [31:0] - hr[n][31: 0]
+// //          Word 2n+1 : bit [31:0] - hr[n][63:32]
+// // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -58,12 +152,265 @@ heart rate signal, and a heart rate stationarity index.  For details, see
 
 #define DEFLEN  600  /* 5 minutes at 2 samples/sec */
 
+struct activity_values {
+  int i;
+  int len;
+  double meanhr0;
+  double meanhr1;
+  double tpower;
+  double meanhr;
+  double stationarity;
+  double p;
+  double activity;
+};
+
+#define USE_ACCEL
+
+#ifdef USE_ACCEL
+//--------------------------------------- Accelerator stuff start ------------------------------------//
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <sys/types.h>
+
+#define ACCEL_BASE_ADDR 0xA0000000
+// 4x 4kB pages
+#define ACCEL_MMAP_SIZE 16384
+#define UDMABUF_MMAP_SIZE 4096
+
+#define OFFSET_TO_STRUCT_INPUT 16
+#define OFFSET_TO_STRUCT_OUTPUT 33
+#define OFFSET_TO_HR_MEMORY 2048
+
+int accel_control_fd;
+unsigned int* accel_control_base_addr;
+
+int udmabuf_fd;
+int udmabuf_phys_fd;
+unsigned int* udmabuf_base_addr;
+unsigned int udmabuf_phys_addr;
+
+void init_accel() {
+  accel_control_fd = open("/dev/mem", O_RDWR | O_SYNC);
+  if (accel_control_fd < 0) {
+    printf("[activity] Cannot open /dev/mem. Exiting...\n");
+    exit(1);
+  }
+
+  accel_control_base_addr = (unsigned int *) mmap(0, ACCEL_MMAP_SIZE, PROT_READ | PROT_WRITE, 
+                                                  MAP_SHARED, accel_control_fd, ACCEL_BASE_ADDR);
+
+  if (accel_control_base_addr == MAP_FAILED) {
+    printf("[activity] Can't obtain memory map to accel control. Exiting...\n");
+    exit(1);
+  }
+}
+
+void close_accel() {
+  munmap(accel_control_base_addr, ACCEL_MMAP_SIZE);
+  close(accel_control_fd);
+}
+
+/*
+ * We probably won't need u-dma-buf, but in case we do...
+ *
+void init_udmabuf() {
+  static char attr[1024];
+
+  printf("[activity] Initializing udmabuf buffer...\n");
+  udmabuf_fd = open("/dev/udmabuf0", O_RDWR | O_SYNC);
+  if (udmabuf_fd < 0) {
+    printf("[activity] Can't open /dev/udmabuf0. Exiting...\n");
+    exit(1);
+  }
+
+  udmabuf_base_addr = (unsigned int*) mmap(NULL, UDMABUF_MMAP_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, udmabuf_fd, 0);
+
+  if (udmabuf_base_addr == MAP_FAILED) {
+    printf("[activity] Can't obtain udmabuf memory map. Exiting...\n");
+    exit(1);
+  }
+
+  udmabuf_phys_fd = open("/sys/class/u-dma-buf/udmabuf0/phys_addr", O_RDONLY);
+  if (udmabuf_phys_fd < 0) {
+    printf("[activity] Can't open /sys/class/u-dma-buf/udmabuf0/phys-addr. Exiting...\n");
+    exit(1);
+  }
+
+  read(udmabuf_phys_fd, attr, 1024);
+  sscanf(attr, "%x", &udmabuf_phys_addr);
+  close(udmabuf_phys_fd);
+}
+
+void close_udmabuf() {
+  munmap(udmabuf_base_addr, UDMABUF_MMAP_SIZE);
+  close(udmabuf_fd);
+}
+ */
+
+void __attribute__((constructor)) setup() {
+  printf("[activity] Initializing accelerator...\n");
+  /*
+  init_udmabuf();
+  */
+  init_accel();  
+  printf("[activity] Initialization complete!\n");
+}
+
+void __attribute__((destructor)) teardown() {
+  printf("[activity] Tearing down accelerator...\n");
+  close_accel();
+  /*
+  close_udmabuf();
+  */
+  printf("[activity] Teardown complete!\n");
+}
+
+void accel_write_reg(unsigned int* base, unsigned int offset, int data) { *(base + offset) = data; }
+
+void accel_enable_input(unsigned int* base) { accel_write_reg(base, 0, 0x01); }
+
+void compute_statistics_accel(struct activity_values *vals, double *hr) {
+  unsigned int i = 0;
+
+  printf("Enabling the start bit on the accelerator\n");
+  // Enable the input -- the accelerator seems to set it back to 0x00 on its own once it completes
+  accel_enable_input(accel_control_base_addr);
+
+  printf("Copying over inputs to the accelerator\n");
+  // Memcpy the input struct to the input struct registers
+  memcpy((accel_control_base_addr + OFFSET_TO_STRUCT_INPUT), vals, sizeof(struct activity_values));
+  // Memcpy the HR array to the HR memory
+  memcpy((accel_control_base_addr + OFFSET_TO_HR_MEMORY), hr, DEFLEN * sizeof(double));
+
+  // Wait for complete or something
+  unsigned int status = 0;
+  while (true) {
+    status = (*accel_control_base_addr); 
+    if ((status & 0x02) == 0x02) {
+      printf("Exiting loop, status = 0x%x\n", status);
+      break;
+    }
+    else if (i % 100000 == 0) {
+      printf("Waiting for accelerator to complete...... (status: 0x%x)\n", *accel_control_base_addr);
+    } 
+    i++;
+  }
+
+  // Copy the output values of the struct back
+  unsigned long int upper_half, lower_half, combined_word;
+  double* dest;
+
+  vals->i = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT);
+  vals->len = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 1);
+
+  upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 3);
+  lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 2);
+  combined_word = (upper_half << 32) | (lower_half);
+  printf("Combined word: %016lx\n", combined_word);
+  dest = &(vals->meanhr0);
+  memcpy(dest, &combined_word, sizeof(double));
+  
+  upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 5);
+  lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 4);
+  combined_word = (upper_half << 32) | (lower_half);
+  printf("Combined word: %016lx\n", combined_word);
+  dest = &(vals->meanhr1);
+  memcpy(dest, &combined_word, sizeof(double));
+
+  upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 7);
+  lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 6);
+  combined_word = (upper_half << 32) | (lower_half);
+  printf("Combined word: %016lx\n", combined_word);
+  dest = &(vals->tpower);
+  memcpy(dest, &combined_word, sizeof(double));
+
+  upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 9);
+  lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 8);
+  combined_word = (upper_half << 32) | (lower_half);
+  printf("Combined word: %016lx\n", combined_word);
+  dest = &(vals->meanhr);
+  memcpy(dest, &combined_word, sizeof(double));
+  
+  upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 11);
+  lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 10);
+  combined_word = (upper_half << 32) | (lower_half);
+  printf("Combined word: %016lx\n", combined_word);
+  dest = &(vals->stationarity);
+  memcpy(dest, &combined_word, sizeof(double));
+
+  upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 13);
+  lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 12);
+  combined_word = (upper_half << 32) | (lower_half);
+  printf("Combined word: %016lx\n", combined_word);
+  dest = &(vals->p);
+  memcpy(dest, &combined_word, sizeof(double));
+
+  upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 15);
+  lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 14);
+  combined_word = (upper_half << 32) | (lower_half);
+  printf("Combined word: %016lx\n", combined_word);
+  dest = &(vals->activity);
+  memcpy(dest, &combined_word, sizeof(double));
+
+  printf("Accelerator execution complete!\n\n");
+}
+//---------------------------------------- Accelerator stuff end -------------------------------------//
+#endif
+
+
+void compute_statistics(struct activity_values *vals, double *hr) {
+  /* hr buffer full -- emit output and reset */
+  vals->meanhr0 = 0.0;
+  vals->meanhr1 = 0.0;
+  vals->tpower = 0.0;
+
+  for (vals->i = 0; vals->i < vals->len / 2 ; (vals->i)++) {
+    vals->meanhr0 += hr[vals->i];
+  }
+
+  for (; vals->i < vals->len ; (vals->i)++) {
+    vals->meanhr1 += hr[vals->i];
+  }
+
+  vals->meanhr0 /= vals->len / 2;
+  vals->meanhr1 /= vals->len / 2;
+  vals->meanhr = (vals->meanhr0 + vals->meanhr1) / 2;
+  vals->stationarity = vals->meanhr0 - vals->meanhr1;
+
+  if (vals->stationarity < 0) {
+    vals->stationarity = -vals->stationarity;
+  }
+
+  for (vals->i = 0 ; vals->i < vals->len ; (vals->i)++) {
+    vals->p = hr[vals->i] - vals->meanhr;
+    vals->tpower += vals->p * vals->p;
+  }
+
+  vals->tpower /= vals->len;
+
+  if (vals->tpower > 100.) {
+    vals->tpower = 100.;
+  }
+
+  vals->activity = sqrt(((vals->meanhr - 40.) * (vals->meanhr - 40.)) + (10. * vals->stationarity * vals->stationarity) + (100. * vals->tpower));
+
+  if (vals->meanhr < 25.) {
+    /* penalty for unbelievably low heart rates */
+    vals->activity += 25. - vals->meanhr;
+  }
+}
+
 int main(int argc, char *argv[]) {
 
   char buf[80];
-  double *t, *hr, activity, meanhr, meanhr0, meanhr1, p, tpower, stationarity;
+  struct activity_values vals;
+  double *hr;
+  double *t;
   double acmin = -1.0, hrmin, stmin, tpmin, tmin0, tmin1;
-  int i = 0, len = DEFLEN;
+  vals.i = 0;
+  vals.len = DEFLEN;
+
   long tt = 0L;
   FILE *in_file, *out_file;
   bool mflag = false, inputFile = false;
@@ -75,7 +422,7 @@ int main(int argc, char *argv[]) {
         inputFile = false;
       }
     } else if (strcmp(argv[j], "-len") == 0) {
-      len = atoi(argv[(j + 1)]);
+      vals.len = atoi(argv[(j + 1)]);
     } else if (strcmp(argv[j], "-m") == 0) {
       mflag = true;
     }
@@ -86,86 +433,55 @@ int main(int argc, char *argv[]) {
     in_file = fopen("test-100.ts", "r");
   }
 
-  if ((t = (double *) malloc(len * sizeof(double))) == NULL || (hr = (double *) malloc(len * sizeof(double))) == NULL) {
+  if ((t = (double *) malloc(vals.len * sizeof(double))) == NULL || (hr = (double *) malloc(vals.len * sizeof(double))) == NULL) {
     printf("%s: Insufficient memory\n", argv[0]);
     return -1;
   }
 
   out_file = fopen("test-activity-out.txt", "w");
   while (fgets(buf, 80, in_file)) {
-    int n = sscanf(buf, "%lf %lf", &t[i], &hr[i]);
+    int n = sscanf(buf, "%lf %lf", &(t[vals.i]), &(hr[vals.i]));
 
     if (n == 0) {
       continue;    /* skip empty lines in input */
     }
 
     if (n == 1) {
-      hr[i] = t[i];
-      t[i] = tt / 2.0;
+      hr[vals.i] = t[vals.i];
+      t[vals.i] = tt / 2.0;
     }
 
     ++tt;
 
-    if (++i >= len) {
-      /* hr buffer full -- emit output and reset */
-      meanhr0 = meanhr1 = tpower = 0.0;
+    if (++(vals.i) >= vals.len) {
 
-      for (i = 0 ; i < len / 2 ; i++) {
-        meanhr0 += hr[i];
-      }
-
-      for (; i < len ; i++) {
-        meanhr1 += hr[i];
-      }
-
-      meanhr0 /= len / 2;
-      meanhr1 /= len / 2;
-      meanhr = (meanhr0 + meanhr1) / 2;
-      stationarity = meanhr0 - meanhr1;
-
-      if (stationarity < 0) {
-        stationarity = -stationarity;
-      }
-
-      for (i = 0 ; i < len ; i++) {
-        p = hr[i] - meanhr;
-        tpower += p * p;
-      }
-
-      tpower /= len;
-
-      if (tpower > 100.) {
-        tpower = 100.;
-      }
-
-      activity = sqrt(((meanhr - 40.) * (meanhr - 40.)) + (10. * stationarity * stationarity) + (100. * tpower));
-
-      if (meanhr < 25.) {
-        /* penalty for unbelievably low heart rates */
-        activity += 25. - meanhr;
-      }
+#ifdef USE_ACCEL
+      compute_statistics_accel(&vals, hr);
+#else
+      compute_statistics(&vals, hr);
+#endif
 
       if (!mflag) {
-        fprintf(out_file, "%g \t %g \t %g \t %g \t %g \n", t[(len / 4) - 1], meanhr, tpower, stationarity, activity);
+        fprintf(out_file, "%g \t %g \t %g \t %g \t %g \n", t[(vals.len / 4) - 1], vals.meanhr, vals.tpower, vals.stationarity, vals.activity);
         fprintf(out_file,
                 "%g \t %g \t %g \t %g \t %g \n",
-                t[(3 * (len / 4)) - 1],
-                meanhr,
-                tpower,
-                stationarity,
-                activity);
-      } else if ((activity < acmin) || (acmin < 0.)) {
-        acmin = activity;
-        hrmin = meanhr;
-        stmin = stationarity;
-        tpmin = tpower;
+                t[(3 * (vals.len / 4)) - 1],
+                vals.meanhr,
+                vals.tpower,
+                vals.stationarity,
+                vals.activity);
+      } else if ((vals.activity < acmin) || (acmin < 0.)) {
+        acmin = vals.activity;
+        hrmin = vals.meanhr;
+        stmin = vals.stationarity;
+        tpmin = vals.tpower;
         tmin0 = t[0];
-        tmin1 = t[len - 1];
+        tmin1 = t[vals.len - 1];
       }
 
-      for (i = 0 ; i < (len / 2) ; i++) {
-        hr[i] = hr[i + (len / 2)];
-        t[i] = t[i + (len / 2)];
+      for (vals.i = 0 ; vals.i < (vals.len / 2) ; (vals.i)++) {
+        hr[vals.i] = hr[vals.i + (vals.len / 2)];
+        t[vals.i] = t[vals.i + (vals.len / 2)];
       }
     }
   }
