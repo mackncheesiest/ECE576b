@@ -1,0 +1,27 @@
+verilog xil_defaultlib --include "/media/jmack2545/data_drive/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/ec67/hdl" --include "../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/da1e/hdl" \
+"../../../bd/design_zcu102/ip/design_zcu102_zynq_ultra_ps_e_0_0/sim/design_zcu102_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/verilog/compute_statistics_BUS_A_s_axi.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/verilog/compute_statistics_dadddsub_64ns_64ns_64_14_no_dsp_1.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/verilog/compute_statistics_dcmp_64ns_64ns_1_4_no_dsp_1.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/verilog/compute_statistics_ddiv_64ns_64ns_64_59_no_dsp_1.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/verilog/compute_statistics_dmul_64ns_64ns_64_14_full_dsp_1.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/verilog/compute_statistics_dsqrt_64ns_64ns_64_59_no_dsp_1.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/verilog/compute_statistics_sitodp_32ns_64_7_no_dsp_1.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/verilog/compute_statistics.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/ip/compute_statistics_ap_dcmp_2_no_dsp_64.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/ip/compute_statistics_ap_ddiv_57_no_dsp_64.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/ip/compute_statistics_ap_dadddsub_12_no_dsp_64.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/ip/compute_statistics_ap_sitodp_5_no_dsp_32.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/ip/compute_statistics_ap_dsqrt_57_no_dsp_64.v" \
+"../../../../ProjectDesign.gen/sources_1/bd/design_zcu102/ipshared/7e23/hdl/ip/compute_statistics_ap_dmul_12_full_dsp_64.v" \
+"../../../bd/design_zcu102/ip/design_zcu102_compute_statistics_0_0/sim/design_zcu102_compute_statistics_0_0.v" \
+"../../../bd/design_zcu102/ip/design_zcu102_xbar_0/sim/design_zcu102_xbar_0.v" \
+"../../../bd/design_zcu102/ip/design_zcu102_auto_ds_0/sim/design_zcu102_auto_ds_0.v" \
+"../../../bd/design_zcu102/ip/design_zcu102_auto_pc_0/sim/design_zcu102_auto_pc_0.v" \
+"../../../bd/design_zcu102/ip/design_zcu102_auto_ds_1/sim/design_zcu102_auto_ds_1.v" \
+"../../../bd/design_zcu102/ip/design_zcu102_auto_pc_1/sim/design_zcu102_auto_pc_1.v" \
+"../../../bd/design_zcu102/sim/design_zcu102.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

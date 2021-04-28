@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_zcu102/ip/design_zcu102_rst_ps8_0_99M_0/sim/design_zcu102_rst_ps8_0_99M_0.vhd" \
+
+nosort
