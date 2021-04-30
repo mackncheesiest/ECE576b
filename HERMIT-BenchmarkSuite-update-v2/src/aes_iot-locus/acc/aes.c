@@ -9,6 +9,7 @@ typedef unsigned int u32;
 typedef unsigned char u8;
 
 void rijndaelEncrypt_acc(u32 *rk, u8 *pt, u8 *ct);
+void rijndaelDecrypt_acc(u32 *rk, u8 *ct, u8 *pt);
 
 u32 encpt_rk[44] = {0};
 u32 decpt_rk[44] = {0};
@@ -1071,48 +1072,55 @@ int main()
         0x92, 0x7c, 0x2a, 0x09, 
     };
 
-    u32 *p1 = (u32 *) aes_encrypt_init(rk, 16);
-    u8 cipher_text[16] = {0};
+    u32 *key_enc = (u32 *) aes_encrypt_init(rk, 16);
+    u32 *key_dec = (u32 *) aes_decrypt_init(rk, 16);
 
-    /*printf("Key value p1 is\n");
-    for(int i=0; i<4; i++){
-	    for(int j=0; j<11; j++){
-                printf("0x%08x, ", p1[i*11 + j]);
-	    }
-	    printf("\n");
-    }*/
-
-    u8 plain_text[16] = {
+    u8 input_plaintext[16] = {
         0x3f,0xd4,0x19,0x01,
         0x42,0xa1,0x53,0x76,
         0x3e,0x59,0xb3,0xf9,
         0x42,0x89,0x56,0x31
     };
 
-    rijndaelEncrypt_acc(p1, plain_text, cipher_text);
-    /*for(i = 0; i < 250; i++)
-    {
-        
-           u8 plain_text[16] = {
-           0x25, 0x5c, 0x31, 0x1d, 
-           0x71, 0xd8, 0x04, 0xb7, 
-           0x43, 0x11, 0x40, 0x86, 
-           0x12, 0xa2, 0xc8, 0x3d
-           };
-         
+    u8 input_ciphertext[16] = {
+        0xec,0xae,0xb0,0x2a,
+        0xf2,0x51,0x45,0x25,
+        0xb4,0x19,0x18,0x70,
+        0x10,0x2,0x5,0x12
+    };
 
-        u8 plain_text[16] = {
-            0x3f,0xd4,0x19,0x01,
-            0x42,0xa1,0x53,0x76,
-            0x3e,0x59,0xb3,0xf9,
-            0x42,0x89,0x56,0x31
-        };
+    u8 output_plaintext[16] = {0};
+    u8 output_ciphertext[16] = {0};
 
-        rijndaelEncrypt(p1, plain_text, cipher_text);
-    }*/
+#ifdef ENC
+    printf("[INFO] Calling AES Encryptor on Accelerator\n");
+    rijndaelEncrypt_acc(key_enc, input_plaintext, output_ciphertext);
+    printf("[INFO] Finished AES Encryptor on Accelerator\n");
 
-    /*for(i=0; i < 16; i++)
-        printf("%#x,",cipher_text[i]);
-    printf("\n");*/
+    printf("[INFO] Validating ciphertext from accelerator\n");
+    for (int i = 0; i < 16; i++){
+        if (output_ciphertext[i] != input_ciphertext[i]){
+            printf("[ERROR] Mismatch at index %d... Expected = 0x%x, found = 0x%x\n", i, input_ciphertext[i], output_ciphertext[i]);
+            return 0;
+        }
+    }
+    printf("[INFO] Success validating ciphertext!!\n");
+#endif
+
+#ifdef DEC
+    printf("[INFO] Calling AES Decryptor on Accelerator\n");
+    rijndaelDecrypt_acc(key_dec, input_ciphertext, output_plaintext);
+    printf("[INFO] Finished AES Decryptor on Accelerator\n");
+
+    printf("[INFO] Validating plaintext from accelerator\n");
+    for (int i = 0; i < 16; i++){
+        if (output_plaintext[i] != input_plaintext[i]){
+            printf("[ERROR] Mismatch at index %d... Expected = 0x%x, found = 0x%x\n", i, input_plaintext[i], output_plaintext[i]);
+            return 0;
+        }
+    }
+    printf("[INFO] Success validating plaintext!!\n");
+#endif
+
     return 0;
 }

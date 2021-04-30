@@ -39,8 +39,6 @@
 #include<string.h>
 #include<fcntl.h>
 #include<unistd.h>
-//#include<cstring>
-//#include<cmath>
 #include<unistd.h>
 #include<string.h>
 
@@ -52,40 +50,71 @@ typedef unsigned char u8;
 #include<sys/mman.h>
 #include<sys/types.h>
 
-#define AES_BASE_ADDR 0xA0010000	// TODO: Change with vivado address map
-#define CONTROL_REG_OFFSET 0x00
-#define PLAINTEXT_REG_OFFSET 0x04
-#define CIPHERTEXT_REG_OFFSET 0x08
-#define ROUNDKEY_REG_OFFSET 0x40
+#define AES_ENC_BASE_ADDR 0xA0010000	// TODO: Change with vivado address map
+#define AES_DEC_BASE_ADDR 0xA0020000
+
+#define CONTROL_ENC_OFFSET 0x00
+#define PLAINTEXT_ENC_OFFSET 0x04
+#define CIPHERTEXT_ENC_OFFSET 0x08
+#define ROUNDKEY_ENC_OFFSET 0x40
+
+#define CONTROL_DEC_OFFSET 0x00
+#define CIPHERTEXT_DEC_OFFSET 0x04
+#define PLAINTEXT_DEC_OFFSET 0x08
+#define ROUNDKEY_DEC_OFFSET 0x40
 
 #define MEM_SIZE 512// in bytes
 //
-int aes_control_fd;
-volatile unsigned int* aes_control_base_addr;
+int aes_enc_control_fd;
+int aes_dec_control_fd;
+
+volatile unsigned int* aes_enc_control_base_addr;
+volatile unsigned int* aes_dec_control_base_addr;
 
 // Initialization function
 /*
  * Create a memory map and get base address of aes accelerator
  * 
  */
-void init_aes(){
-    printf("[AES] Initializing AES accelerator.\n");
+void init_aes_enc(){
+    printf("[AES] Initializing AES encryptor accelerator.\n");
     
-    aes_control_fd = open("/dev/mem", O_RDWR | O_SYNC);
-    if (aes_control_fd < 0){
+    aes_enc_control_fd = open("/dev/mem", O_RDWR | O_SYNC);
+    if (aes_enc_control_fd < 0){
         fprintf(stderr, "[AES] Can't open /dev/mem! Exiting ...\n");
 	exit(1);
     }
 
-    aes_control_base_addr = (volatile unsigned int *)mmap(0, getpagesize(), PROT_READ | PROT_WRITE, MAP_SHARED, aes_control_fd,
-		    					AES_BASE_ADDR);
+    aes_enc_control_base_addr = (volatile unsigned int *)mmap(0, getpagesize(), PROT_READ | PROT_WRITE, MAP_SHARED, aes_enc_control_fd,
+		    					AES_ENC_BASE_ADDR);
 
-    if (aes_control_base_addr == MAP_FAILED){
-        fprintf(stderr, "[AES] Can't obtain memory map to AES control slave! Exiting ...\n");
+    if (aes_enc_control_base_addr == MAP_FAILED){
+        fprintf(stderr, "[AES] Can't obtain memory map to AES encryptor control slave! Exiting ...\n");
 	exit(1);
     }
 
-    printf("[AES] Successfully initialized AES accelerator!\n");
+    printf("[AES] Successfully initialized AES encryptor accelerator!\n");
+}
+
+
+void init_aes_dec(){
+    printf("[AES] Initializing AES decryptor accelerator.\n");
+
+    aes_dec_control_fd = open("/dev/mem", O_RDWR | O_SYNC);
+    if (aes_dec_control_fd < 0){
+        fprintf(stderr, "[AES] Can't open /dev/mem! Exiting ...\n");
+        exit(1);
+    }
+
+    aes_dec_control_base_addr = (volatile unsigned int *)mmap(0, getpagesize(), PROT_READ | PROT_WRITE, MAP_SHARED, aes_dec_control_fd,
+                                                          AES_DEC_BASE_ADDR);
+
+    if (aes_dec_control_base_addr == MAP_FAILED){
+        fprintf(stderr, "[AES] Can't obtain memory map to AES decryptor control slave! Exiting ...\n");
+        exit(1);
+    }
+
+    printf("[AES] Successfully initialized AES decryptor accelerator!\n");
 }
 
 
@@ -96,8 +125,8 @@ void write_aes_register(volatile unsigned int* base_addr, unsigned int offset, u
 
 
 // start aes accelerator
-void start_aes(volatile unsigned int* base_addr){
-    write_aes_register(base_addr, CONTROL_REG_OFFSET, 0x01); // TODO: Check value being written
+void start_aes(volatile unsigned int* base_addr, unsigned int control_reg_offset){
+    write_aes_register(base_addr, control_reg_offset, 0x01); // TODO: Check value being written
 }
 
 // wait for aes accelerator to complete
@@ -117,28 +146,31 @@ void wait_for_aes_complete(volatile unsigned int* base_addr){
 
 
 // close memory map
-void close_aes(){
-    munmap((unsigned int*)aes_control_base_addr, getpagesize());
-    close(aes_control_fd);
+void close_aes_enc(){
+    munmap((unsigned int*)aes_enc_control_base_addr, getpagesize());
+    close(aes_enc_control_fd);
 }
-
+void close_aes_dec(){
+    munmap((unsigned int*)aes_dec_control_base_addr, getpagesize());
+    close(aes_dec_control_fd);
+}
 
 
 // ########################################### Program to perform AES encryption on accelerator ##############################################
 int rijndaelEncrypt_acc(u32 *rk, u8 *pt, u8 *ct){
 
-    init_aes();
+    init_aes_enc();
 
     printf("[AES] Copying round key to accelerator\n");
-    u32 *addr = memcpy((void*)(aes_control_base_addr+ROUNDKEY_REG_OFFSET), (const void*) rk, 44*sizeof(u32));
+    u32 *addr = memcpy((void*)(aes_enc_control_base_addr+ROUNDKEY_ENC_OFFSET), (const void*) rk, 44*sizeof(u32));
     if (addr==NULL){
         printf("[AES-ERROR] memcpy of round key failed!!!\n");
         exit(1);
     }
     printf("[AES] Done copying round key to accelerator\n");
 
-    printf("[AES] Copying plaintext to accelrator\n");
-    u8 *chaddr = memcpy((aes_control_base_addr+PLAINTEXT_REG_OFFSET), pt, 16*sizeof(u8));
+    printf("[AES] Copying plaintext to accelerator\n");
+    u8 *chaddr = memcpy((void*)(aes_enc_control_base_addr+PLAINTEXT_ENC_OFFSET), pt, 16*sizeof(u8));
     if (chaddr == NULL){
         printf("[AES-ERROR] mempcy of plaintext failed!!!\n");
         exit(1);
@@ -146,29 +178,74 @@ int rijndaelEncrypt_acc(u32 *rk, u8 *pt, u8 *ct){
     printf("[AES] Done copying plaintext to accelerator\n");
 
     printf("[AES] Launching AES accelerator\n");
-    start_aes(aes_control_base_addr);
+    start_aes(aes_enc_control_base_addr, CONTROL_ENC_OFFSET);
     printf("[AES] Waiting for AES accelerator to complete\n");
-    wait_for_aes_complete(aes_control_base_addr);
-    printf("[AES] Success!! AES accelerator finished execution\n");
+    wait_for_aes_complete(aes_enc_control_base_addr);
+    printf("[AES] AES accelerator finished execution\n");
 
     printf("[AES] Copying ciphertext back from accelerator\n");
-    chaddr = memcpy(ct, (aes_control_base_addr+CIPHERTEXT_REG_OFFSET), 16*sizeof(u8));
+    chaddr = memcpy(ct, (aes_enc_control_base_addr+CIPHERTEXT_ENC_OFFSET), 16*sizeof(u8));
     if (chaddr == NULL){
         printf("[AES-ERROR] memcpy of ciphertext from accelarator to memory failed\n");
         exit(1);
     }
     printf("[AES] Ciphertext received from accelerator\n");
 
-    printf("[AES] Received ciphertext is\n");
+    /*printf("[AES] Received ciphertext is\n");
     for (int i=0; i<4; i++){
 	    for (int j=0; j<4; j++)
 	        printf("0x%x, ", ct[i*4+j]);
 	    printf("\n");
     }
-    printf("\n");
-    printf("[AES] Bye bye...\n");
+    printf("\n");*/
+    printf("[AES] Bye bye from AES accelerator...\n");
     return 0;
 }
 
 
+// ########################################### Program to perform AES decryption on accelerator ##############################################
+int rijndaelDecrypt_acc(u32 *rk, u8 *ct, u8 *pt){
+
+    init_aes_dec();
+
+    printf("[AES] Copying round key to accelerator\n");
+    u32 *addr = memcpy((void*)(aes_dec_control_base_addr+ROUNDKEY_DEC_OFFSET), (const void*) rk, 44*sizeof(u32));
+    if (addr==NULL){
+        printf("[AES-ERROR] memcpy of round key failed!!!\n");
+        exit(1);
+    }
+    printf("[AES] Done copying round key to accelerator\n");
+
+    printf("[AES] Copying ciphertext to accelerator\n");
+    u8 *chaddr = memcpy((void*)(aes_dec_control_base_addr+CIPHERTEXT_DEC_OFFSET), ct, 16*sizeof(u8));
+    if (chaddr == NULL){
+        printf("[AES-ERROR] mempcy of ciphertext failed!!!\n");
+        exit(1);
+    }
+    printf("[AES] Done copying ciphertext to accelerator\n");
+
+    printf("[AES] Launching AES decryptor accelerator\n");
+    start_aes(aes_dec_control_base_addr, CONTROL_DEC_OFFSET);
+    printf("[AES] Waiting for AES decryptor accelerator to complete\n");
+    wait_for_aes_complete(aes_dec_control_base_addr);
+    printf("[AES] AES decryptor accelerator finished execution\n");
+
+    printf("[AES] Copying plaintext back from accelerator\n");
+    chaddr = memcpy(pt, (aes_dec_control_base_addr+PLAINTEXT_DEC_OFFSET), 16*sizeof(u8));
+    if (chaddr == NULL){
+        printf("[AES-ERROR] memcpy of plaintext from accelarator to memory failed\n");
+        exit(1);
+    }
+    printf("[AES] Plaintext received from accelerator\n");
+
+    /*printf("[AES] Received ciphertext is\n");
+    for (int i=0; i<4; i++){
+        for (int j=0; j<4; j++)
+            printf("0x%x, ", ct[i*4+j]);
+        printf("\n");
+    }
+    printf("\n");*/
+    printf("[AES] Bye bye from AES accelerator...\n");
+    return 0;
+}
 
