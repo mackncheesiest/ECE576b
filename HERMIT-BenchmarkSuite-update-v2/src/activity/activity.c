@@ -50,6 +50,8 @@ heart rate signal, and a heart rate stationarity index.  For details, see
 1992.
 */
 
+//#define USE_ACCEL
+
 // Accelerator AXI-lite map
 // BUS_A
 // // 0x0000 : Control signals
@@ -149,6 +151,12 @@ heart rate signal, and a heart rate stationarity index.  For details, see
 #include <stdlib.h>
 #include <stdbool.h>
 #include <math.h>
+#include <time.h>
+
+#define SEC2NANOSEC 1000000000
+
+struct timespec main_start, main_end;
+struct timespec kernel_start, kernel_end;
 
 #define DEFLEN  600  /* 5 minutes at 2 samples/sec */
 
@@ -164,14 +172,16 @@ struct activity_values {
   double activity;
 };
 
-#define USE_ACCEL
-
 #ifdef USE_ACCEL
 //--------------------------------------- Accelerator stuff start ------------------------------------//
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/mman.h>
 #include <sys/types.h>
+
+struct timespec accel_TX_start, accel_TX_end;
+struct timespec accel_compute_start, accel_compute_end;
+struct timespec accel_RX_start, accel_RX_end;
 
 #define ACCEL_BASE_ADDR 0xA0000000
 // 4x 4kB pages
@@ -183,12 +193,7 @@ struct activity_values {
 #define OFFSET_TO_HR_MEMORY 2048
 
 int accel_control_fd;
-unsigned int* accel_control_base_addr;
-
-int udmabuf_fd;
-int udmabuf_phys_fd;
-unsigned int* udmabuf_base_addr;
-unsigned int udmabuf_phys_addr;
+volatile unsigned int* accel_control_base_addr;
 
 void init_accel() {
   accel_control_fd = open("/dev/mem", O_RDWR | O_SYNC);
@@ -197,7 +202,7 @@ void init_accel() {
     exit(1);
   }
 
-  accel_control_base_addr = (unsigned int *) mmap(0, ACCEL_MMAP_SIZE, PROT_READ | PROT_WRITE, 
+  accel_control_base_addr = (volatile unsigned int *) mmap(0, ACCEL_MMAP_SIZE, PROT_READ | PROT_WRITE, 
                                                   MAP_SHARED, accel_control_fd, ACCEL_BASE_ADDR);
 
   if (accel_control_base_addr == MAP_FAILED) {
@@ -207,52 +212,12 @@ void init_accel() {
 }
 
 void close_accel() {
-  munmap(accel_control_base_addr, ACCEL_MMAP_SIZE);
+  munmap((void*) accel_control_base_addr, ACCEL_MMAP_SIZE);
   close(accel_control_fd);
 }
 
-/*
- * We probably won't need u-dma-buf, but in case we do...
- *
-void init_udmabuf() {
-  static char attr[1024];
-
-  printf("[activity] Initializing udmabuf buffer...\n");
-  udmabuf_fd = open("/dev/udmabuf0", O_RDWR | O_SYNC);
-  if (udmabuf_fd < 0) {
-    printf("[activity] Can't open /dev/udmabuf0. Exiting...\n");
-    exit(1);
-  }
-
-  udmabuf_base_addr = (unsigned int*) mmap(NULL, UDMABUF_MMAP_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, udmabuf_fd, 0);
-
-  if (udmabuf_base_addr == MAP_FAILED) {
-    printf("[activity] Can't obtain udmabuf memory map. Exiting...\n");
-    exit(1);
-  }
-
-  udmabuf_phys_fd = open("/sys/class/u-dma-buf/udmabuf0/phys_addr", O_RDONLY);
-  if (udmabuf_phys_fd < 0) {
-    printf("[activity] Can't open /sys/class/u-dma-buf/udmabuf0/phys-addr. Exiting...\n");
-    exit(1);
-  }
-
-  read(udmabuf_phys_fd, attr, 1024);
-  sscanf(attr, "%x", &udmabuf_phys_addr);
-  close(udmabuf_phys_fd);
-}
-
-void close_udmabuf() {
-  munmap(udmabuf_base_addr, UDMABUF_MMAP_SIZE);
-  close(udmabuf_fd);
-}
- */
-
 void __attribute__((constructor)) setup() {
   printf("[activity] Initializing accelerator...\n");
-  /*
-  init_udmabuf();
-  */
   init_accel();  
   printf("[activity] Initialization complete!\n");
 }
@@ -260,28 +225,33 @@ void __attribute__((constructor)) setup() {
 void __attribute__((destructor)) teardown() {
   printf("[activity] Tearing down accelerator...\n");
   close_accel();
-  /*
-  close_udmabuf();
-  */
   printf("[activity] Teardown complete!\n");
 }
 
-void accel_write_reg(unsigned int* base, unsigned int offset, int data) { *(base + offset) = data; }
+void accel_write_reg(volatile unsigned int* base, unsigned int offset, int data) { *(base + offset) = data; }
 
-void accel_enable_input(unsigned int* base) { accel_write_reg(base, 0, 0x01); }
+void accel_enable_input(volatile unsigned int* base) { accel_write_reg(base, 0, 0x01); }
 
 void compute_statistics_accel(struct activity_values *vals, double *hr) {
   unsigned int i = 0;
+  // Memcpy the input struct to the input struct registers
+  memcpy((accel_control_base_addr + OFFSET_TO_STRUCT_INPUT), vals, sizeof(struct activity_values));
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 0) = vals->i;
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 1) = vals->len;
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 2) = vals->meanhr0;
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 4) = vals->meanhr1;
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 6) = vals->tpower;
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 8) = vals->meanhr;
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 10) = vals->stationarity;
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 12) = vals->p;
+  // *(accel_control_base_addr + OFFSET_TO_STRUCT_INPUT + 14) = vals->activity;
+
+  // Memcpy the HR array to the HR memory
+  memcpy((accel_control_base_addr + OFFSET_TO_HR_MEMORY), hr, DEFLEN * sizeof(double));
 
   printf("Enabling the start bit on the accelerator\n");
   // Enable the input -- the accelerator seems to set it back to 0x00 on its own once it completes
   accel_enable_input(accel_control_base_addr);
-
-  printf("Copying over inputs to the accelerator\n");
-  // Memcpy the input struct to the input struct registers
-  memcpy((accel_control_base_addr + OFFSET_TO_STRUCT_INPUT), vals, sizeof(struct activity_values));
-  // Memcpy the HR array to the HR memory
-  memcpy((accel_control_base_addr + OFFSET_TO_HR_MEMORY), hr, DEFLEN * sizeof(double));
 
   // Wait for complete or something
   unsigned int status = 0;
@@ -298,6 +268,7 @@ void compute_statistics_accel(struct activity_values *vals, double *hr) {
   }
 
   // Copy the output values of the struct back
+  // memcpy(vals, (accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT), sizeof(struct activity_values));
   unsigned long int upper_half, lower_half, combined_word;
   double* dest;
 
@@ -307,49 +278,42 @@ void compute_statistics_accel(struct activity_values *vals, double *hr) {
   upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 3);
   lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 2);
   combined_word = (upper_half << 32) | (lower_half);
-  printf("Combined word: %016lx\n", combined_word);
   dest = &(vals->meanhr0);
   memcpy(dest, &combined_word, sizeof(double));
   
   upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 5);
   lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 4);
   combined_word = (upper_half << 32) | (lower_half);
-  printf("Combined word: %016lx\n", combined_word);
   dest = &(vals->meanhr1);
   memcpy(dest, &combined_word, sizeof(double));
 
   upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 7);
   lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 6);
   combined_word = (upper_half << 32) | (lower_half);
-  printf("Combined word: %016lx\n", combined_word);
   dest = &(vals->tpower);
   memcpy(dest, &combined_word, sizeof(double));
 
   upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 9);
   lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 8);
   combined_word = (upper_half << 32) | (lower_half);
-  printf("Combined word: %016lx\n", combined_word);
   dest = &(vals->meanhr);
   memcpy(dest, &combined_word, sizeof(double));
   
   upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 11);
   lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 10);
   combined_word = (upper_half << 32) | (lower_half);
-  printf("Combined word: %016lx\n", combined_word);
   dest = &(vals->stationarity);
   memcpy(dest, &combined_word, sizeof(double));
 
   upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 13);
   lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 12);
   combined_word = (upper_half << 32) | (lower_half);
-  printf("Combined word: %016lx\n", combined_word);
   dest = &(vals->p);
   memcpy(dest, &combined_word, sizeof(double));
 
   upper_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 15);
   lower_half = *(accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT + 14);
   combined_word = (upper_half << 32) | (lower_half);
-  printf("Combined word: %016lx\n", combined_word);
   dest = &(vals->activity);
   memcpy(dest, &combined_word, sizeof(double));
 
@@ -403,6 +367,7 @@ void compute_statistics(struct activity_values *vals, double *hr) {
 
 int main(int argc, char *argv[]) {
 
+  clock_gettime(CLOCK_MONOTONIC_RAW, &main_start);
   char buf[80];
   struct activity_values vals;
   double *hr;
@@ -414,6 +379,12 @@ int main(int argc, char *argv[]) {
   long tt = 0L;
   FILE *in_file, *out_file;
   bool mflag = false, inputFile = false;
+
+#ifdef USE_ACCEL
+  printf("Utilizing the accelerator\n");
+#else
+  printf("Not utilizing accelerator, using CPU implementation\n");
+#endif
 
   for (int j = 1 ; j < argc ; ++j) {
     if (strcmp(argv[j], "-r") == 0) {
@@ -455,11 +426,17 @@ int main(int argc, char *argv[]) {
 
     if (++(vals.i) >= vals.len) {
 
+      // printf("Dumping struct values BEFORE calling compute_statistics:\n");
+      // printf("i: %d, len: %d, meanhr0: %lf, meanhr1: %lf, tpower: %lf, meanhr: %lf, stationarity: %lf, p: %lf, activity: %lf\n\n",
+      //         vals.i, vals.len, vals.meanhr0, vals.meanhr1, vals.tpower, vals.meanhr, vals.stationarity, vals.p, vals.activity);
 #ifdef USE_ACCEL
       compute_statistics_accel(&vals, hr);
 #else
       compute_statistics(&vals, hr);
 #endif
+      // printf("Dumping struct values AFTER calling compute_statistics:\n");
+      // printf("i: %d, len: %d, meanhr0: %lf, meanhr1: %lf, tpower: %lf, meanhr: %lf, stationarity: %lf, p: %lf, activity: %lf\n\n",
+      //         vals.i, vals.len, vals.meanhr0, vals.meanhr1, vals.tpower, vals.meanhr, vals.stationarity, vals.p, vals.activity);
 
       if (!mflag) {
         fprintf(out_file, "%g \t %g \t %g \t %g \t %g \n", t[(vals.len / 4) - 1], vals.meanhr, vals.tpower, vals.stationarity, vals.activity);
@@ -492,6 +469,11 @@ int main(int argc, char *argv[]) {
 
   fclose(in_file);
   fclose(out_file);
+
+  clock_gettime(CLOCK_MONOTONIC_RAW, &main_end);
+  printf("Activity took %ld nanoseconds\n", 
+    (main_end.tv_sec * SEC2NANOSEC + main_end.tv_nsec) - (main_start.tv_sec * SEC2NANOSEC + main_start.tv_nsec)
+  );
 
   return 0;
 }
