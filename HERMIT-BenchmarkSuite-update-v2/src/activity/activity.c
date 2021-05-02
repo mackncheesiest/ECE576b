@@ -50,7 +50,7 @@ heart rate signal, and a heart rate stationarity index.  For details, see
 1992.
 */
 
-//#define USE_ACCEL
+#define USE_ACCEL
 
 // Accelerator AXI-lite map
 // BUS_A
@@ -232,7 +232,12 @@ void accel_write_reg(volatile unsigned int* base, unsigned int offset, int data)
 
 void accel_enable_input(volatile unsigned int* base) { accel_write_reg(base, 0, 0x01); }
 
+struct timespec accel_TX_start, accel_TX_end;
+struct timespec accel_compute_start, accel_compute_end;
+struct timespec accel_RX_start, accel_RX_end;
+
 void compute_statistics_accel(struct activity_values *vals, double *hr) {
+  clock_gettime(CLOCK_MONOTONIC_RAW, &accel_TX_start);
   unsigned int i = 0;
   // Memcpy the input struct to the input struct registers
   memcpy((accel_control_base_addr + OFFSET_TO_STRUCT_INPUT), vals, sizeof(struct activity_values));
@@ -249,7 +254,9 @@ void compute_statistics_accel(struct activity_values *vals, double *hr) {
   // Memcpy the HR array to the HR memory
   memcpy((accel_control_base_addr + OFFSET_TO_HR_MEMORY), hr, DEFLEN * sizeof(double));
 
-  printf("Enabling the start bit on the accelerator\n");
+  clock_gettime(CLOCK_MONOTONIC_RAW, &accel_compute_start);
+
+  // printf("Enabling the start bit on the accelerator\n");
   // Enable the input -- the accelerator seems to set it back to 0x00 on its own once it completes
   accel_enable_input(accel_control_base_addr);
 
@@ -258,14 +265,16 @@ void compute_statistics_accel(struct activity_values *vals, double *hr) {
   while (true) {
     status = (*accel_control_base_addr); 
     if ((status & 0x02) == 0x02) {
-      printf("Exiting loop, status = 0x%x\n", status);
+      // printf("Exiting loop, status = 0x%x\n", status);
       break;
     }
     else if (i % 100000 == 0) {
-      printf("Waiting for accelerator to complete...... (status: 0x%x)\n", *accel_control_base_addr);
+      // printf("Waiting for accelerator to complete...... (status: 0x%x)\n", *accel_control_base_addr);
     } 
     i++;
   }
+
+  clock_gettime(CLOCK_MONOTONIC_RAW, &accel_RX_start);
 
   // Copy the output values of the struct back
   // memcpy(vals, (accel_control_base_addr + OFFSET_TO_STRUCT_OUTPUT), sizeof(struct activity_values));
@@ -317,7 +326,8 @@ void compute_statistics_accel(struct activity_values *vals, double *hr) {
   dest = &(vals->activity);
   memcpy(dest, &combined_word, sizeof(double));
 
-  printf("Accelerator execution complete!\n\n");
+  clock_gettime(CLOCK_MONOTONIC_RAW, &accel_RX_end);
+  // printf("Accelerator execution complete!\n\n");
 }
 //---------------------------------------- Accelerator stuff end -------------------------------------//
 #endif
@@ -429,11 +439,13 @@ int main(int argc, char *argv[]) {
       // printf("Dumping struct values BEFORE calling compute_statistics:\n");
       // printf("i: %d, len: %d, meanhr0: %lf, meanhr1: %lf, tpower: %lf, meanhr: %lf, stationarity: %lf, p: %lf, activity: %lf\n\n",
       //         vals.i, vals.len, vals.meanhr0, vals.meanhr1, vals.tpower, vals.meanhr, vals.stationarity, vals.p, vals.activity);
+      clock_gettime(CLOCK_MONOTONIC_RAW, &kernel_start);
 #ifdef USE_ACCEL
       compute_statistics_accel(&vals, hr);
 #else
       compute_statistics(&vals, hr);
 #endif
+      clock_gettime(CLOCK_MONOTONIC_RAW, &kernel_end);
       // printf("Dumping struct values AFTER calling compute_statistics:\n");
       // printf("i: %d, len: %d, meanhr0: %lf, meanhr1: %lf, tpower: %lf, meanhr: %lf, stationarity: %lf, p: %lf, activity: %lf\n\n",
       //         vals.i, vals.len, vals.meanhr0, vals.meanhr1, vals.tpower, vals.meanhr, vals.stationarity, vals.p, vals.activity);
@@ -471,9 +483,22 @@ int main(int argc, char *argv[]) {
   fclose(out_file);
 
   clock_gettime(CLOCK_MONOTONIC_RAW, &main_end);
-  printf("Activity took %ld nanoseconds\n", 
-    (main_end.tv_sec * SEC2NANOSEC + main_end.tv_nsec) - (main_start.tv_sec * SEC2NANOSEC + main_start.tv_nsec)
-  );
 
+  unsigned long int e2e_time = (main_end.tv_sec * SEC2NANOSEC + main_end.tv_nsec) - (main_start.tv_sec * SEC2NANOSEC + main_start.tv_nsec);
+  unsigned long int kernel_time = (kernel_end.tv_sec * SEC2NANOSEC + kernel_end.tv_nsec) - (kernel_start.tv_sec * SEC2NANOSEC + kernel_start.tv_nsec);
+
+#ifndef USE_ACCEL
+  printf("CPU-based activity: full execution took %ld ns, kernel execution took %ld ns\n", e2e_time, kernel_time);
+#else
+  accel_TX_end = accel_compute_start;
+  accel_compute_end = accel_RX_start;
+
+  unsigned long int accel_TX_time = (accel_TX_end.tv_sec * SEC2NANOSEC + accel_TX_end.tv_nsec) - (accel_TX_start.tv_sec * SEC2NANOSEC + accel_TX_start.tv_nsec);
+  unsigned long int accel_compute_time = (accel_compute_end.tv_sec * SEC2NANOSEC + accel_compute_end.tv_nsec) - (accel_compute_start.tv_sec * SEC2NANOSEC + accel_compute_start.tv_nsec);
+  unsigned long int accel_RX_time = (accel_RX_end.tv_sec * SEC2NANOSEC + accel_RX_end.tv_nsec) - (accel_RX_start.tv_sec * SEC2NANOSEC + accel_RX_start.tv_nsec);
+
+  printf("Accel-based activity: full execution took %ld ns, kernel execution took %ld ns, accel TX took %ld ns, accel compute took %ld ns, accel RX took %ld ns\n",
+          e2e_time, kernel_time, accel_TX_time, accel_compute_time, accel_RX_time);
+#endif
   return 0;
 }
