@@ -41,7 +41,11 @@
 #include<unistd.h>
 #include<unistd.h>
 #include<string.h>
+#include<time.h>
 
+extern struct timespec accel_TX_start, accel_TX_end;
+extern struct timespec accel_compute_start, accel_compute_end;
+extern struct timespec accel_RX_start, accel_RX_end;
 
 typedef unsigned int u32;
 typedef unsigned char u8;
@@ -155,41 +159,59 @@ void close_aes_dec(){
     close(aes_dec_control_fd);
 }
 
+void __attribute__((constructor)) setup() {
+  printf("[aes] Initializing accelerator...\n");
+  init_aes_enc();
+  init_aes_dec();  
+  printf("[aes] Initialization complete!\n");
+}
+
+void __attribute__((destructor)) teardown() {
+  printf("[aes] Tearing down accelerator...\n");
+  close_aes_enc();
+  close_aes_dec();
+  printf("[aes] Teardown complete!\n");
+}
+
 
 // ########################################### Program to perform AES encryption on accelerator ##############################################
 int rijndaelEncrypt_acc(u32 *rk, u8 *pt, u8 *ct){
-
-    init_aes_enc();
-
-    printf("[AES] Copying round key to accelerator\n");
+    clock_gettime(CLOCK_MONOTONIC_RAW, &accel_TX_start);
+    //printf("[AES] Copying round key to accelerator\n");
     u32 *addr = memcpy((void*)(aes_enc_control_base_addr+ROUNDKEY_ENC_OFFSET), (const void*) rk, 44*sizeof(u32));
     if (addr==NULL){
         printf("[AES-ERROR] memcpy of round key failed!!!\n");
         exit(1);
     }
-    printf("[AES] Done copying round key to accelerator\n");
+    //printf("[AES] Done copying round key to accelerator\n");
 
-    printf("[AES] Copying plaintext to accelerator\n");
+    //printf("[AES] Copying plaintext to accelerator\n");
     u8 *chaddr = memcpy((void*)(aes_enc_control_base_addr+PLAINTEXT_ENC_OFFSET), pt, 16*sizeof(u8));
     if (chaddr == NULL){
         printf("[AES-ERROR] mempcy of plaintext failed!!!\n");
         exit(1);
     }
-    printf("[AES] Done copying plaintext to accelerator\n");
+    //printf("[AES] Done copying plaintext to accelerator\n");
 
-    printf("[AES] Launching AES accelerator\n");
+    clock_gettime(CLOCK_MONOTONIC_RAW, &accel_compute_start);
+
+    //printf("[AES] Launching AES accelerator\n");
     start_aes(aes_enc_control_base_addr, CONTROL_ENC_OFFSET);
-    printf("[AES] Waiting for AES accelerator to complete\n");
+    //printf("[AES] Waiting for AES accelerator to complete\n");
     wait_for_aes_complete(aes_enc_control_base_addr);
-    printf("[AES] AES accelerator finished execution\n");
+    //printf("[AES] AES accelerator finished execution\n");
 
-    printf("[AES] Copying ciphertext back from accelerator\n");
+    clock_gettime(CLOCK_MONOTONIC_RAW, &accel_RX_start);
+
+    //printf("[AES] Copying ciphertext back from accelerator\n");
     chaddr = memcpy(ct, (aes_enc_control_base_addr+CIPHERTEXT_ENC_OFFSET), 16*sizeof(u8));
     if (chaddr == NULL){
         printf("[AES-ERROR] memcpy of ciphertext from accelarator to memory failed\n");
         exit(1);
     }
-    printf("[AES] Ciphertext received from accelerator\n");
+
+    clock_gettime(CLOCK_MONOTONIC_RAW, &accel_RX_end);
+    //printf("[AES] Ciphertext received from accelerator\n");
 
     /*printf("[AES] Received ciphertext is\n");
     for (int i=0; i<4; i++){
@@ -198,45 +220,49 @@ int rijndaelEncrypt_acc(u32 *rk, u8 *pt, u8 *ct){
 	    printf("\n");
     }
     printf("\n");*/
-    printf("[AES] Bye bye from AES accelerator...\n");
+    //printf("[AES] Bye bye from AES accelerator...\n");
     return 0;
 }
 
 
 // ########################################### Program to perform AES decryption on accelerator ##############################################
 int rijndaelDecrypt_acc(u32 *rk, u8 *ct, u8 *pt){
-
-    init_aes_dec();
-
-    printf("[AES] Copying round key to accelerator\n");
+    clock_gettime(CLOCK_MONOTONIC_RAW, &accel_TX_start);
+    //printf("[AES] Copying round key to accelerator\n");
     u32 *addr = memcpy((void*)(aes_dec_control_base_addr+ROUNDKEY_DEC_OFFSET), (const void*) rk, 44*sizeof(u32));
     if (addr==NULL){
         printf("[AES-ERROR] memcpy of round key failed!!!\n");
         exit(1);
     }
-    printf("[AES] Done copying round key to accelerator\n");
+    //printf("[AES] Done copying round key to accelerator\n");
 
-    printf("[AES] Copying ciphertext to accelerator\n");
+    //printf("[AES] Copying ciphertext to accelerator\n");
     u8 *chaddr = memcpy((void*)(aes_dec_control_base_addr+CIPHERTEXT_DEC_OFFSET), ct, 16*sizeof(u8));
     if (chaddr == NULL){
         printf("[AES-ERROR] mempcy of ciphertext failed!!!\n");
         exit(1);
     }
-    printf("[AES] Done copying ciphertext to accelerator\n");
+    //printf("[AES] Done copying ciphertext to accelerator\n");
 
-    printf("[AES] Launching AES decryptor accelerator\n");
+    clock_gettime(CLOCK_MONOTONIC_RAW, &accel_compute_start);
+
+    //printf("[AES] Launching AES decryptor accelerator\n");
     start_aes(aes_dec_control_base_addr, CONTROL_DEC_OFFSET);
-    printf("[AES] Waiting for AES decryptor accelerator to complete\n");
+    //printf("[AES] Waiting for AES decryptor accelerator to complete\n");
     wait_for_aes_complete(aes_dec_control_base_addr);
-    printf("[AES] AES decryptor accelerator finished execution\n");
+    //printf("[AES] AES decryptor accelerator finished execution\n");
 
-    printf("[AES] Copying plaintext back from accelerator\n");
+    clock_gettime(CLOCK_MONOTONIC_RAW, &accel_RX_start);
+
+    //printf("[AES] Copying plaintext back from accelerator\n");
     chaddr = memcpy(pt, (aes_dec_control_base_addr+PLAINTEXT_DEC_OFFSET), 16*sizeof(u8));
     if (chaddr == NULL){
         printf("[AES-ERROR] memcpy of plaintext from accelarator to memory failed\n");
         exit(1);
     }
-    printf("[AES] Plaintext received from accelerator\n");
+
+    clock_gettime(CLOCK_MONOTONIC_RAW, &accel_RX_end);
+    //printf("[AES] Plaintext received from accelerator\n");
 
     /*printf("[AES] Received ciphertext is\n");
     for (int i=0; i<4; i++){
@@ -245,7 +271,7 @@ int rijndaelDecrypt_acc(u32 *rk, u8 *ct, u8 *pt){
         printf("\n");
     }
     printf("\n");*/
-    printf("[AES] Bye bye from AES accelerator...\n");
+    //printf("[AES] Bye bye from AES accelerator...\n");
     return 0;
 }
 

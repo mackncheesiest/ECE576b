@@ -1,9 +1,19 @@
 //#include <cstdio>
 //#include <cstdlib>
 //#include "aes_cpu_acc.c"
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+//#define USE_ACCEL
+#define SEC2NANOSEC 1000000000
+
+struct timespec main_start, main_end;
+struct timespec kernel_start, kernel_end;
+
+struct timespec accel_TX_start, accel_TX_end;
+struct timespec accel_compute_start, accel_compute_end;
+struct timespec accel_RX_start, accel_RX_end;
 
 typedef unsigned int u32;
 typedef unsigned char u8;
@@ -1064,6 +1074,8 @@ void * aes_decrypt_init(const u8 *key, size_t len)
 #define RK_LEN 16
 int main()
 {
+    clock_gettime(CLOCK_MONOTONIC_RAW, &main_start);
+
     int i;
     u8 rk[RK_LEN] = {
         0x33, 0xc6, 0x6d, 0x09, 
@@ -1093,34 +1105,61 @@ int main()
     u8 output_ciphertext[16] = {0};
 
 #ifdef ENC
-    printf("[INFO] Calling AES Encryptor on Accelerator\n");
+    clock_gettime(CLOCK_MONOTONIC_RAW, &kernel_start);
+    #ifdef USE_ACCEL
+    // printf("[INFO] Calling AES Encryptor on Accelerator\n");
     rijndaelEncrypt_acc(key_enc, input_plaintext, output_ciphertext);
-    printf("[INFO] Finished AES Encryptor on Accelerator\n");
-
-    printf("[INFO] Validating ciphertext from accelerator\n");
-    for (int i = 0; i < 16; i++){
-        if (output_ciphertext[i] != input_ciphertext[i]){
-            printf("[ERROR] Mismatch at index %d... Expected = 0x%x, found = 0x%x\n", i, input_ciphertext[i], output_ciphertext[i]);
-            return 0;
-        }
-    }
-    printf("[INFO] Success validating ciphertext!!\n");
+    // printf("[INFO] Finished AES Encryptor on Accelerator\n");
+    // printf("[INFO] Validating ciphertext from accelerator\n");
+    // for (int i = 0; i < 16; i++){
+    //     if (output_ciphertext[i] != input_ciphertext[i]){
+    //         printf("[ERROR] Mismatch at index %d... Expected = 0x%x, found = 0x%x\n", i, input_ciphertext[i], output_ciphertext[i]);
+    //         return 0;
+    //     }
+    // }
+    // printf("[INFO] Success validating ciphertext!!\n");
+    #else
+    rijndaelEncrypt(key_enc, input_plaintext, output_ciphertext);    
+    #endif
+    clock_gettime(CLOCK_MONOTONIC_RAW, &kernel_end);
 #endif
 
 #ifdef DEC
-    printf("[INFO] Calling AES Decryptor on Accelerator\n");
+    clock_gettime(CLOCK_MONOTONIC_RAW, &kernel_start);
+    #ifdef USE_ACCEL
+    //printf("[INFO] Calling AES Decryptor on Accelerator\n");
     rijndaelDecrypt_acc(key_dec, input_ciphertext, output_plaintext);
-    printf("[INFO] Finished AES Decryptor on Accelerator\n");
-
-    printf("[INFO] Validating plaintext from accelerator\n");
-    for (int i = 0; i < 16; i++){
-        if (output_plaintext[i] != input_plaintext[i]){
-            printf("[ERROR] Mismatch at index %d... Expected = 0x%x, found = 0x%x\n", i, input_plaintext[i], output_plaintext[i]);
-            return 0;
-        }
-    }
-    printf("[INFO] Success validating plaintext!!\n");
+    //printf("[INFO] Finished AES Decryptor on Accelerator\n");
+    // printf("[INFO] Validating plaintext from accelerator\n");
+    // for (int i = 0; i < 16; i++){
+    //     if (output_plaintext[i] != input_plaintext[i]){
+    //         printf("[ERROR] Mismatch at index %d... Expected = 0x%x, found = 0x%x\n", i, input_plaintext[i], output_plaintext[i]);
+    //         return 0;
+    //     }
+    // }
+    // printf("[INFO] Success validating plaintext!!\n");
+    #else
+    rijndaelDecrypt(key_dec, input_ciphertext, output_plaintext);
+    #endif
+    clock_gettime(CLOCK_MONOTONIC_RAW, &kernel_end);
 #endif
+    clock_gettime(CLOCK_MONOTONIC_RAW, &main_end);
 
+    unsigned long int e2e_time = (main_end.tv_sec * SEC2NANOSEC + main_end.tv_nsec) - (main_start.tv_sec * SEC2NANOSEC + main_start.tv_nsec);
+    unsigned long int kernel_time = (kernel_end.tv_sec * SEC2NANOSEC + kernel_end.tv_nsec) - (kernel_start.tv_sec * SEC2NANOSEC + kernel_start.tv_nsec);
+
+#ifndef USE_ACCEL
+    printf("CPU-based aes: full execution took %ld ns, kernel execution took %ld ns\n", e2e_time, kernel_time);
+#else
+    accel_TX_end = accel_compute_start;
+    accel_compute_end = accel_RX_start;
+
+    unsigned long int accel_TX_time = (accel_TX_end.tv_sec * SEC2NANOSEC + accel_TX_end.tv_nsec) - (accel_TX_start.tv_sec * SEC2NANOSEC + accel_TX_start.tv_nsec);
+    unsigned long int accel_compute_time = (accel_compute_end.tv_sec * SEC2NANOSEC + accel_compute_end.tv_nsec) - (accel_compute_start.tv_sec * SEC2NANOSEC + accel_compute_start.tv_nsec);
+    unsigned long int accel_RX_time = (accel_RX_end.tv_sec * SEC2NANOSEC + accel_RX_end.tv_nsec) - (accel_RX_start.tv_sec * SEC2NANOSEC + accel_RX_start.tv_nsec);
+
+    printf("Accel-based aes: full execution took %ld ns, kernel execution took %ld ns, accel TX took %ld ns, accel compute took %ld ns, accel RX took %ld ns\n",
+            e2e_time, kernel_time, accel_TX_time, accel_compute_time, accel_RX_time);
+#endif
     return 0;
 }
