@@ -907,7 +907,7 @@ CONFIG_pciutils=y
 #
 # vim 
 #
-# CONFIG_vim is not set
+CONFIG_vim=y
 # CONFIG_vim-help is not set
 # CONFIG_vim-dbg is not set
 # CONFIG_vim-vimrc is not set
@@ -1363,7 +1363,7 @@ CONFIG_run-postinsts=y
 #
 # ffmpeg 
 #
-# CONFIG_ffmpeg is not set
+CONFIG_ffmpeg=y
 # CONFIG_ffmpeg-dbg is not set
 # CONFIG_ffmpeg-dev is not set
 
@@ -2451,7 +2451,7 @@ CONFIG_udev-extraconf=y
 #
 # gdb 
 #
-# CONFIG_gdb is not set
+CONFIG_gdb=y
 # CONFIG_gdb-dev is not set
 # CONFIG_gdbserver is not set
 # CONFIG_gdb-dbg is not set

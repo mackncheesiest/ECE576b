@@ -1,11 +1,11 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Fri Apr 16 01:26:28 2021
+-- Date        : Fri Apr 30 14:45:09 2021
 -- Host        : engr-rcl13g running 64-bit Ubuntu 18.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub -rename_top design_zcu102_rst_ps8_0_99M_0 -prefix
---               design_zcu102_rst_ps8_0_99M_0_ design_1_rst_ps8_0_99M_0_stub.vhdl
--- Design      : design_1_rst_ps8_0_99M_0
+-- Command     : write_vhdl -force -mode synth_stub
+--               /localhome/jmack2545/ece576b/Vivado/ProjectDesign/ProjectDesign.gen/sources_1/bd/design_zcu102/ip/design_zcu102_rst_ps8_0_99M_0/design_zcu102_rst_ps8_0_99M_0_stub.vhdl
+-- Design      : design_zcu102_rst_ps8_0_99M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu9eg-ffvb1156-2-e
 -- --------------------------------------------------------------------------------

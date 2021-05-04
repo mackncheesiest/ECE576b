@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="aes_dec_hls.cpp" path="/localhome/jmack2545/ece576b/VitisHLS/aes_decrypt/aes_dec_hls.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="aes_dec_tb.cpp" path="/localhome/jmack2545/ece576b/VitisHLS/aes_decrypt/aes_dec_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,19 +1,21 @@
 INFO: [HLS 200-10] Running '/media/jmack2545/data_drive/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'jmack2545' on host 'engr-rcl13g.catnet.arizona.edu' (Linux_x86_64 version 5.4.0-72-generic) on Thu Apr 22 01:41:24 MST 2021
+INFO: [HLS 200-10] For user 'jmack2545' on host 'engr-rcl13g.catnet.arizona.edu' (Linux_x86_64 version 5.4.0-72-generic) on Sat May 01 15:20:55 MST 2021
 INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
-INFO: [HLS 200-10] In directory '/localhome/jmack2545/ece576b/VitisHLS'
-Sourcing Tcl script '/localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln/export.tcl'
+INFO: [HLS 200-10] In directory '/localhome/jmack2545/ece576b/VitisHLS/activity'
+Sourcing Tcl script '/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/activity_soln/export.tcl'
 INFO: [HLS 200-1510] Running: open_project activity_hls 
-INFO: [HLS 200-10] Opening project '/localhome/jmack2545/ece576b/VitisHLS/activity_hls'.
+INFO: [HLS 200-10] Opening project '/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls'.
 INFO: [HLS 200-1510] Running: set_top compute_statistics 
-INFO: [HLS 200-1510] Running: add_files myfile.cpp 
-INFO: [HLS 200-10] Adding design file 'myfile.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files bytestrm_util.h 
-INFO: [HLS 200-10] Adding design file 'bytestrm_util.h' to the project
 INFO: [HLS 200-1510] Running: add_files activity_hls.cpp 
 INFO: [HLS 200-10] Adding design file 'activity_hls.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files bytestrm_util.h 
+INFO: [HLS 200-10] Adding design file 'bytestrm_util.h' to the project
+INFO: [HLS 200-1510] Running: add_files myfile.cpp 
+INFO: [HLS 200-10] Adding design file 'myfile.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb activity_test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'activity_test.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution activity_soln -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln'.
+INFO: [HLS 200-10] Opening solution '/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/activity_soln'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 2ns.
 INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -57,6 +59,6 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'compute_statistic
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/jmack2545/data_drive/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 22 01:41:40 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat May  1 15:21:14 2021...
 INFO: [HLS 200-802] Generated output file activity_hls/activity_soln/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 14.16 seconds. CPU system time: 1.74 seconds. Elapsed time: 17.85 seconds; current allocated memory: 198.564 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 16 seconds. CPU system time: 2.07 seconds. Elapsed time: 19.89 seconds; current allocated memory: 198.626 MB.

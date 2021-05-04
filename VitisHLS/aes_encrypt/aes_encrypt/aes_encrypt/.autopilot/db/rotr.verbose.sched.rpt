@@ -1,0 +1,125 @@
+
+
+================================================================
+== Vitis HLS Report for 'rotr'
+================================================================
+* Date:           Thu Apr 29 19:46:25 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        aes_encrypt
+* Solution:       aes_encrypt (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.00 ns|  1.388 ns|     0.54 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1|  2.000 ns|  2.000 ns|    1|    1|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.78>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%bits_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %bits"   --->   Operation 3 'read' 'bits_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%bits_cast = zext i5 %bits_read"   --->   Operation 4 'zext' 'bits_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.78ns)   --->   "%sub_ln111 = sub i6 32, i6 %bits_cast" [../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111]   --->   Operation 5 'sub' 'sub_ln111' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 1.38>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %val_r"   --->   Operation 6 'read' 'val_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns) (grouped into LUT with out node or_ln111)   --->   "%bits_cast1 = zext i5 %bits_read"   --->   Operation 7 'zext' 'bits_cast1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns) (grouped into LUT with out node or_ln111)   --->   "%lshr_ln111 = lshr i32 %val_read, i32 %bits_cast1" [../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111]   --->   Operation 8 'lshr' 'lshr_ln111' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.38> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns) (grouped into LUT with out node or_ln111)   --->   "%zext_ln111 = zext i6 %sub_ln111" [../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111]   --->   Operation 9 'zext' 'zext_ln111' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns) (grouped into LUT with out node or_ln111)   --->   "%shl_ln111 = shl i32 %val_read, i32 %zext_ln111" [../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111]   --->   Operation 10 'shl' 'shl_ln111' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.38> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (1.38ns) (out node of the LUT)   --->   "%or_ln111 = or i32 %shl_ln111, i32 %lshr_ln111" [../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111]   --->   Operation 11 'or' 'or_ln111' <Predicate = true> <Delay = 1.38> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%ret_ln111 = ret i32 %or_ln111" [../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111]   --->   Operation 12 'ret' 'ret_ln111' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2ns, clock uncertainty: 0.54ns.
+
+ <State 1>: 0.781ns
+The critical path consists of the following:
+	wire read on port 'bits' [3]  (0 ns)
+	'sub' operation ('sub_ln111', ../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111) [8]  (0.781 ns)
+
+ <State 2>: 1.39ns
+The critical path consists of the following:
+	wire read on port 'val_r' [4]  (0 ns)
+	'lshr' operation ('lshr_ln111', ../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111) [7]  (0 ns)
+	'or' operation ('or_ln111', ../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp:111) [11]  (1.39 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

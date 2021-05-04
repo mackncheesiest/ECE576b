@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="myfile.cpp" path="/localhome/jmack2545/ece576b/VitisHLS/myfile.cpp"/>
-    <originFiles name="bytestrm_util.h" path="/localhome/jmack2545/ece576b/VitisHLS/bytestrm_util.h"/>
-    <originFiles name="activity_hls.cpp" path="/localhome/jmack2545/ece576b/VitisHLS/activity_hls.cpp"/>
+    <originFiles name="activity_hls.cpp" path="/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls.cpp"/>
+    <originFiles name="bytestrm_util.h" path="/localhome/jmack2545/ece576b/VitisHLS/activity/bytestrm_util.h"/>
+    <originFiles name="myfile.cpp" path="/localhome/jmack2545/ece576b/VitisHLS/activity/myfile.cpp"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="activity_test.cpp" path="/localhome/jmack2545/ece576b/VitisHLS/activity/activity_test.cpp"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

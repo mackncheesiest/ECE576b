@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="rijndaelEncrypt_hls.cpp" path="/home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="aes_tb_1.cpp" path="/home/jmack2545/Downloads/aes_tb_1.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

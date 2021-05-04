@@ -42,15 +42,15 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xczu9eg:-ffvb1156:-2-e
-set SourceFiles {sc {} c {../../activity_hls.cpp ../../myfile.cpp}}
+set SourceFiles {sc {} c {../../myfile.cpp ../../activity_hls.cpp}}
 set SourceFlags {sc {} c {{} {}}}
-set DirectiveFile /localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln/activity_soln.directive
-set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
+set DirectiveFile /localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/activity_soln/activity_soln.directive
+set TBFiles {verilog ../../activity_test.cpp bc ../../activity_test.cpp vhdl ../../activity_test.cpp sc ../../activity_test.cpp cas ../../activity_test.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {bc "" c "" sc "" cas "" vhdl "" verilog ""}
-set TBInstNames {bc "" c "" sc "" cas "" vhdl "" verilog ""}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

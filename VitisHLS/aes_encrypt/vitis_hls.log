@@ -1,0 +1,36 @@
+INFO: [HLS 200-10] Running '/media/jmack2545/data_drive/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'jmack2545' on host 'engr-rcl13g.catnet.arizona.edu' (Linux_x86_64 version 5.4.0-72-generic) on Thu Apr 29 19:48:34 MST 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/localhome/jmack2545/ece576b/VitisHLS/aes_encrypt'
+Sourcing Tcl script '/localhome/jmack2545/ece576b/VitisHLS/aes_encrypt/aes_encrypt/aes_encrypt/export.tcl'
+INFO: [HLS 200-1510] Running: open_project aes_encrypt 
+INFO: [HLS 200-10] Opening project '/localhome/jmack2545/ece576b/VitisHLS/aes_encrypt/aes_encrypt'.
+INFO: [HLS 200-1510] Running: set_top rijndaelEncrypt_hls 
+INFO: [HLS 200-1510] Running: add_files ../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp 
+INFO: [HLS 200-10] Adding design file '../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../../../../home/jmack2545/Downloads/aes_tb_1.cpp 
+INFO: [HLS 200-10] Adding test bench file '../../../../../home/jmack2545/Downloads/aes_tb_1.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution aes_encrypt -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/localhome/jmack2545/ece576b/VitisHLS/aes_encrypt/aes_encrypt/aes_encrypt'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 2 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/jmack2545/data_drive/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 29 19:48:46 2021...
+INFO: [HLS 200-802] Generated output file aes_encrypt/aes_encrypt/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 11.42 seconds. CPU system time: 0.95 seconds. Elapsed time: 13.98 seconds; current allocated memory: 197.895 MB.

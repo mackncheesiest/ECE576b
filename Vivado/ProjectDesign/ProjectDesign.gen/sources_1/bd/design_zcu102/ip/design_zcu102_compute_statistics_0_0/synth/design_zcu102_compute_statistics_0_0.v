@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:compute_statistics:1.0
-// IP Revision: 2104220141
+// IP Revision: 2105011520
 
 (* X_CORE_INFO = "compute_statistics,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "design_zcu102_compute_statistics_0_0,compute_statistics,{}" *)
-(* CORE_GENERATION_INFO = "design_zcu102_compute_statistics_0_0,compute_statistics,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=compute_statistics,x_ipVersion=1.0,x_ipCoreRevision=2104220141,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_BUS_A_ADDR_WIDTH=14,C_S_AXI_BUS_A_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "design_zcu102_compute_statistics_0_0,compute_statistics,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=compute_statistics,x_ipVersion=1.0,x_ipCoreRevision=2105011520,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_BUS_A_ADDR_WIDTH=14,C_S_AXI_BUS_A_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_zcu102_compute_statistics_0_0 (
@@ -110,11 +110,11 @@ output wire [31 : 0] s_axi_BUS_A_RDATA;
 output wire [1 : 0] s_axi_BUS_A_RRESP;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_BUS_A RVALID" *)
 output wire s_axi_BUS_A_RVALID;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_BUS_A, ADDR_WIDTH 14, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 99990005, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_zcu102_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_T\
-HREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_BUS_A, ADDR_WIDTH 14, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 333300018, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_zcu102_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_\
+THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_BUS_A RREADY" *)
 input wire s_axi_BUS_A_RREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_BUS_A, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 99990005, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_zcu102_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_BUS_A, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 333300018, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_zcu102_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 input wire ap_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)

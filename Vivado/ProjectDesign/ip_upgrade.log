@@ -1,6 +1,48 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May  1 15:22:06 2021
+| Host         : engr-rcl13g running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_zcu102_compute_statistics_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_zcu102_compute_statistics_0_0 (xilinx.com:hls:compute_statistics:1.0) from (Rev. 2104220141) to (Rev. 2105011520)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Apr 30 15:17:41 2021
+| Host         : engr-rcl13g running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_zcu102_rijndaelDecrypt_hls_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_zcu102_rijndaelDecrypt_hls_0_0 (xilinx.com:hls:rijndaelDecrypt_hls:1.0) from (Rev. 2104300136) to (Rev. 2104301517)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 | Date         : Thu Apr 22 01:49:29 2021
 | Host         : engr-rcl13g running 64-bit Ubuntu 18.04.5 LTS
 | Command      : upgrade_ip

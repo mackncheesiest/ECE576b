@@ -1,0 +1,221 @@
+<stg><name>rotr</name>
+
+
+<trans_list>
+
+<trans id="13" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="5" op_0_bw="5" op_1_bw="5">
+<![CDATA[
+:0 %bits_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %bits
+
+]]></Node>
+<StgValue><ssdm name="bits_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="6" op_0_bw="5">
+<![CDATA[
+:3 %bits_cast = zext i5 %bits_read
+
+]]></Node>
+<StgValue><ssdm name="bits_cast"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>Adder</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="6" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+:5 %sub_ln115 = sub i6 32, i6 %bits_cast
+
+]]></Node>
+<StgValue><ssdm name="sub_ln115"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="6" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:1 %val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %val_r
+
+]]></Node>
+<StgValue><ssdm name="val_read"/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="32" op_0_bw="5">
+<![CDATA[
+:2 %bits_cast1 = zext i5 %bits_read
+
+]]></Node>
+<StgValue><ssdm name="bits_cast1"/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="1">
+<core>Shifter</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:4 %lshr_ln115 = lshr i32 %val_read, i32 %bits_cast1
+
+]]></Node>
+<StgValue><ssdm name="lshr_ln115"/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="32" op_0_bw="6">
+<![CDATA[
+:6 %zext_ln115 = zext i6 %sub_ln115
+
+]]></Node>
+<StgValue><ssdm name="zext_ln115"/></StgValue>
+</operation>
+
+<operation id="10" st_id="2" stage="1" lat="1">
+<core>Shifter</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:7 %shl_ln115 = shl i32 %val_read, i32 %zext_ln115
+
+]]></Node>
+<StgValue><ssdm name="shl_ln115"/></StgValue>
+</operation>
+
+<operation id="11" st_id="2" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:8 %or_ln115 = or i32 %shl_ln115, i32 %lshr_ln115
+
+]]></Node>
+<StgValue><ssdm name="or_ln115"/></StgValue>
+</operation>
+
+<operation id="12" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="0" op_0_bw="32">
+<![CDATA[
+:9 %ret_ln115 = ret i32 %or_ln115
+
+]]></Node>
+<StgValue><ssdm name="ret_ln115"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="14" name="val_r" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="val_r"/></StgValue>
+</port>
+<port id="15" name="bits" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="bits"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="17" from="_ssdm_op_Read.ap_auto.i5" to="bits_read" fromId="16" toId="3">
+</dataflow>
+<dataflow id="18" from="bits" to="bits_read" fromId="15" toId="3">
+</dataflow>
+<dataflow id="19" from="bits_read" to="bits_cast" fromId="3" toId="4">
+</dataflow>
+<dataflow id="21" from="StgValue_20" to="sub_ln115" fromId="20" toId="5">
+</dataflow>
+<dataflow id="22" from="bits_cast" to="sub_ln115" fromId="4" toId="5">
+</dataflow>
+<dataflow id="24" from="_ssdm_op_Read.ap_auto.i32" to="val_read" fromId="23" toId="6">
+</dataflow>
+<dataflow id="25" from="val_r" to="val_read" fromId="14" toId="6">
+</dataflow>
+<dataflow id="26" from="bits_read" to="bits_cast1" fromId="3" toId="7">
+</dataflow>
+<dataflow id="27" from="val_read" to="lshr_ln115" fromId="6" toId="8">
+</dataflow>
+<dataflow id="28" from="bits_cast1" to="lshr_ln115" fromId="7" toId="8">
+</dataflow>
+<dataflow id="29" from="sub_ln115" to="zext_ln115" fromId="5" toId="9">
+</dataflow>
+<dataflow id="30" from="val_read" to="shl_ln115" fromId="6" toId="10">
+</dataflow>
+<dataflow id="31" from="zext_ln115" to="shl_ln115" fromId="9" toId="10">
+</dataflow>
+<dataflow id="32" from="shl_ln115" to="or_ln115" fromId="10" toId="11">
+</dataflow>
+<dataflow id="33" from="lshr_ln115" to="or_ln115" fromId="8" toId="11">
+</dataflow>
+<dataflow id="34" from="or_ln115" to="ret_ln115" fromId="11" toId="12">
+</dataflow>
+</dataflows>
+
+
+</stg>

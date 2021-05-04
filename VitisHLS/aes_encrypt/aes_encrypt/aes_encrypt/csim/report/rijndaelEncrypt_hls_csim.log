@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../../../home/jmack2545/Downloads/aes_tb_1.cpp in debug mode
+   Compiling ../../../../../../../../../home/jmack2545/Downloads/rijndaelEncrypt_hls.cpp in debug mode
+   Generating csim.exe
+[SIM] Calling encryptor function
+[SIM] Finished encryptor function
+[SIM] Checking against reference ciphertext
+[SIM] Ciphertext Correct !!!
+[SIM] Ciphertext value received from aes accelerator
+0xec, 0xae, 0xb0, 0x2a, 0xf2, 0x51, 0x45, 0x25, 0xb4, 0x19, 0x18, 0x70, 0x10, 0x2, 0x5, 0x12, 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

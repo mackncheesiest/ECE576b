@@ -31,7 +31,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3494661552</coreId>
+						<coreId>616421040</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -64,7 +64,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>81</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -87,7 +87,7 @@
 						<id>11</id>
 						<name>vals_read</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -95,7 +95,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -141,7 +141,7 @@
 						<id>12</id>
 						<name>tmp_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -149,7 +149,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -197,7 +197,7 @@
 						<id>13</id>
 						<name>tmp_2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -205,7 +205,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -253,7 +253,7 @@
 						<id>14</id>
 						<name>and_ln</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -261,7 +261,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -281,7 +281,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1661208512</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -310,7 +310,7 @@
 						<id>15</id>
 						<name>tmp_19</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -318,7 +318,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -338,7 +338,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>408</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -365,7 +365,7 @@
 						<id>16</id>
 						<name>p_neg</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -373,7 +373,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -393,7 +393,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3496029984</coreId>
+						<coreId>616565776</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -419,7 +419,7 @@
 						<id>17</id>
 						<name>p_lshr</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -427,7 +427,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -447,7 +447,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>613779728</coreId>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
@@ -475,7 +475,7 @@
 						<id>18</id>
 						<name>p_lshr_cast</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -483,7 +483,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -503,7 +503,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>129</coreId>
+						<coreId>1751348000</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -528,7 +528,7 @@
 						<id>19</id>
 						<name>p_neg_t</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -536,7 +536,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -556,7 +556,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>129</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -582,7 +582,7 @@
 						<id>20</id>
 						<name>tmp_3</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -590,7 +590,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -610,7 +610,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>410</coreId>
+						<coreId>129</coreId>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
@@ -638,7 +638,7 @@
 						<id>21</id>
 						<name>p_lshr_f</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -646,7 +646,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -691,7 +691,7 @@
 						<id>22</id>
 						<name>div</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -699,7 +699,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -719,7 +719,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>129</coreId>
+						<coreId>321</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -746,7 +746,7 @@
 						<id>23</id>
 						<name>tmp_20</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -754,7 +754,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -774,7 +774,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>321</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
@@ -802,7 +802,7 @@
 						<id>24</id>
 						<name>icmp</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -810,7 +810,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -830,7 +830,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>4294967295</coreId>
+						<coreId>1005</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -856,7 +856,7 @@
 						<id>25</id>
 						<name>br_ln26</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -864,7 +864,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -909,7 +909,7 @@
 						<id>27</id>
 						<name>empty_21</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -917,7 +917,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -937,7 +937,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>305</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -965,7 +965,7 @@
 						<id>28</id>
 						<name>phi_ln26</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -973,7 +973,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -993,7 +993,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>769</coreId>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
@@ -1021,7 +1021,7 @@
 						<id>29</id>
 						<name>empty_22</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1029,7 +1029,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1049,7 +1049,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22185568</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1077,7 +1077,7 @@
 						<id>30</id>
 						<name>add_ln26</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1085,7 +1085,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1105,7 +1105,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>11</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
@@ -1131,7 +1131,7 @@
 						<id>31</id>
 						<name>indvars_iv15_cast</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1139,7 +1139,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1159,7 +1159,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>4294967295</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1184,7 +1184,7 @@
 						<id>33</id>
 						<name>icmp_ln26</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1192,7 +1192,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1212,7 +1212,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>825241901</coreId>
+						<coreId>22202632</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1238,7 +1238,7 @@
 						<id>34</id>
 						<name>br_ln26</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1246,7 +1246,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1266,7 +1266,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>22203264</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1293,7 +1293,7 @@
 						<id>36</id>
 						<name>trunc_ln26_cast</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1301,7 +1301,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1321,7 +1321,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>201326720</coreId>
+						<coreId>4294967295</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1346,7 +1346,7 @@
 						<id>38</id>
 						<name>hr_addr</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1354,7 +1354,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1374,7 +1374,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>840979276</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>10</bitwidth>
 				</Value>
@@ -1401,7 +1401,7 @@
 						<id>39</id>
 						<name>hr_load</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1409,7 +1409,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1429,7 +1429,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1145391171</coreId>
+						<coreId>22189616</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1454,7 +1454,7 @@
 						<id>40</id>
 						<name>bitcast_ln27</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1462,7 +1462,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1482,7 +1482,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>2593</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1507,7 +1507,7 @@
 						<id>41</id>
 						<name>add</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1515,7 +1515,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1535,7 +1535,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>14</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1561,7 +1561,7 @@
 						<id>42</id>
 						<name>bitcast_ln27_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1569,7 +1569,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1589,7 +1589,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907908848</coreId>
+						<coreId>9</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1614,7 +1614,7 @@
 						<id>43</id>
 						<name>trunc_ln26</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1622,7 +1622,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1642,7 +1642,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>2833</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -1667,7 +1667,7 @@
 						<id>44</id>
 						<name>trunc_ln26_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1675,7 +1675,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1695,7 +1695,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907910784</coreId>
+						<coreId>22213472</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -1720,7 +1720,7 @@
 						<id>45</id>
 						<name>trunc_ln26_2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1728,7 +1728,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1748,7 +1748,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22214360</coreId>
 					</Obj>
 					<bitwidth>24</bitwidth>
 				</Value>
@@ -1773,7 +1773,7 @@
 						<id>46</id>
 						<name>add_ln26_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1781,7 +1781,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1801,7 +1801,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1701603686</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>24</bitwidth>
 				</Value>
@@ -1827,7 +1827,7 @@
 						<id>47</id>
 						<name>add_ln26_2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1835,7 +1835,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1855,7 +1855,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>825307487</coreId>
+						<coreId>1713401447</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -1881,7 +1881,7 @@
 						<id>48</id>
 						<name>add_ln26_3</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1889,7 +1889,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1909,7 +1909,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1702129263</coreId>
+						<coreId>1768712560</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -1935,7 +1935,7 @@
 						<id>49</id>
 						<name>tmp_4</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1943,7 +1943,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1963,7 +1963,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1936683105</coreId>
+						<coreId>1702129263</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -1991,7 +1991,7 @@
 						<id>50</id>
 						<name>tmp_5</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -1999,7 +1999,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2019,7 +2019,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907923976</coreId>
+						<coreId>1162758476</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -2047,7 +2047,7 @@
 						<id>51</id>
 						<name>tmp_6</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2055,7 +2055,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2075,7 +2075,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907926736</coreId>
+						<coreId>1713401449</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -2103,7 +2103,7 @@
 						<id>52</id>
 						<name>tmp_7</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2111,7 +2111,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2131,7 +2131,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>5617</coreId>
 					</Obj>
 					<bitwidth>384</bitwidth>
 				</Value>
@@ -2159,7 +2159,7 @@
 						<id>53</id>
 						<name>tmp_8</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2167,7 +2167,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2187,7 +2187,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907896496</coreId>
+						<coreId>615996528</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2215,7 +2215,7 @@
 						<id>54</id>
 						<name>or_ln26_s</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2223,7 +2223,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2243,7 +2243,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>201326720</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -2276,7 +2276,7 @@
 						<id>55</id>
 						<name>br_ln26</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2284,7 +2284,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2304,7 +2304,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2329,7 +2329,7 @@
 						<id>57</id>
 						<name>select_ln30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2337,7 +2337,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2357,7 +2357,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22221288</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2384,7 +2384,7 @@
 						<id>58</id>
 						<name>sext_ln30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2392,7 +2392,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2412,7 +2412,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22221664</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2437,7 +2437,7 @@
 						<id>59</id>
 						<name>sext_ln30_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2445,7 +2445,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2465,7 +2465,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>22221768</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2490,7 +2490,7 @@
 						<id>60</id>
 						<name>br_ln30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2498,7 +2498,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2518,7 +2518,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>1610612864</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2543,7 +2543,7 @@
 						<id>62</id>
 						<name>empty_23</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2551,7 +2551,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2571,7 +2571,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907889704</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -2599,7 +2599,7 @@
 						<id>63</id>
 						<name>indvars_iv13</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2607,7 +2607,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2627,7 +2627,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907890512</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2655,7 +2655,7 @@
 						<id>64</id>
 						<name>empty_24</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2663,7 +2663,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2683,7 +2683,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907891264</coreId>
+						<coreId>4294967295</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2711,7 +2711,7 @@
 						<id>66</id>
 						<name>icmp_ln30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2719,7 +2719,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2739,7 +2739,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673214063</coreId>
+						<coreId>132</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -2765,7 +2765,7 @@
 						<id>67</id>
 						<name>br_ln30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2773,7 +2773,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2793,7 +2793,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907893600</coreId>
+						<coreId>808598902</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2820,7 +2820,7 @@
 						<id>70</id>
 						<name>hr_addr_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2828,7 +2828,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2848,7 +2848,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2004299567</coreId>
+						<coreId>8</coreId>
 					</Obj>
 					<bitwidth>10</bitwidth>
 				</Value>
@@ -2875,7 +2875,7 @@
 						<id>71</id>
 						<name>hr_load_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2883,7 +2883,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2903,7 +2903,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1162630468</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2928,7 +2928,7 @@
 						<id>72</id>
 						<name>bitcast_ln31</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2936,7 +2936,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2956,7 +2956,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2037672310</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2981,7 +2981,7 @@
 						<id>73</id>
 						<name>add1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -2989,7 +2989,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3009,7 +3009,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1063481188</coreId>
+						<coreId>10</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -3035,7 +3035,7 @@
 						<id>74</id>
 						<name>bitcast_ln31_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3043,7 +3043,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3063,7 +3063,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1415533385</coreId>
+						<coreId>132</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -3088,7 +3088,7 @@
 						<id>75</id>
 						<name>trunc_ln30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3096,7 +3096,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3116,7 +3116,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1663988588</coreId>
+						<coreId>22198736</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3141,7 +3141,7 @@
 						<id>76</id>
 						<name>add_ln30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3149,7 +3149,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3169,7 +3169,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1936028192</coreId>
+						<coreId>1295780106</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -3195,7 +3195,7 @@
 						<id>77</id>
 						<name>trunc_ln30_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3203,7 +3203,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3223,7 +3223,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869881445</coreId>
+						<coreId>1230384197</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3248,7 +3248,7 @@
 						<id>78</id>
 						<name>trunc_ln30_2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3256,7 +3256,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3276,7 +3276,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1701867296</coreId>
+						<coreId>2004299567</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -3301,7 +3301,7 @@
 						<id>79</id>
 						<name>trunc_ln30_3</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3309,7 +3309,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3329,7 +3329,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1836345390</coreId>
+						<coreId>1162630468</coreId>
 					</Obj>
 					<bitwidth>24</bitwidth>
 				</Value>
@@ -3354,7 +3354,7 @@
 						<id>80</id>
 						<name>add_ln30_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3362,7 +3362,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3382,7 +3382,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1668444006</coreId>
+						<coreId>2037672310</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3408,7 +3408,7 @@
 						<id>81</id>
 						<name>add_ln30_2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3416,7 +3416,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3436,7 +3436,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>942485552</coreId>
+						<coreId>1063481188</coreId>
 					</Obj>
 					<bitwidth>24</bitwidth>
 				</Value>
@@ -3462,7 +3462,7 @@
 						<id>82</id>
 						<name>add_ln30_3</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3470,7 +3470,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3490,7 +3490,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1751087476</coreId>
+						<coreId>1415533385</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -3516,7 +3516,7 @@
 						<id>83</id>
 						<name>add_ln30_4</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3524,7 +3524,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3544,7 +3544,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1631286127</coreId>
+						<coreId>1663988588</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3570,7 +3570,7 @@
 						<id>84</id>
 						<name>tmp_9</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3578,7 +3578,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3598,7 +3598,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1986360096</coreId>
+						<coreId>1936028192</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3626,7 +3626,7 @@
 						<id>85</id>
 						<name>tmp_10</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3634,7 +3634,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3654,7 +3654,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1279795773</coreId>
+						<coreId>1869881445</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3682,7 +3682,7 @@
 						<id>86</id>
 						<name>tmp_11</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3690,7 +3690,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3710,7 +3710,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1668445551</coreId>
+						<coreId>1701867296</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3738,7 +3738,7 @@
 						<id>87</id>
 						<name>tmp_12</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3746,7 +3746,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3766,7 +3766,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>543450483</coreId>
+						<coreId>1836345390</coreId>
 					</Obj>
 					<bitwidth>320</bitwidth>
 				</Value>
@@ -3794,7 +3794,7 @@
 						<id>88</id>
 						<name>tmp_13</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3802,7 +3802,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3822,7 +3822,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953394531</coreId>
+						<coreId>1668444006</coreId>
 					</Obj>
 					<bitwidth>96</bitwidth>
 				</Value>
@@ -3850,7 +3850,7 @@
 						<id>89</id>
 						<name>or_ln30_s</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3858,7 +3858,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3878,7 +3878,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>959520826</coreId>
+						<coreId>942485552</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -3910,7 +3910,7 @@
 						<id>90</id>
 						<name>br_ln30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>30</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3918,7 +3918,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3938,7 +3938,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1986360096</coreId>
+						<coreId>1751087476</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3963,7 +3963,7 @@
 						<id>92</id>
 						<name>conv</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>34</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -3971,7 +3971,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3991,7 +3991,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769239141</coreId>
+						<coreId>1936683105</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4016,7 +4016,7 @@
 						<id>93</id>
 						<name>div1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>34</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4024,7 +4024,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4044,7 +4044,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869833586</coreId>
+						<coreId>1931502951</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4070,7 +4070,7 @@
 						<id>94</id>
 						<name>bitcast_ln34</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>34</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4078,7 +4078,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4098,7 +4098,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953852527</coreId>
+						<coreId>1031365995</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4123,7 +4123,7 @@
 						<id>95</id>
 						<name>div2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>35</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4131,7 +4131,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4151,7 +4151,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1031365995</coreId>
+						<coreId>1867718756</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4177,7 +4177,7 @@
 						<id>96</id>
 						<name>bitcast_ln35</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>35</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4185,7 +4185,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4205,7 +4205,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1717924464</coreId>
+						<coreId>1936744812</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4230,7 +4230,7 @@
 						<id>97</id>
 						<name>add2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>36</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4238,7 +4238,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4258,7 +4258,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1701273971</coreId>
+						<coreId>1663050309</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4284,7 +4284,7 @@
 						<id>98</id>
 						<name>div3</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>36</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4292,7 +4292,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4312,7 +4312,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953721967</coreId>
+						<coreId>540703090</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4338,7 +4338,7 @@
 						<id>99</id>
 						<name>bitcast_ln36</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>36</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4346,7 +4346,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4366,7 +4366,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1667309612</coreId>
+						<coreId>1931502951</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4391,7 +4391,7 @@
 						<id>100</id>
 						<name>sub</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4399,7 +4399,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4419,7 +4419,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1684370288</coreId>
+						<coreId>1128679775</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4445,7 +4445,7 @@
 						<id>101</id>
 						<name>bitcast_ln37</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4453,7 +4453,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4473,7 +4473,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907949608</coreId>
+						<coreId>840977746</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4498,7 +4498,7 @@
 						<id>102</id>
 						<name>tmp_14</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4506,7 +4506,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4526,7 +4526,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1279610953</coreId>
+						<coreId>1969695603</coreId>
 					</Obj>
 					<bitwidth>128</bitwidth>
 				</Value>
@@ -4554,7 +4554,7 @@
 						<id>103</id>
 						<name>tmp_s</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4562,7 +4562,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4582,7 +4582,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2228327</coreId>
+						<coreId>1031040613</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -4610,7 +4610,7 @@
 						<id>104</id>
 						<name>trunc_ln39</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4618,7 +4618,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4638,7 +4638,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1952673397</coreId>
+						<coreId>1885415012</coreId>
 					</Obj>
 					<bitwidth>52</bitwidth>
 				</Value>
@@ -4663,7 +4663,7 @@
 						<id>105</id>
 						<name>icmp_ln39</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4671,7 +4671,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4691,7 +4691,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1936290661</coreId>
+						<coreId>1431323424</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4717,7 +4717,7 @@
 						<id>106</id>
 						<name>icmp_ln39_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4725,7 +4725,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4745,7 +4745,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>828330828</coreId>
+						<coreId>1936024608</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4771,7 +4771,7 @@
 						<id>107</id>
 						<name>or_ln39</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4779,7 +4779,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4799,7 +4799,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1948280172</coreId>
+						<coreId>808464928</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4825,7 +4825,7 @@
 						<id>108</id>
 						<name>tmp_15</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4833,7 +4833,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4853,7 +4853,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769367924</coreId>
+						<coreId>1279795712</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4879,7 +4879,7 @@
 						<id>109</id>
 						<name>and_ln39</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4887,7 +4887,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4907,7 +4907,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>942485552</coreId>
+						<coreId>1230261845</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4933,7 +4933,7 @@
 						<id>110</id>
 						<name>xor_ln40</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>40</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4941,7 +4941,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4961,7 +4961,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1718510880</coreId>
+						<coreId>1663041570</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4987,7 +4987,7 @@
 						<id>111</id>
 						<name>bitcast_ln40</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>40</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -4995,7 +4995,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5015,7 +5015,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>774453042</coreId>
+						<coreId>1818779513</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5040,7 +5040,7 @@
 						<id>112</id>
 						<name>select_ln39</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5048,7 +5048,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5068,7 +5068,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1295780106</coreId>
+						<coreId>691614010</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5095,7 +5095,7 @@
 						<id>113</id>
 						<name>tmp_16</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5103,7 +5103,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5123,7 +5123,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539570464</coreId>
+						<coreId>808333344</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5151,7 +5151,7 @@
 						<id>114</id>
 						<name>tmp_17</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5159,7 +5159,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5179,7 +5179,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>779316328</coreId>
+						<coreId>1397508130</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -5207,7 +5207,7 @@
 						<id>115</id>
 						<name>tmp_18</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5215,7 +5215,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5235,7 +5235,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768318322</coreId>
+						<coreId>757935405</coreId>
 					</Obj>
 					<bitwidth>480</bitwidth>
 				</Value>
@@ -5267,7 +5267,7 @@
 						<id>116</id>
 						<name>tmp_21</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5275,7 +5275,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5295,7 +5295,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852138871</coreId>
+						<coreId>1680830057</coreId>
 					</Obj>
 					<bitwidth>480</bitwidth>
 				</Value>
@@ -5327,7 +5327,7 @@
 						<id>117</id>
 						<name>select_ln39_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5335,7 +5335,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5355,7 +5355,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>825440880</coreId>
+						<coreId>2004299567</coreId>
 					</Obj>
 					<bitwidth>480</bitwidth>
 				</Value>
@@ -5382,7 +5382,7 @@
 						<id>118</id>
 						<name>and_ln1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5390,7 +5390,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5410,7 +5410,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>808591443</coreId>
+						<coreId>943205680</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -5437,7 +5437,7 @@
 						<id>119</id>
 						<name>br_ln43</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5445,7 +5445,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5465,7 +5465,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1952669984</coreId>
+						<coreId>1751087476</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5490,7 +5490,7 @@
 						<id>121</id>
 						<name>storemerge</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5498,7 +5498,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5518,7 +5518,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>825767981</coreId>
+						<coreId>151666223</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -5546,7 +5546,7 @@
 						<id>122</id>
 						<name>phi_ln43</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5554,7 +5554,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5574,7 +5574,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852121199</coreId>
+						<coreId>824196384</coreId>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
@@ -5602,7 +5602,7 @@
 						<id>123</id>
 						<name>empty_25</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5610,7 +5610,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5630,7 +5630,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>840979276</coreId>
+						<coreId>1818779513</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5658,7 +5658,7 @@
 						<id>124</id>
 						<name>add_ln43</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5666,7 +5666,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5686,7 +5686,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>695430688</coreId>
+						<coreId>1701998624</coreId>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
@@ -5712,7 +5712,7 @@
 						<id>125</id>
 						<name>indvars_iv_cast</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5720,7 +5720,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5740,7 +5740,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907968649</coreId>
+						<coreId>1702327397</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -5765,7 +5765,7 @@
 						<id>127</id>
 						<name>icmp_ln43</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5773,7 +5773,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5793,7 +5793,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907969824</coreId>
+						<coreId>980447331</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5819,7 +5819,7 @@
 						<id>128</id>
 						<name>br_ln43</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5827,7 +5827,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5847,7 +5847,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953068649</coreId>
+						<coreId>542329928</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5874,7 +5874,7 @@
 						<id>130</id>
 						<name>trunc_ln43_cast</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5882,7 +5882,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5902,7 +5902,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>2037672310</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5927,7 +5927,7 @@
 						<id>132</id>
 						<name>hr_addr_2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5935,7 +5935,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5955,7 +5955,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907971664</coreId>
+						<coreId>942485552</coreId>
 					</Obj>
 					<bitwidth>10</bitwidth>
 				</Value>
@@ -5982,7 +5982,7 @@
 						<id>133</id>
 						<name>hr_load_2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -5990,7 +5990,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6010,7 +6010,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>201326720</coreId>
+						<coreId>544175136</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6035,7 +6035,7 @@
 						<id>134</id>
 						<name>bitcast_ln44</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6043,7 +6043,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6063,7 +6063,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>1397508187</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6088,7 +6088,7 @@
 						<id>135</id>
 						<name>sub2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6096,7 +6096,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6116,7 +6116,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>543450473</coreId>
+						<coreId>1847604793</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6142,7 +6142,7 @@
 						<id>136</id>
 						<name>bitcast_ln44_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6150,7 +6150,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6170,7 +6170,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>18629025</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6195,7 +6195,7 @@
 						<id>137</id>
 						<name>mul</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6203,7 +6203,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6223,7 +6223,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907974376</coreId>
+						<coreId>22270080</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6249,7 +6249,7 @@
 						<id>138</id>
 						<name>add3</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6257,7 +6257,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6277,7 +6277,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907966041</coreId>
+						<coreId>1610612864</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6303,7 +6303,7 @@
 						<id>139</id>
 						<name>bitcast_ln45</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6311,7 +6311,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6331,7 +6331,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907975728</coreId>
+						<coreId>4</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6356,7 +6356,7 @@
 						<id>140</id>
 						<name>trunc_ln43</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6364,7 +6364,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6384,7 +6384,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>9</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>24</bitwidth>
 				</Value>
@@ -6409,7 +6409,7 @@
 						<id>141</id>
 						<name>add_ln43_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6417,7 +6417,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6437,7 +6437,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>14</coreId>
+						<coreId>22272256</coreId>
 					</Obj>
 					<bitwidth>24</bitwidth>
 				</Value>
@@ -6463,7 +6463,7 @@
 						<id>142</id>
 						<name>tmp_22</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6471,7 +6471,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6491,7 +6491,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907977240</coreId>
+						<coreId>1610612864</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6519,7 +6519,7 @@
 						<id>143</id>
 						<name>tmp_23</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6527,7 +6527,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6547,7 +6547,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907977648</coreId>
+						<coreId>4</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6575,7 +6575,7 @@
 						<id>144</id>
 						<name>tmp_24</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6583,7 +6583,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6603,7 +6603,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>201326720</coreId>
+						<coreId>22273641</coreId>
 					</Obj>
 					<bitwidth>128</bitwidth>
 				</Value>
@@ -6631,7 +6631,7 @@
 						<id>145</id>
 						<name>tmp_25</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6639,7 +6639,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6659,7 +6659,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22274688</coreId>
 					</Obj>
 					<bitwidth>160</bitwidth>
 				</Value>
@@ -6687,7 +6687,7 @@
 						<id>146</id>
 						<name>or_ln43_s</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6695,7 +6695,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6715,7 +6715,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907979161</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>512</bitwidth>
 				</Value>
@@ -6748,7 +6748,7 @@
 						<id>147</id>
 						<name>br_ln43</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6756,7 +6756,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6776,7 +6776,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907980080</coreId>
+						<coreId>132</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6801,7 +6801,7 @@
 						<id>149</id>
 						<name>conv1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>48</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6809,7 +6809,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6829,7 +6829,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1751087476</coreId>
+						<coreId>22276960</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6854,7 +6854,7 @@
 						<id>150</id>
 						<name>div4</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>48</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6862,7 +6862,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6882,7 +6882,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907981512</coreId>
+						<coreId>1610612864</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6908,7 +6908,7 @@
 						<id>151</id>
 						<name>bitcast_ln48</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>48</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6916,7 +6916,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6936,7 +6936,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907981920</coreId>
+						<coreId>7</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6961,7 +6961,7 @@
 						<id>152</id>
 						<name>tmp_26</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>48</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -6969,7 +6969,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6989,7 +6989,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>201326720</coreId>
+						<coreId>22277913</coreId>
 					</Obj>
 					<bitwidth>192</bitwidth>
 				</Value>
@@ -7017,7 +7017,7 @@
 						<id>153</id>
 						<name>trunc_ln48</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>48</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7025,7 +7025,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7045,7 +7045,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1025526089</coreId>
+						<coreId>22279136</coreId>
 					</Obj>
 					<bitwidth>192</bitwidth>
 				</Value>
@@ -7070,7 +7070,7 @@
 						<id>154</id>
 						<name>and_ln2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>48</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7078,7 +7078,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7098,7 +7098,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22279240</coreId>
 					</Obj>
 					<bitwidth>448</bitwidth>
 				</Value>
@@ -7126,7 +7126,7 @@
 						<id>155</id>
 						<name>or_ln48_7</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>48</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7134,7 +7134,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7182,7 +7182,7 @@
 						<id>156</id>
 						<name>tmp_27</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7190,7 +7190,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7210,7 +7210,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3225656</coreId>
+						<coreId>132</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -7238,7 +7238,7 @@
 						<id>157</id>
 						<name>trunc_ln50</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7246,7 +7246,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7266,7 +7266,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22283200</coreId>
 					</Obj>
 					<bitwidth>52</bitwidth>
 				</Value>
@@ -7291,7 +7291,7 @@
 						<id>158</id>
 						<name>icmp_ln50</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7299,7 +7299,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7319,7 +7319,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>10</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -7345,7 +7345,7 @@
 						<id>159</id>
 						<name>icmp_ln50_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7353,7 +7353,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7373,7 +7373,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907988464</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -7399,7 +7399,7 @@
 						<id>160</id>
 						<name>or_ln50</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7407,7 +7407,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7427,7 +7427,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>201326720</coreId>
+						<coreId>22284201</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -7453,7 +7453,7 @@
 						<id>161</id>
 						<name>tmp_28</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7461,7 +7461,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7481,7 +7481,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>155</coreId>
+						<coreId>22285376</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -7507,7 +7507,7 @@
 						<id>162</id>
 						<name>and_ln50</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7515,7 +7515,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7535,7 +7535,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1769367924</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -7561,7 +7561,7 @@
 						<id>163</id>
 						<name>or_ln51</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7569,7 +7569,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7589,7 +7589,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>132</coreId>
 					</Obj>
 					<bitwidth>448</bitwidth>
 				</Value>
@@ -7615,7 +7615,7 @@
 						<id>164</id>
 						<name>select_ln50</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7623,7 +7623,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7643,7 +7643,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907991048</coreId>
+						<coreId>22286752</coreId>
 					</Obj>
 					<bitwidth>448</bitwidth>
 				</Value>
@@ -7670,7 +7670,7 @@
 						<id>165</id>
 						<name>sub3</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7678,7 +7678,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7698,7 +7698,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>18829777</coreId>
+						<coreId>1610612864</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -7724,7 +7724,7 @@
 						<id>166</id>
 						<name>mul1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7732,7 +7732,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7752,7 +7752,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907990560</coreId>
+						<coreId>1601795177</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -7778,7 +7778,7 @@
 						<id>167</id>
 						<name>mul2</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7786,7 +7786,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7806,7 +7806,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>201326720</coreId>
+						<coreId>22288520</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -7832,7 +7832,7 @@
 						<id>168</id>
 						<name>mul3</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7840,7 +7840,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7860,7 +7860,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22288928</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -7886,7 +7886,7 @@
 						<id>169</id>
 						<name>add4</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -7894,7 +7894,61 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>activity_hls.cpp</first>
+											<second>compute_statistics</second>
+										</first>
+										<second>54</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1610612864</coreId>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>622</item>
+					<item>623</item>
+				</oprand_edges>
+				<opcode>dadd</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.96</m_delay>
+				<m_topoIndex>145</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_147">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>170</id>
+						<name>div53_op</name>
+						<fileName>activity_hls.cpp</fileName>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
+						<lineNumber>54</lineNumber>
+						<contextFuncName>compute_statistics</contextFuncName>
+						<contextNormFuncName>compute_statistics</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7921,60 +7975,6 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>622</item>
-					<item>623</item>
-				</oprand_edges>
-				<opcode>dadd</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.96</m_delay>
-				<m_topoIndex>145</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_147">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>170</id>
-						<name>div53_op</name>
-						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>compute_statistics</contextFuncName>
-						<contextNormFuncName>compute_statistics</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>activity_hls.cpp</first>
-											<second>compute_statistics</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>2907994320</coreId>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
 					<item>624</item>
 					<item>625</item>
 				</oprand_edges>
@@ -7994,7 +7994,7 @@
 						<id>171</id>
 						<name>select_ln54</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8002,7 +8002,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8022,7 +8022,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>8</coreId>
+						<coreId>22290441</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -8049,7 +8049,7 @@
 						<id>172</id>
 						<name>add5</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8057,7 +8057,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8077,7 +8077,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>11</coreId>
+						<coreId>22291360</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -8103,7 +8103,7 @@
 						<id>173</id>
 						<name>tmp</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8111,7 +8111,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8131,7 +8131,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907995448</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -8157,7 +8157,7 @@
 						<id>174</id>
 						<name>bitcast_ln54</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8165,7 +8165,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8185,7 +8185,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22287816</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -8210,7 +8210,7 @@
 						<id>175</id>
 						<name>or_ln54_s</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8218,7 +8218,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8265,7 +8265,7 @@
 						<id>176</id>
 						<name>tmp_29</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>56</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8273,7 +8273,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8293,7 +8293,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2907993208</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -8321,7 +8321,7 @@
 						<id>177</id>
 						<name>trunc_ln56</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>56</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8329,7 +8329,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8374,7 +8374,7 @@
 						<id>178</id>
 						<name>icmp_ln56</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>56</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8382,7 +8382,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8428,7 +8428,7 @@
 						<id>179</id>
 						<name>icmp_ln56_1</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>56</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8436,7 +8436,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8482,7 +8482,7 @@
 						<id>180</id>
 						<name>or_ln56</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>56</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8490,7 +8490,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8536,7 +8536,7 @@
 						<id>181</id>
 						<name>tmp_30</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>56</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8544,7 +8544,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8590,7 +8590,7 @@
 						<id>182</id>
 						<name>and_ln56</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>56</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8598,7 +8598,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8644,7 +8644,7 @@
 						<id>183</id>
 						<name>sub4</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8652,7 +8652,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8698,7 +8698,7 @@
 						<id>184</id>
 						<name>add6</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8706,7 +8706,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8752,7 +8752,7 @@
 						<id>185</id>
 						<name>bitcast_ln58</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8760,7 +8760,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8805,7 +8805,7 @@
 						<id>186</id>
 						<name>or_ln58_s</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8813,7 +8813,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8860,7 +8860,7 @@
 						<id>187</id>
 						<name>select_ln56</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>56</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8868,7 +8868,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8915,7 +8915,7 @@
 						<id>188</id>
 						<name>vals_write_ln54</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8923,7 +8923,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8971,7 +8971,7 @@
 						<id>189</id>
 						<name>_ln60</name>
 						<fileName>activity_hls.cpp</fileName>
-						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS</fileDirectory>
+						<fileDirectory>/localhome/jmack2545/ece576b/VitisHLS/activity</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>compute_statistics</contextFuncName>
 						<contextNormFuncName>compute_statistics</contextNormFuncName>
@@ -8979,7 +8979,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/localhome/jmack2545/ece576b/VitisHLS</first>
+								<first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9041,7 +9041,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>22300952</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -9629,7 +9629,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3893357583</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -9741,7 +9741,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>77594626</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -10021,7 +10021,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3497635184</coreId>
+						<coreId>616288400</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -10049,7 +10049,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3494643696</coreId>
+						<coreId>22121008</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -10077,7 +10077,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3499858064</coreId>
+						<coreId>614591856</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -10304,7 +10304,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1751348000</coreId>
+					<coreId>1769367924</coreId>
 				</Obj>
 				<node_objs>
 					<count>15</count>
@@ -10426,7 +10426,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>132</coreId>
+					<coreId>21937376</coreId>
 				</Obj>
 				<node_objs>
 					<count>4</count>
@@ -10457,7 +10457,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>0</coreId>
+					<coreId>132</coreId>
 				</Obj>
 				<node_objs>
 					<count>5</count>
@@ -10489,7 +10489,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>201326720</coreId>
+					<coreId>3025152</coreId>
 				</Obj>
 				<node_objs>
 					<count>21</count>
@@ -10537,7 +10537,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1313817414</coreId>
+					<coreId>81</coreId>
 				</Obj>
 				<node_objs>
 					<count>28</count>
@@ -10592,7 +10592,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1768712568</coreId>
+					<coreId>1734553453</coreId>
 				</Obj>
 				<node_objs>
 					<count>7</count>
@@ -10626,7 +10626,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>132</coreId>
+					<coreId>1629498407</coreId>
 				</Obj>
 				<node_objs>
 					<count>17</count>

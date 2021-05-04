@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="rijndaelDecrypt_hls" xd:componentRef="rijndaelDecrypt_hls" xd:initiationInterval="184" xd:clockPeriod="2.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(rk)" xd:originalName="rk" xd:direction="in" xd:interfaceRef="s_axi_BUS" xd:busTypeRef="axilite" xd:offset="0x100" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(ct)" xd:originalName="ct" xd:direction="in" xd:interfaceRef="s_axi_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(pt)" xd:originalName="pt" xd:direction="out" xd:interfaceRef="s_axi_BUS" xd:busTypeRef="axilite" xd:offset="0x20" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="183" xd:worst-case="183" xd:average-case="183"/>
+  <xd:resourceEstimates xd:LUT="15083" xd:FF="2831" xd:BRAM="15" xd:DSP="0"/>
+</xd:acceleratorMap>

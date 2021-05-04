@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Fri Apr 16 01:41:20 2021
+// Date        : Fri Apr 30 14:45:31 2021
 // Host        : engr-rcl13g running 64-bit Ubuntu 18.04.5 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /localhome/jmack2545/ece576b/Vivado/ProjectDesign/ProjectDesign.gen/sources_1/bd/design_zcu102/ip/design_zcu102_xbar_0/design_zcu102_xbar_0_stub.v
@@ -21,7 +21,7 @@ module design_zcu102_xbar_0(aclk, aresetn, s_axi_awaddr, s_axi_awprot,
   m_axi_awprot, m_axi_awvalid, m_axi_awready, m_axi_wdata, m_axi_wstrb, m_axi_wvalid, 
   m_axi_wready, m_axi_bresp, m_axi_bvalid, m_axi_bready, m_axi_araddr, m_axi_arprot, 
   m_axi_arvalid, m_axi_arready, m_axi_rdata, m_axi_rresp, m_axi_rvalid, m_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="aclk,aresetn,s_axi_awaddr[79:0],s_axi_awprot[5:0],s_axi_awvalid[1:0],s_axi_awready[1:0],s_axi_wdata[63:0],s_axi_wstrb[7:0],s_axi_wvalid[1:0],s_axi_wready[1:0],s_axi_bresp[3:0],s_axi_bvalid[1:0],s_axi_bready[1:0],s_axi_araddr[79:0],s_axi_arprot[5:0],s_axi_arvalid[1:0],s_axi_arready[1:0],s_axi_rdata[63:0],s_axi_rresp[3:0],s_axi_rvalid[1:0],s_axi_rready[1:0],m_axi_awaddr[39:0],m_axi_awprot[2:0],m_axi_awvalid[0:0],m_axi_awready[0:0],m_axi_wdata[31:0],m_axi_wstrb[3:0],m_axi_wvalid[0:0],m_axi_wready[0:0],m_axi_bresp[1:0],m_axi_bvalid[0:0],m_axi_bready[0:0],m_axi_araddr[39:0],m_axi_arprot[2:0],m_axi_arvalid[0:0],m_axi_arready[0:0],m_axi_rdata[31:0],m_axi_rresp[1:0],m_axi_rvalid[0:0],m_axi_rready[0:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="aclk,aresetn,s_axi_awaddr[79:0],s_axi_awprot[5:0],s_axi_awvalid[1:0],s_axi_awready[1:0],s_axi_wdata[63:0],s_axi_wstrb[7:0],s_axi_wvalid[1:0],s_axi_wready[1:0],s_axi_bresp[3:0],s_axi_bvalid[1:0],s_axi_bready[1:0],s_axi_araddr[79:0],s_axi_arprot[5:0],s_axi_arvalid[1:0],s_axi_arready[1:0],s_axi_rdata[63:0],s_axi_rresp[3:0],s_axi_rvalid[1:0],s_axi_rready[1:0],m_axi_awaddr[119:0],m_axi_awprot[8:0],m_axi_awvalid[2:0],m_axi_awready[2:0],m_axi_wdata[95:0],m_axi_wstrb[11:0],m_axi_wvalid[2:0],m_axi_wready[2:0],m_axi_bresp[5:0],m_axi_bvalid[2:0],m_axi_bready[2:0],m_axi_araddr[119:0],m_axi_arprot[8:0],m_axi_arvalid[2:0],m_axi_arready[2:0],m_axi_rdata[95:0],m_axi_rresp[5:0],m_axi_rvalid[2:0],m_axi_rready[2:0]" */;
   input aclk;
   input aresetn;
   input [79:0]s_axi_awaddr;
@@ -43,23 +43,23 @@ module design_zcu102_xbar_0(aclk, aresetn, s_axi_awaddr, s_axi_awprot,
   output [3:0]s_axi_rresp;
   output [1:0]s_axi_rvalid;
   input [1:0]s_axi_rready;
-  output [39:0]m_axi_awaddr;
-  output [2:0]m_axi_awprot;
-  output [0:0]m_axi_awvalid;
-  input [0:0]m_axi_awready;
-  output [31:0]m_axi_wdata;
-  output [3:0]m_axi_wstrb;
-  output [0:0]m_axi_wvalid;
-  input [0:0]m_axi_wready;
-  input [1:0]m_axi_bresp;
-  input [0:0]m_axi_bvalid;
-  output [0:0]m_axi_bready;
-  output [39:0]m_axi_araddr;
-  output [2:0]m_axi_arprot;
-  output [0:0]m_axi_arvalid;
-  input [0:0]m_axi_arready;
-  input [31:0]m_axi_rdata;
-  input [1:0]m_axi_rresp;
-  input [0:0]m_axi_rvalid;
-  output [0:0]m_axi_rready;
+  output [119:0]m_axi_awaddr;
+  output [8:0]m_axi_awprot;
+  output [2:0]m_axi_awvalid;
+  input [2:0]m_axi_awready;
+  output [95:0]m_axi_wdata;
+  output [11:0]m_axi_wstrb;
+  output [2:0]m_axi_wvalid;
+  input [2:0]m_axi_wready;
+  input [5:0]m_axi_bresp;
+  input [2:0]m_axi_bvalid;
+  output [2:0]m_axi_bready;
+  output [119:0]m_axi_araddr;
+  output [8:0]m_axi_arprot;
+  output [2:0]m_axi_arvalid;
+  input [2:0]m_axi_arready;
+  input [95:0]m_axi_rdata;
+  input [5:0]m_axi_rresp;
+  input [2:0]m_axi_rvalid;
+  output [2:0]m_axi_rready;
 endmodule

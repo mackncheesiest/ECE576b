@@ -29,47 +29,52 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/activity_hls/.apc/.src</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/activity_hls/.apc/.tb</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/.apc/.tb</location>
 		</link>
 		<link>
 			<name>activity_soln/constraints</name>
 			<type>2</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln/.tcls</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/activity_soln/.tcls</location>
 		</link>
 		<link>
 			<name>source/activity_hls.cpp</name>
 			<type>1</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/activity_hls.cpp</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls.cpp</location>
 		</link>
 		<link>
 			<name>source/bytestrm_util.h</name>
 			<type>1</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/bytestrm_util.h</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/bytestrm_util.h</location>
 		</link>
 		<link>
 			<name>source/myfile.cpp</name>
 			<type>1</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/myfile.cpp</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/myfile.cpp</location>
+		</link>
+		<link>
+			<name>testbench/activity_test.cpp</name>
+			<type>1</type>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/activity_test.cpp</location>
 		</link>
 		<link>
 			<name>activity_soln/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln/activity_soln.directive</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/activity_soln/activity_soln.directive</location>
 		</link>
 		<link>
 			<name>activity_soln/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln/directives.tcl</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/activity_soln/directives.tcl</location>
 		</link>
 		<link>
 			<name>activity_soln/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/localhome/jmack2545/ece576b/VitisHLS/activity_hls/activity_soln/script.tcl</location>
+			<location>/localhome/jmack2545/ece576b/VitisHLS/activity/activity_hls/activity_soln/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

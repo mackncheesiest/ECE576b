@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="rijndaelDecrypt_hls" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="rijndaelDecrypt_hls"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

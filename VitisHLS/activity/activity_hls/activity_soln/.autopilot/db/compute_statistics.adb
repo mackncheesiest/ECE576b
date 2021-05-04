@@ -31,7 +31,7 @@
               <opType/>
               <implIndex/>
               <coreName>RAM_1P</coreName>
-              <coreId>3494661552</coreId>
+              <coreId>616421040</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -64,7 +64,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>81</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -95,7 +95,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -149,7 +149,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -205,7 +205,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -261,7 +261,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -281,7 +281,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1661208512</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -318,7 +318,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -338,7 +338,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>408</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -373,7 +373,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -427,7 +427,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -447,7 +447,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>613779728</coreId>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -483,7 +483,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -503,7 +503,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>129</coreId>
+              <coreId>1751348000</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -536,7 +536,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -590,7 +590,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -610,7 +610,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>410</coreId>
+              <coreId>129</coreId>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -646,7 +646,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -699,7 +699,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -754,7 +754,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -774,7 +774,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>321</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -810,7 +810,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -830,7 +830,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>1005</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -864,7 +864,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -917,7 +917,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -937,7 +937,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>305</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -973,7 +973,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -993,7 +993,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>769</coreId>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -1029,7 +1029,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1049,7 +1049,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>22185568</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1085,7 +1085,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1139,7 +1139,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1159,7 +1159,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>4294967295</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1192,7 +1192,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1212,7 +1212,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>825241901</coreId>
+              <coreId>22202632</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1246,7 +1246,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1266,7 +1266,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>22203264</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1301,7 +1301,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1321,7 +1321,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>201326720</coreId>
+              <coreId>4294967295</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1354,7 +1354,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1374,7 +1374,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>840979276</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -1409,7 +1409,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1462,7 +1462,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1482,7 +1482,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>2593</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1515,7 +1515,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1569,7 +1569,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1589,7 +1589,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907908848</coreId>
+              <coreId>9</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1622,7 +1622,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1642,7 +1642,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>2833</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -1675,7 +1675,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1695,7 +1695,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907910784</coreId>
+              <coreId>22213472</coreId>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -1728,7 +1728,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1748,7 +1748,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>22214360</coreId>
             </Obj>
             <bitwidth>24</bitwidth>
           </Value>
@@ -1781,7 +1781,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1835,7 +1835,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1889,7 +1889,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1943,7 +1943,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1963,7 +1963,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1936683105</coreId>
+              <coreId>1702129263</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -1999,7 +1999,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2019,7 +2019,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907923976</coreId>
+              <coreId>1162758476</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -2055,7 +2055,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2075,7 +2075,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907926736</coreId>
+              <coreId>1713401449</coreId>
             </Obj>
             <bitwidth>7</bitwidth>
           </Value>
@@ -2111,7 +2111,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2131,7 +2131,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>5617</coreId>
             </Obj>
             <bitwidth>384</bitwidth>
           </Value>
@@ -2167,7 +2167,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2187,7 +2187,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907896496</coreId>
+              <coreId>615996528</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2223,7 +2223,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2243,7 +2243,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>201326720</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -2284,7 +2284,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2304,7 +2304,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -2337,7 +2337,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2392,7 +2392,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2412,7 +2412,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>22221664</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2445,7 +2445,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2465,7 +2465,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>22221768</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2498,7 +2498,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2518,7 +2518,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>1610612864</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -2551,7 +2551,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2571,7 +2571,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907889704</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -2607,7 +2607,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2627,7 +2627,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907890512</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2663,7 +2663,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2683,7 +2683,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907891264</coreId>
+              <coreId>4294967295</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2719,7 +2719,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2739,7 +2739,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>673214063</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2773,7 +2773,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2793,7 +2793,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907893600</coreId>
+              <coreId>808598902</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -2828,7 +2828,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2848,7 +2848,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2004299567</coreId>
+              <coreId>8</coreId>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2883,7 +2883,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2936,7 +2936,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2956,7 +2956,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2037672310</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2989,7 +2989,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3043,7 +3043,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3063,7 +3063,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1415533385</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -3096,7 +3096,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3116,7 +3116,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1663988588</coreId>
+              <coreId>22198736</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -3149,7 +3149,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3203,7 +3203,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3223,7 +3223,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1869881445</coreId>
+              <coreId>1230384197</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -3256,7 +3256,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3276,7 +3276,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1701867296</coreId>
+              <coreId>2004299567</coreId>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -3309,7 +3309,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3329,7 +3329,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1836345390</coreId>
+              <coreId>1162630468</coreId>
             </Obj>
             <bitwidth>24</bitwidth>
           </Value>
@@ -3362,7 +3362,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3416,7 +3416,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3470,7 +3470,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3524,7 +3524,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3578,7 +3578,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3598,7 +3598,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1986360096</coreId>
+              <coreId>1936028192</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -3634,7 +3634,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3654,7 +3654,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1279795773</coreId>
+              <coreId>1869881445</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -3690,7 +3690,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3710,7 +3710,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1668445551</coreId>
+              <coreId>1701867296</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -3746,7 +3746,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3766,7 +3766,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>543450483</coreId>
+              <coreId>1836345390</coreId>
             </Obj>
             <bitwidth>320</bitwidth>
           </Value>
@@ -3802,7 +3802,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3822,7 +3822,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1953394531</coreId>
+              <coreId>1668444006</coreId>
             </Obj>
             <bitwidth>96</bitwidth>
           </Value>
@@ -3858,7 +3858,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3878,7 +3878,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>959520826</coreId>
+              <coreId>942485552</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -3918,7 +3918,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3938,7 +3938,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1986360096</coreId>
+              <coreId>1751087476</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -3971,7 +3971,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3991,7 +3991,7 @@
               <opType>sitodp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1769239141</coreId>
+              <coreId>1936683105</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4024,7 +4024,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4078,7 +4078,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4098,7 +4098,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1953852527</coreId>
+              <coreId>1031365995</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4131,7 +4131,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4185,7 +4185,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4205,7 +4205,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1717924464</coreId>
+              <coreId>1936744812</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4238,7 +4238,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4292,7 +4292,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4346,7 +4346,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4366,7 +4366,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1667309612</coreId>
+              <coreId>1931502951</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4399,7 +4399,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4453,7 +4453,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4473,7 +4473,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907949608</coreId>
+              <coreId>840977746</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4506,7 +4506,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4526,7 +4526,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1279610953</coreId>
+              <coreId>1969695603</coreId>
             </Obj>
             <bitwidth>128</bitwidth>
           </Value>
@@ -4562,7 +4562,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4582,7 +4582,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2228327</coreId>
+              <coreId>1031040613</coreId>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -4618,7 +4618,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4638,7 +4638,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1952673397</coreId>
+              <coreId>1885415012</coreId>
             </Obj>
             <bitwidth>52</bitwidth>
           </Value>
@@ -4671,7 +4671,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4691,7 +4691,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1936290661</coreId>
+              <coreId>1431323424</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4725,7 +4725,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4745,7 +4745,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>828330828</coreId>
+              <coreId>1936024608</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4779,7 +4779,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4799,7 +4799,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1948280172</coreId>
+              <coreId>808464928</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4833,7 +4833,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4853,7 +4853,7 @@
               <opType>dcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1769367924</coreId>
+              <coreId>1279795712</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4887,7 +4887,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4907,7 +4907,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>942485552</coreId>
+              <coreId>1230261845</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4941,7 +4941,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4961,7 +4961,7 @@
               <opType>xor</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1718510880</coreId>
+              <coreId>1663041570</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4995,7 +4995,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5015,7 +5015,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>774453042</coreId>
+              <coreId>1818779513</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -5048,7 +5048,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5103,7 +5103,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5123,7 +5123,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>539570464</coreId>
+              <coreId>808333344</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -5159,7 +5159,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5179,7 +5179,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>779316328</coreId>
+              <coreId>1397508130</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5215,7 +5215,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5235,7 +5235,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1768318322</coreId>
+              <coreId>757935405</coreId>
             </Obj>
             <bitwidth>480</bitwidth>
           </Value>
@@ -5275,7 +5275,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5295,7 +5295,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1852138871</coreId>
+              <coreId>1680830057</coreId>
             </Obj>
             <bitwidth>480</bitwidth>
           </Value>
@@ -5335,7 +5335,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5390,7 +5390,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5410,7 +5410,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>808591443</coreId>
+              <coreId>943205680</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -5445,7 +5445,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5465,7 +5465,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1952669984</coreId>
+              <coreId>1751087476</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -5498,7 +5498,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5518,7 +5518,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>825767981</coreId>
+              <coreId>151666223</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -5554,7 +5554,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5574,7 +5574,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1852121199</coreId>
+              <coreId>824196384</coreId>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -5610,7 +5610,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5630,7 +5630,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>840979276</coreId>
+              <coreId>1818779513</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -5666,7 +5666,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5720,7 +5720,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5740,7 +5740,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907968649</coreId>
+              <coreId>1702327397</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5773,7 +5773,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5793,7 +5793,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>2907969824</coreId>
+              <coreId>980447331</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5827,7 +5827,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5847,7 +5847,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1953068649</coreId>
+              <coreId>542329928</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -5882,7 +5882,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5902,7 +5902,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>2037672310</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -5935,7 +5935,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5955,7 +5955,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907971664</coreId>
+              <coreId>942485552</coreId>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -5990,7 +5990,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6043,7 +6043,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6063,7 +6063,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>1397508187</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -6096,7 +6096,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6150,7 +6150,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6170,7 +6170,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>18629025</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -6203,7 +6203,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6257,7 +6257,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6311,7 +6311,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6331,7 +6331,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907975728</coreId>
+              <coreId>4</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -6364,7 +6364,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6384,7 +6384,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>9</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>24</bitwidth>
           </Value>
@@ -6417,7 +6417,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6471,7 +6471,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6491,7 +6491,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907977240</coreId>
+              <coreId>1610612864</coreId>
             </Obj>
             <bitwidth>7</bitwidth>
           </Value>
@@ -6527,7 +6527,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6547,7 +6547,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907977648</coreId>
+              <coreId>4</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -6583,7 +6583,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6603,7 +6603,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>201326720</coreId>
+              <coreId>22273641</coreId>
             </Obj>
             <bitwidth>128</bitwidth>
           </Value>
@@ -6639,7 +6639,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6659,7 +6659,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>22274688</coreId>
             </Obj>
             <bitwidth>160</bitwidth>
           </Value>
@@ -6695,7 +6695,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6715,7 +6715,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907979161</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>512</bitwidth>
           </Value>
@@ -6756,7 +6756,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6776,7 +6776,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907980080</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -6809,7 +6809,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6829,7 +6829,7 @@
               <opType>sitodp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1751087476</coreId>
+              <coreId>22276960</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -6862,7 +6862,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6916,7 +6916,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6936,7 +6936,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907981920</coreId>
+              <coreId>7</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -6969,7 +6969,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6989,7 +6989,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>201326720</coreId>
+              <coreId>22277913</coreId>
             </Obj>
             <bitwidth>192</bitwidth>
           </Value>
@@ -7025,7 +7025,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7045,7 +7045,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1025526089</coreId>
+              <coreId>22279136</coreId>
             </Obj>
             <bitwidth>192</bitwidth>
           </Value>
@@ -7078,7 +7078,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7098,7 +7098,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>22279240</coreId>
             </Obj>
             <bitwidth>448</bitwidth>
           </Value>
@@ -7134,7 +7134,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7190,7 +7190,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7210,7 +7210,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3225656</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -7246,7 +7246,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7266,7 +7266,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>22283200</coreId>
             </Obj>
             <bitwidth>52</bitwidth>
           </Value>
@@ -7299,7 +7299,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7319,7 +7319,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>10</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7353,7 +7353,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7373,7 +7373,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>2907988464</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7407,7 +7407,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7427,7 +7427,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>201326720</coreId>
+              <coreId>22284201</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7461,7 +7461,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7481,7 +7481,7 @@
               <opType>dcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>155</coreId>
+              <coreId>22285376</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7515,7 +7515,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7535,7 +7535,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1769367924</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7569,7 +7569,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7589,7 +7589,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>448</bitwidth>
           </Value>
@@ -7623,7 +7623,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7678,7 +7678,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7732,7 +7732,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7786,7 +7786,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7840,7 +7840,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7894,7 +7894,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7948,7 +7948,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8002,7 +8002,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8057,7 +8057,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8111,7 +8111,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8165,7 +8165,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8185,7 +8185,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>22287816</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -8218,7 +8218,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8273,7 +8273,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8293,7 +8293,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2907993208</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -8329,7 +8329,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8382,7 +8382,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8436,7 +8436,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8490,7 +8490,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8544,7 +8544,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8598,7 +8598,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8652,7 +8652,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8706,7 +8706,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8760,7 +8760,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8813,7 +8813,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8868,7 +8868,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8923,7 +8923,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8979,7 +8979,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/localhome/jmack2545/ece576b/VitisHLS</first>
+                  <first>/localhome/jmack2545/ece576b/VitisHLS/activity</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9041,7 +9041,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>22300952</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -9629,7 +9629,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3893357583</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -9741,7 +9741,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>77594626</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -10021,7 +10021,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3497635184</coreId>
+              <coreId>616288400</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -10049,7 +10049,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3494643696</coreId>
+              <coreId>22121008</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -10077,7 +10077,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3499858064</coreId>
+              <coreId>614591856</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -10304,7 +10304,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>1751348000</coreId>
+            <coreId>1769367924</coreId>
           </Obj>
           <node_objs>
             <count>15</count>
@@ -10426,7 +10426,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>132</coreId>
+            <coreId>21937376</coreId>
           </Obj>
           <node_objs>
             <count>4</count>
@@ -10457,7 +10457,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>0</coreId>
+            <coreId>132</coreId>
           </Obj>
           <node_objs>
             <count>5</count>
@@ -10489,7 +10489,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>201326720</coreId>
+            <coreId>3025152</coreId>
           </Obj>
           <node_objs>
             <count>21</count>
@@ -10537,7 +10537,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>1313817414</coreId>
+            <coreId>81</coreId>
           </Obj>
           <node_objs>
             <count>28</count>
@@ -10592,7 +10592,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>1768712568</coreId>
+            <coreId>1734553453</coreId>
           </Obj>
           <node_objs>
             <count>7</count>
@@ -10626,7 +10626,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>132</coreId>
+            <coreId>1629498407</coreId>
           </Obj>
           <node_objs>
             <count>17</count>

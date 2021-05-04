@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../aes_dec_hls.cpp in debug mode
+   Generating csim.exe
+[SIM] Calling decryptor function
+[SIM] Finished decryptor function
+[SIM] Checking against reference ciphertext
+[SIM] Plaintext Correct !!!
+[SIM] Plaintext value received from aes accelerator
+0x3f, 0xd4, 0x19, 0x1, 0x42, 0xa1, 0x53, 0x76, 0x3e, 0x59, 0xb3, 0xf9, 0x42, 0x89, 0x56, 0x31, 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
